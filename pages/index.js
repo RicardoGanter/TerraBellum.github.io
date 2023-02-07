@@ -10,6 +10,7 @@ export default function Home() {
   return (
     
     <>
+    <button className='btn btn-primary'>boton de inicio</button>
     <Layout titulo="Home">
 
     </Layout>
@@ -18,6 +19,7 @@ export default function Home() {
     <div className={styles.fondo}  >
       <Image src={espacio} alt='lol' Layout='relative' quality={20}/>
     </div>
+    
     </>
    
   )
