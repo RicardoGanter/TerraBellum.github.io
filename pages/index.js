@@ -3,18 +3,22 @@ import Head from 'next/head'
 // const inter = Inter({ subsets: ['latin'] })
 import Link from 'next/link'
 import Layout from '../components/layout'
-import styles from '../styles/imagenes.module.css'
+import Image from 'next/image'
+import espacio from '../public/espacio.png'
+import styles from '../styles/home.module.css'
 export default function Home() {
   return (
-    <>
-    <div className={styles.fondo1}></div>
-    <div className={styles.fondo2}></div>
-    <div className={styles.fondo3}></div>
-    <div className={styles.fondo4}></div>
-    <div className={styles.fondo5}></div>
-    <Layout titulo="Home">
     
+    <>
+    <Layout titulo="Home">
+
     </Layout>
+    {/* <Image src="/espacio.png" alt='fondo de la galaxia' Layout='responsive'  objetFit='cover' width={13000 / 10} height={90000 / 10}/> */}
+
+    <div className={styles.fondo}  >
+      <Image src={espacio} alt='lol' Layout='relative' quality={20}/>
+    </div>
     </>
+   
   )
 }

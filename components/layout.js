@@ -4,7 +4,7 @@ import Header from "./Header.js";
 
 const Layout = ({children,titulo})=>{
     return(
-        <div>
+        <>
             <Head>
             <title>TerraBellum - {titulo}</title>
             </Head>
@@ -12,7 +12,7 @@ const Layout = ({children,titulo})=>{
             <Header/>
 
             {children}
-        </div>
+        </>
     )
 };
 
