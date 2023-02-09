@@ -4,10 +4,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import Image from 'next/image'
-import espacio from '../public/espacio.png'
 import styles from '../styles/home.module.css'
 import Texto from '@/components/texto'
-
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -19,6 +18,7 @@ export default function Home() {
     {/* <div style={{display: 'block', width: 900}}> */}
       {/* <Image src={espacio} alt='lol' Layout='responsive' quality={100}/>
     </div>   */} 
+    <Footer/>
     </>
   )
 }

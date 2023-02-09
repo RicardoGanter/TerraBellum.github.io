@@ -5,8 +5,8 @@ const Texto = ()=>{
     return(
         <div>
             <div className={styles.texto}>
-                <h1>Únete a la competición de Terrabellum y
-                    demuestra tus habilidades en un juego emocionante y único que ofrece una experiencia de juego divertida y segura.</h1>
+                <p>Únete a la competición de Terrabellum y
+                    demuestra tus habilidades en un juego emocionante y único que ofrece una experiencia de juego divertida y segura.</p>
             </div>
             
             <div className={styles.texto2} >

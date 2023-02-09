@@ -1,11 +1,14 @@
 .texto{
     color: rgb(255, 255, 255);
     position: relative;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 30%;
-    animation: textoapareciendo 6000ms;
-    /* ease-out o in suavidad inicio y fin */
+    margin: 20% 30% 0 30%;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+    background-color: rgb(45, 80, 68);
+    opacity: 90%;
+    border-radius: 10px;
+    animation: textoapareciendo 6000ms;/* ease-out o in suavidad inicio y fin */
 }
 
 .texto2{
@@ -34,5 +37,11 @@
     to{
         opacity: 100%;
     }
+
+}
+
+.contenedortext{
+
+    background-color: aquamarine;
 
 }

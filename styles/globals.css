@@ -1,8 +1,9 @@
 body {
-    background-image: url(../public/espacio.png);
+    background-image: url(../public/img/espacio.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 6000px;
+
 }
 
 ::-webkit-scrollbar {

@@ -1,0 +1,19 @@
+.redesSociales{
+    position: relative;
+    background-color: rgb(60, 49, 49);
+    border: rgb(77, 37, 22) solid; 
+    /* min-height: calc(100vh - 100px -300px); */
+    text-align: center;
+    margin: 200% 0;
+}
+.footertext{
+    color: aliceblue;
+    margin-top: 1rem;
+}
+
+.enlacesfooter{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 1rem;
+}
