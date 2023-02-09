@@ -1,3 +1,25 @@
-.contenedor{
-    background-color: rgb(3, 4, 4);
+.contenedor {
+  background-color: rgb(3, 4, 4);
+}
+
+/* .head {
+  width: 70%;
+  height: 20%;
+  left: 100%;
+} */
+
+.container {
+  position: fixed;
+}
+
+.buttons {
+  margin-right: 300px;
+  margin-left: 100px;
+  /* background-color: white;
+  border-radius: 2px; */
+}
+#terrabellumImg {
+  width: 50%;
+  height: 20%;
+  border: 0;
 }
