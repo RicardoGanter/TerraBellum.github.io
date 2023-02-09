@@ -7,10 +7,8 @@ const Layout = ({children,titulo})=>{
         <>
             <Head>
             <title>TerraBellum - {titulo}</title>
-            </Head>
-            
+            </Head>          
             <Header/>
-
             {children}
         </>
     )

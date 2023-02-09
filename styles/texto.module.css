@@ -1,0 +1,38 @@
+.texto{
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30%;
+    animation: textoapareciendo 6000ms;
+    /* ease-out o in suavidad inicio y fin */
+}
+
+.texto2{
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 20%;
+    margin-right: 50%;
+    margin-top: 35%;
+    animation: textoapareciendo 6000ms
+}
+
+.texto3{
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 20%;
+    margin-right: 50%;
+    margin-top: 35%;
+    animation: textoapareciendo 6000ms
+}
+
+@keyframes textoapareciendo {
+
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+
+}

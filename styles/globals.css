@@ -1,0 +1,17 @@
+body {
+    background-image: url(../public/espacio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6000px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #011234;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2em;
+    /* background: rgb(61, 46, 104); */
+    background: linear-gradient(-45deg, #5052e5, #934be6);
+  }
