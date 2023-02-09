@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import Image from "next/image";
-import espacio from "../public/espacio.png";
+import espacio from "../public/img/espacio.png";
 import styles from "../styles/home.module.css";
 export default function Home() {
   return (
