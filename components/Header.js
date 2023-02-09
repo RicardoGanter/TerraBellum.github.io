@@ -33,6 +33,7 @@ const Header = () => {
                 height: "50%",
                 marginTop: "2%",
                 marginLeft: "7%",
+                
               }}
             ></Image>
           </h2>

@@ -15,11 +15,11 @@ const Footer = ()=>{
             <div className={styles.redesSociales}>
                 <Image src={TB} width={400} alt='Terrabellum'/>
                 <div>
-                <Image className={styles.lol} src={discord} width={40} magin-rigth={100} alt='discord'/>
-                <Image className={styles.lol} src={instagram} width={40}alt='instagram'/>
-                <Image className={styles.lol} src={twiter} width={40} alt='twiter'/>
-                <Image className={styles.lol} src={tiktok} width={40} alt='tiktok'/>
-                <Image className={styles.lol} src={facebook} width={40} alt='facebook'/>
+                <Link href={'https://www.instagram.com/Terra_Bellum/'}><Image className={styles.svgRedesSociales} src={discord} width={40} magin-rigth={100} alt='discord'/></Link>
+                <Link href={'https://www.instagram.com/Terra_Bellum/'}><Image className={styles.svgRedesSociales} src={instagram} width={40}alt='instagram'/></Link>
+                <Link href={'https://twitter.com/TerraBellum_NFT'}><Image className={styles.svgRedesSociales} src={twiter} width={40} alt='twiter'/></Link>
+                <Link href={'google.com'}><Image className={styles.svgRedesSociales} src={tiktok} width={40} alt='tiktok'/></Link>
+                <Link href={'https://www.facebook.com/profile.php?id=100082027137863'}><Image className={styles.svgRedesSociales} src={facebook} width={40} alt='facebook'/></Link>
                 </div>
             
             <div className={styles.footertext}>

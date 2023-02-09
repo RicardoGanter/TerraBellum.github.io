@@ -12,6 +12,8 @@
 }
 
 .texto2{
+    background: rebeccapurple;
+    height: 100px;
     color: rgb(255, 255, 255);
     position: relative;
     margin-left: 20%;
