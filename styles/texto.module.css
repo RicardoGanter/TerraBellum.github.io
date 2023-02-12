@@ -24,3 +24,19 @@
     flex-direction: column;
     margin:  3rem;
 }
+.contenedorImagenArmas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:solid 2px  burlywood;
+    border-radius: .3rem;
+    /* background-color: rgb(126, 105, 78); */
+}
+
+.imagenArma{
+    margin: 1rem;
+    border:solid 3px  burlywood;
+    border-radius: .4rem;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(86, 86, 76);
+}

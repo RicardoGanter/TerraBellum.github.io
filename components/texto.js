@@ -3,8 +3,9 @@ import styles from '../styles/texto.module.css'
 import Image from 'next/image';
 import TB from '../public/img/tb.png'
 import terrabellum from '../public/img/logoprincipal.png'
-
-
+import hud from './../public/img/hud.png'
+import arma from './../public/img/lazzer.png'
+import katana from './../public/img/katana.png'
 const Texto = ()=>{
     return(
         <>
@@ -19,7 +20,6 @@ const Texto = ()=>{
                     </div>
                     <Image src={TB} alt='imagen terrabellum' style={{width: '350px', height: '400px'}}/>
                 </div>
-            
                 <div className={styles.contenedorPersonajes}>
                     <div>
                         <p>Personajes: En el universo de Terrabellum los personajes
@@ -28,7 +28,7 @@ const Texto = ()=>{
                              impactantes y efectivas en el juego
                         </p>
                     </div>
-                    <Image src={terrabellum} style={{width: '500px', height: '120px'}} alt='imagen terrabellum'  />
+                    <Image src={hud} style={{width: '850px', height: '120px'}} alt='imagen terrabellum'  />
                 </div>
 
                 <div className={styles.contenedorArmas}>
@@ -39,7 +39,14 @@ const Texto = ()=>{
                               y conocer bien sus consecuencias para tener exito en las partidas
                         </p>
                     </div>
-                    <Image src={terrabellum} style={{width: '500px', height: '120px'}} alt='imagen terrabellum'  />
+                    <div className={styles.contenedorImagenArmas}>
+                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={katana}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
+                    </div>
                 </div>
             </div>
         </>

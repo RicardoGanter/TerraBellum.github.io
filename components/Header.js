@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "../styles/Header.module.css";
 import Image from "next/image";
-import logo from "../public/img/logoprincipal.png";
+import logo from "../public/img/terrabellum.png";
 
 const Header = () => {
    
