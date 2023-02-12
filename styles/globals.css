@@ -1,6 +1,5 @@
 body {
-    background-image: url(../public/img/espacio.png);
-    background-color: #011234;
+    background-image: url(../public/img/espacio3.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 6000px;
@@ -26,3 +25,11 @@ p{
     /* background: rgb(61, 46, 104); */
     background: linear-gradient(-45deg, #5052e5, #934be6);
   }
+
+  @media (max-width: 480px){
+
+    p{
+        font-size: 1rem;
+    }
+    
+}

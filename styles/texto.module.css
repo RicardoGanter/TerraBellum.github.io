@@ -29,7 +29,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     border:solid 2px  burlywood;
     border-radius: .3rem;
-    /* background-color: rgb(126, 105, 78); */
+}
+
+.imagenTB{
+    width: 350px ;
+    height: 400px;
+}
+
+.imagenHud{
+    width: 900px;
+    height: 160px;
 }
 
 .imagenArma{
@@ -39,4 +48,23 @@
     width: 300px;
     height: 200px;
     background-color: rgb(86, 86, 76);
+}
+
+@media (max-width: 480px){
+    .imagenTB{
+        width: 200px;
+        height: 150px;
+        padding: 1rem;
+    }
+    .imagenHud{
+        width: 400px ;
+        height: 100px;
+        padding: 1rem;
+    }
+    .contenedorPersonajesArmas{
+    margin: 90rem 1rem ;
+    }
+    .contenedorImagenArmas{
+        grid-template-columns: 1fr;
+    }
 }

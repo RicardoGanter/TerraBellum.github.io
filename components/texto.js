@@ -1,8 +1,6 @@
 import styles from '../styles/texto.module.css'
-// import AnimacionScroll from './animation/texto';
 import Image from 'next/image';
 import TB from '../public/img/tb.png'
-import terrabellum from '../public/img/logoprincipal.png'
 import hud from './../public/img/hud.png'
 import arma from './../public/img/lazzer.png'
 import katana from './../public/img/katana.png'
@@ -18,7 +16,7 @@ const Texto = ()=>{
                             el ultimo de pie, se lleva la victoria.
                         </p>
                     </div>
-                    <Image src={TB} alt='imagen terrabellum' style={{width: '350px', height: '400px'}}/>
+                    <Image src={TB} className={styles.imagenTB} alt='imagen terrabellum'/>
                 </div>
                 <div className={styles.contenedorPersonajes}>
                     <div>
@@ -28,7 +26,7 @@ const Texto = ()=>{
                              impactantes y efectivas en el juego
                         </p>
                     </div>
-                    <Image src={hud} style={{width: '850px', height: '120px'}} alt='imagen terrabellum'  />
+                    <Image src={hud} className={styles.imagenHud} alt='imagen terrabellum'  />
                 </div>
 
                 <div className={styles.contenedorArmas}>
@@ -41,7 +39,9 @@ const Texto = ()=>{
                     </div>
                     <div className={styles.contenedorImagenArmas}>
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={katana}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={katana}alt='imagen terrabellum'/>
+                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
