@@ -10,6 +10,7 @@ const Layout = ({children,titulo})=>{
             </Head>          
             <Header/>
             {children}
+            
         </>
     )
 };

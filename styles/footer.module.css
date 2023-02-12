@@ -19,4 +19,9 @@
 }
 .svgRedesSociales{
     margin: 0 1rem;
+    
+}
+
+.svgRedesSociales:hover{
+    background-color: aquamarine;
 }

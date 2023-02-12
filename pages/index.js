@@ -11,13 +11,8 @@ import Footer from '@/components/footer'
 export default function Home() {
   return (
     <>
-    <Layout titulo="Home">
-    </Layout>
+    <Layout titulo="Home"/>
     <Texto/>
-    {/* <div className={styles.fondo}  >
-    {/* <div style={{display: 'block', width: 900}}> */}
-      {/* <Image src={espacio} alt='lol' Layout='responsive' quality={100}/>
-    </div>   */} 
     <Footer/>
     </>
   )

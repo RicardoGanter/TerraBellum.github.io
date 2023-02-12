@@ -1,49 +1,26 @@
-.texto{
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin: 20% 30% 0 30%;
-    font-size: 45px;
-    font-family: sans-serif;
-    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
-    background-color: rgb(45, 80, 68);
-    opacity: 90%;
-    border-radius: 10px;
-    animation: textoapareciendo 6000ms;/* ease-out o in suavidad inicio y fin */
+.contenedorPersonajesArmas{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 90rem 30rem;
+    /* overflow: hidden;
+    background-color: rgba(33, 2, 57, 0.892); */
+    
 }
 
-.texto2{
-    background: rebeccapurple;
-    height: 100px;
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-left: 20%;
-    margin-right: 50%;
-    margin-top: 35%;
-    animation: textoapareciendo 6000ms
+.contenedorInfoJuego{
+    display: flex;
+    margin:  0 3rem;
 }
 
-.texto3{
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-left: 20%;
-    margin-right: 50%;
-    margin-top: 35%;
-    animation: textoapareciendo 6000ms
+.contenedorPersonajes{
+    display: flex;
+    flex-direction: column;
+    margin:  0 3rem;
 }
 
-@keyframes textoapareciendo {
-
-    from{
-        opacity: 0%;
-    }
-    to{
-        opacity: 100%;
-    }
-
-}
-
-.contenedortext{
-
-    background-color: aquamarine;
-
+.contenedorArmas{
+    display: flex;
+    flex-direction: column;
+    margin:  3rem;
 }

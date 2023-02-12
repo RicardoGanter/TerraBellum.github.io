@@ -1,9 +1,17 @@
 body {
     background-image: url(../public/img/espacio.png);
+    background-color: #011234;
     background-repeat: no-repeat;
     background-size: cover;
     height: 6000px;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
 
+p{
+  font-family: sans-serif;
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
 }
 
 ::-webkit-scrollbar {
