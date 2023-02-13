@@ -1,25 +1,32 @@
 import styles from '../styles/footer.module.css'
 import Image from 'next/image';
-import discord from '../public/icon/discord.svg'
+import discord from '../public/icon/discordgris.svg'
 import instagram from '../public/icon/instagram.svg'
 import tiktok from '../public/icon/tiktok.svg'
-import facebook from '../public/icon/facebook.svg'
+import facebook from '../public/icon/facebookgris.svg'
 import twiter from '../public/icon/twiter.svg'
 import TB from '../public/img/tb.png'
 import Link from 'next/link';
+import ImageHover from './imagenRsociales';
+import { useState } from 'react';
 
 const Footer = ()=>{
+    
     return(
         <>
-        
             <div className={styles.redesSociales}>
                 <Link href={'/'}><Image src={TB} width={350} alt='Terrabellum'/></Link>
                 <div>
-                <Link href={'https://www.instagram.com/Terra_Bellum/'}><Image className={styles.svgRedesSociales} src={discord} width={35} magin-rigth={100} alt='discord'/></Link>
-                <Link href={'https://www.instagram.com/Terra_Bellum/'}><Image className={styles.svgRedesSociales} src={instagram} width={35}alt='instagram'/></Link>
-                <Link href={'https://twitter.com/TerraBellum_NFT'}><Image className={styles.svgRedesSociales} src={twiter} width={35} alt='twiter'/></Link>
-                <Link href={'google.com'}><Image className={styles.svgRedesSociales} src={tiktok} width={35} alt='tiktok'/></Link>
-                <Link href={'https://www.facebook.com/profile.php?id=100082027137863'}><Image className={styles.svgRedesSociales} src={facebook} width={35} alt='facebook'/></Link>
+                <Link href={'https://www.instagram.com/Terra_Bellum/'} ><ImageHover className={styles.svgRedesSociales}
+                initialImage={instagram} alternativeImage={discord} /></Link>
+                <Link href={'https://www.instagram.com/Terra_Bellum/'}><ImageHover className={styles.svgRedesSociales}
+                initialImage={instagram} alternativeImage={discord}/></Link>
+                <Link href={'https://twitter.com/TerraBellum_NFT'}><ImageHover className={styles.svgRedesSociales}
+                initialImage={instagram} alternativeImage={discord}/></Link>
+                <Link href={'google.com'}><ImageHover className={styles.svgRedesSociales}
+                initialImage={instagram} alternativeImage={discord}/></Link>
+                <Link href={'https://www.facebook.com/profile.php?id=100082027137863'}><ImageHover className={styles.svgRedesSociales}
+                initialImage={instagram} alternativeImage={discord}/></Link>
                 </div>
             
             <div className={styles.footertext}>

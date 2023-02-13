@@ -1,7 +1,7 @@
 .redesSociales{
     position: relative;
-    background-color: rgb(60, 49, 49);
-    border: rgb(77, 37, 22) solid; 
+    background-color: rgba(10, 10, 10, 0.771);
+    border: rgb(174, 174, 174) solid; 
     /* min-height: calc(100vh - 100px -300px); */
     text-align: center;
     margin: 200% 0;
@@ -19,9 +19,13 @@
 }
 .svgRedesSociales{
     margin: 0 1rem;
-    
+    width: 50px;
+    height: 50px;
 }
 
+.enlacesfooter:hover{
+    color: rgb(38, 38, 38);
+}
 .svgRedesSociales:hover{
-    background-color: aquamarine;
+    fill: aqua;
 }

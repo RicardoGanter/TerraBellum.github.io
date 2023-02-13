@@ -1,5 +1,5 @@
 body {
-    background-image: url(../public/img/espacio3.png);
+    background-image: url(../public/img/Espacio4-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 6000px;
@@ -7,7 +7,14 @@ body {
     font-size: 2rem;
     margin: 0;
 }
+/* header{
+  position: fixed;
+} */
 
+.noseXD{
+  color: red !important;
+  fill: red !important;
+}
 p{
   font-family: sans-serif;
   text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;

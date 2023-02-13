@@ -12,7 +12,7 @@ const Header = () => {
     const [interresolution, setInterresolution] = useState(false)
 
     return (
-    <header >
+    <header className={styles.header}>
       {/* movil 480px */}
       <nav className={styles.navbarcontainMovile} >
         <Image src={logomovil} alt='logo TB movil' className={styles.imagentb}/>

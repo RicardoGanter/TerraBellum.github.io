@@ -4,7 +4,22 @@ import TB from '../public/img/tb.png'
 import hud from './../public/img/hud.png'
 import arma from './../public/img/lazzer.png'
 import katana from './../public/img/katana.png'
+import { useState } from 'react';
 const Texto = ()=>{
+    const [count, setCount] = useState(1);
+
+    const handleIncrement = () => {
+        if (count < 4) {
+        setCount(count + 1);
+        }
+    };
+
+    const handleDecrement = () => {
+        if (count > 1) {
+        setCount(count - 1);
+        }
+    }
+
     return(
         <>
             <div className={styles.contenedorPersonajesArmas}>
@@ -37,15 +52,18 @@ const Texto = ()=>{
                               y conocer bien sus consecuencias para tener exito en las partidas
                         </p>
                     </div>
-                    <div className={styles.contenedorImagenArmas}>
+                    <div style={{position:'relative'}}>
+                        <button className={styles.btnarmasrigth} onClick={()=>handleIncrement()}>lol</button>
+                        <button className={styles.btnarmasleft} onClick={()=> handleDecrement()}>loll</button>
+                        
+                    <div className={styles.contenedorImagenArmas}>    
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={katana}alt='imagen terrabellum'/>
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
+                    </div>
                     </div>
                 </div>
             </div>
