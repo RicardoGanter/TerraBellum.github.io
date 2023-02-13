@@ -9,6 +9,7 @@ import incendiaria from './../public/img/incendiaria.png'
 import Lanza_papas from './../public/img/Lanza_papas.png'
 import patata from './../public/img/patata.png'
 import { useState } from 'react';
+import arrows from '../public/img/arrows.svg'
 const Texto = ()=>{
     // const contenedor = imagendata.forEach(x=>{
     //     <Image className={styles.imagenArma} src={imagendata.x}alt='img arma'/>
@@ -60,12 +61,27 @@ const Texto = ()=>{
                         </p>
                     </div>
                     <div style={{position:'relative'}}>
-                        <button className={styles.btnarmasrigth} onClick={()=>handleIncrement()}>lol</button>
-                        <button className={styles.btnarmasleft} onClick={()=> handleDecrement()}>loll</button>
+                        
+                    {/* <div
+                            className={styles.btnarmasrigth}
+                            onClick={() => handleIncrement()}
+                            >
+                            <Image src={arrows}></Image>
+                            </div>
+                            <div
+                            className={styles.btnarmasleft}
+                            onClick={() => handleDecrement()}
+                            > */}
+                        <Image className={styles.btnarmasleft}  src={arrows} onClick={()=> handleDecrement()} alt='arrows image'/>
+                        <Image className={styles.btnarmasrigth} src={arrows} onClick={()=>handleIncrement()} alt='arrows image'/>
                         {  (count==1) ? (
                     <div><h2 className={styles.textoimagenarmas} >granadas</h2>         
                     <div className={styles.contenedorImagenArmas}>                 
                     <Image className={styles.imagenArma} src={patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
                     </div></div> ) : null }
                     

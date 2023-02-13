@@ -1,3 +1,96 @@
+.contenedorPersonajesArmas{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 90rem 30rem;
+    /* overflow: hidden;
+    background-color: rgba(33, 2, 57, 0.892); */
+    
+}
+
+.contenedorInfoJuego{
+    display: flex;
+    margin:  0 3rem;
+}
+
+.contenedorPersonajes{
+    display: flex;
+    flex-direction: column;
+    margin:  0 3rem;
+}
+
+.contenedorArmas{
+    display: flex;
+    flex-direction: column;
+    margin:  3rem;
+}
+.contenedorImagenArmas{
+    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border:solid 2px  burlywood;
+    border-radius: .3rem; */
+}
+
+.textoimagenarmas{
+    text-align: center;
+    display: block;
+}
+
+.imagenTB{
+    width: 350px ;
+    height: 400px;
+}
+
+.imagenHud{
+    width: 900px;
+    height: 160px;
+}
+
+.imagenArma{
+    margin: 1rem;
+    border:solid 4px  rgb(172, 172, 172);
+    border-radius: .4rem;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(21, 21, 21, 0.863);
+    
+}
+
+.btnarmasrigth{
+    position: absolute;
+    right: -10%;
+    top: 50%;
+}
+.btnarmasleft{
+    position: absolute;
+    left:-10%;
+    top: 50%;
+}
+
+@media (max-width: 480px){
+    .imagenTB{
+        width: 200px;
+        height: 150px;
+        padding: 1rem;
+    }
+    .imagenHud{
+        width: 400px ;
+        height: 100px;
+        padding: 1rem;
+    }
+    .contenedorPersonajesArmas{
+    margin: 90rem 1rem ;
+    }
+    .contenedorImagenArmas{
+        grid-template-columns: 1fr;
+    }
+    .imagenArma{
+    width: 200px;
+    height: 150px;
+    }
+}
 .contenedorPersonajesArmas {
   position: relative;
   align-items: center;
@@ -30,16 +123,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   /* border:solid 2px  burlywood;
     border-radius: .3rem; */
-}
-
-.textoimagenarmas{
-    text-align: center;
-    display: block;
-}
-
-.textoimagenarmas{
-    text-align: center;
-    display: block;
 }
 
 .imagenTB {
