@@ -1,31 +1,34 @@
-.redesSociales{
-    position: relative;
-    background-color: rgba(10, 10, 10, 0.771);
-    border: rgb(174, 174, 174) solid; 
-    /* min-height: calc(100vh - 100px -300px); */
-    text-align: center;
-    margin: 200% 0;
+.redesSociales {
+  position: relative;
+  background-color: rgba(10, 10, 10, 0.771);
+  border: rgb(174, 174, 174) solid;
+  /* min-height: calc(100vh - 100px -300px); */
+  text-align: center;
+  margin: 200% 0;
 }
-.footertext{
-    color: aliceblue;
-    margin-top: 1rem;
-}
-
-.enlacesfooter{
-    text-decoration: none;
-    color: aliceblue;
-    display: block;
-    margin-bottom: 1rem;
-}
-.svgRedesSociales{
-    margin: 0 1rem;
-    width: 50px;
-    height: 50px;
+.footertext {
+  color: aliceblue;
+  margin-top: 1rem;
 }
 
-.enlacesfooter:hover{
-    color: rgb(38, 38, 38);
+.enlacesfooter {
+  text-decoration: none;
+  color: aliceblue;
+  display: block;
+  margin-bottom: 1rem;
 }
-.svgRedesSociales:hover{
-    fill: aqua;
+.svgRedesSociales {
+  margin: 0 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.enlacesfooter:hover {
+  color: rgb(38, 38, 38);
+}
+.svgRedesSociales:hover {
+  fill: aqua;
+}
+.icon {
+  margin: 0 1rem;
 }
