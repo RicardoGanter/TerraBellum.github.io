@@ -1,0 +1,71 @@
+.contain{
+    margin: 121rem 5rem;
+}
+
+.infotexto{
+    margin: 15rem;
+    text-align: center;
+}
+
+.cards_grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+}
+
+.cards{
+    position: relative;
+    
+    border-radius: 40px;
+    width: 300px;
+    height: 500px;
+    transition: 1s;
+}
+.card_front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(69, 13, 13);
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(0deg);
+    transition: 1s;
+}
+
+.card_back{
+    position: absolute;
+    background-color: rgb(44, 22, 72);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(180deg);
+    transition: 1s;
+}
+/* .lol{
+    transform: rotateY(180deg);
+} */
+
+.cards:hover .card_front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.cards:hover .card_back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+
+
+/* .card_back:hover{
+    opacity: 0;
+}
+.card_front:hover{
+    opacity: 1;
+} */
+
+
+
+   
+
+

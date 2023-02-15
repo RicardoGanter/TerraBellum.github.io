@@ -48,7 +48,7 @@ const Header = () => {
           <button className={`${styles.botonright} ${styles.btnnavbar}`} >personajes</button>
         </div>
        
-        <Image src={logo} alt="Logo" className={styles.img} />
+        <Link href={"/"}><Image src={logo} alt="Logo" className={styles.img} /></Link>
        
         <div className={styles.group1} >
            

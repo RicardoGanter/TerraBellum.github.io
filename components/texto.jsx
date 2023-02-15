@@ -1,7 +1,7 @@
 import styles from '../styles/texto.module.css'
 import Image from 'next/image';
 import TB from '../public/img/tb.png'
-import hud from './../public/img/hudd.PNG'
+import hud from './../public/img/hudd.png'
 import arma from './../public/img/lazzer.png'
 import katana from './../public/img/katana.png'
 import axe from './../public/img/Axe.png'
@@ -39,7 +39,7 @@ const Texto = ()=>{
                             el ultimo de pie, se lleva la victoria.
                         </p>
                     </div>
-                    <Image src={TB} className={styles.imagenTB} alt='imagen terrabellum'/>
+                    <Image src={TB} className={styles.imagenTB} alt='imagen terrabellum' />
                 </div>
                 <div className={styles.contenedorPersonajes}>
                     <div>
@@ -49,7 +49,10 @@ const Texto = ()=>{
                              impactantes y efectivas en el juego
                         </p>
                     </div>
-                    <Image src={hud} className={styles.imagenHud} alt='imagen terrabellum'  />
+                    <div style={{display:'flex', flexDirection:'row'}}>
+                    <Image src={hud} className={styles.imagenHud} alt='imagen terrabellum' style={{width:'400px', height:'200px'}} />
+                    <h3>lol</h3>
+                    </div>
                 </div>
 
                 <div className={styles.contenedorArmas}>
@@ -61,17 +64,7 @@ const Texto = ()=>{
                         </p>
                     </div>
                     <div style={{position:'relative'}}>
-                        
-                    {/* <div
-                            className={styles.btnarmasrigth}
-                            onClick={() => handleIncrement()}
-                            >
-                            <Image src={arrows}></Image>
-                            </div>
-                            <div
-                            className={styles.btnarmasleft}
-                            onClick={() => handleDecrement()}
-                            > */}
+
                         <Image className={styles.btnarmasleft}  src={arrows} onClick={()=> handleDecrement()} alt='arrows image'/>
                         <Image className={styles.btnarmasrigth} src={arrows} onClick={()=>handleIncrement()} alt='arrows image'/>
                         {  (count==1) ? (
@@ -90,6 +83,10 @@ const Texto = ()=>{
                     <div className={styles.contenedorImagenArmas}>                 
                     <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={Lanza_papas}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
                     </div></div> ) : null }
 
                     {  (count==3) ? (
@@ -97,12 +94,20 @@ const Texto = ()=>{
                     <div className={styles.contenedorImagenArmas}>                 
                     <Image className={styles.imagenArma} src={axe}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={katana}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
                     </div></div> ) : null }
 
                     {  (count==4) ? (
                     <div><h2 className={styles.textoimagenarmas} >granadas</h2>         
                     <div className={styles.contenedorImagenArmas}>                 
                     <Image className={styles.imagenArma} src={patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
                     <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
                     </div></div> ) : null }
 

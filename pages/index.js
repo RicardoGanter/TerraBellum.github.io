@@ -7,12 +7,15 @@ import Image from 'next/image'
 import styles from '../styles/home.module.css'
 import Texto from '@/components/texto.jsx'
 import Footer from '@/components/footer'
-
+import TextoCloacas from "@/components/miembros";
+import Nftcartas from "@/components/nftcartas.jsx";
 export default function Home() {
   return (
     <>
     <Layout titulo="Home"/>
     <Texto/>
+    <Nftcartas/>
+    <TextoCloacas/>
     <Footer/>
     </>
   )
