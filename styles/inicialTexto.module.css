@@ -1,0 +1,28 @@
+.textoinicial{
+    font-size: 2rem;
+    margin: 37rem 15% 0 15%;
+    animation: textosos 4s ease-in normal;
+    text-align: center;
+}
+
+@keyframes textosos {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@media (min-width:481px) and (max-width:1150px) {
+    .textoinicial{
+        font-size: 1.5rem;
+        margin: 25rem 10% 0 10%;
+    }
+}
+
+@media (max-width:480px) {
+    .textoinicial{
+        font-size: 1rem;
+        margin: 25rem 10% 0 10%;
+    }
+}

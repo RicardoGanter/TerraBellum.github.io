@@ -21,3 +21,19 @@
     flex-direction: column;
 }
 
+@media (max-width:480px){
+    .contain{
+        grid-template-columns: 1fr 1fr;
+    }
+    .texto{
+        color: black;
+    }
+}
+@media (min-width:480px) and (max-width:1090px){
+    .contain{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .texto{
+        color: black;
+    }
+}

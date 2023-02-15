@@ -1,10 +1,11 @@
 .contain{
-    margin: 121rem 5rem;
+    margin: 90rem auto 0 auto;
+    text-align: center;
 }
 
-.infotexto{
-    margin: 15rem;
+.infotext{
     text-align: center;
+    margin: 0 20% 10rem 20%;
 }
 
 .cards_grid{
@@ -70,8 +71,41 @@
     opacity: 1;
 } */
 
+@media (max-width:480px){
+    .contain{
+        text-align: center;
+        align-items: center;
+        
+    }
+    .cards_grid{
+        align-items: center;
+        flex-direction: column;
+    }
+    .cards{
+        margin: 4rem 0;
+    }
+    .infotexto{
+        
+        color: black;
+    }
+}
 
+@media (min-width:480px) and (max-width:1150px){
+    .contain{
+        text-align: center;
+        align-items: center;
+        
+    }
+    .cards_grid{
+        align-items: center;
+        flex-direction: column;
+    }
+    .cards{
+        margin: 4rem 0;
+    }
+    .infotexto{
+        
+        color: black;
+    }
 
-   
-
-
+}
