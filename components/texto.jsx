@@ -1,20 +1,16 @@
 import styles from '../styles/texto.module.css'
 import Image from 'next/image';
-import TB from '../public/img/tb.png'
+import TB from '../public/img/logos/tb.png'
 import hud from './../public/img/hudd.png'
-import arma from './../public/img/lazzer.png'
-import katana from './../public/img/katana.png'
-import axe from './../public/img/Axe.png'
-import incendiaria from './../public/img/incendiaria.png'
-import Lanza_papas from './../public/img/Lanza_papas.png'
-import patata from './../public/img/patata.png'
+import arma from './../public/img/armas/lazzer.png'
+import katana from './../public/img/armas/katana.png'
+import axe from './../public/img/armas/Axe.png'
+import incendiaria from './../public/img/armas/incendiaria.png'
+import Lanza_papas from './../public/img/armas/Lanza_papas.png'
+import patata from './../public/img/armas/patata.png'
 import { useState } from 'react';
-import arrows from '../public/img/arrows.svg'
+import arrows from '../public/arrows.svg'
 const Texto = ()=>{
-    // const contenedor = imagendata.forEach(x=>{
-    //     <Image className={styles.imagenArma} src={imagendata.x}alt='img arma'/>
-    // })
-
     const [count, setCount] = useState(1);
 
     const handleIncrement = () => {

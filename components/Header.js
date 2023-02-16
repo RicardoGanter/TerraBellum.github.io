@@ -1,11 +1,10 @@
 import Link from "next/link";
 import styles from "../styles/Header.module.css";
 import Image from "next/image";
-import logo from "../public/img/terrabellum.png";
-import logomovil from '../public/img/tb.png'
+import logo from "../public/img/logos/terrabellum.png";
+import logomovil from '../public/img/logos/tb.png'
 import bar from '../public/icon/bar.svg'
 import { useState } from "react";
-
 
 const Header = () => {
     const [navbarcontainMovile, setNavbarcontainMovile] = useState(false)

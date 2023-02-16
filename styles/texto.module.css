@@ -3,7 +3,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 90rem 30rem;
+  margin: 60rem 20% 0 20%;
   /* overflow: hidden;
     background-color: rgba(33, 2, 57, 0.892); */
 }
@@ -12,11 +12,16 @@
   display: flex;
   margin: 0 3rem;
 }
-
+.contenedorInfoJuego div p{
+  margin: 0 30% 0 0;
+}
 .contenedorPersonajes {
   display: flex;
   flex-direction: column;
   margin: 0 3rem;
+}
+.contenedorPersonajes div p{
+  margin: 2rem 10%;
 }
 
 .contenedorArmas {
@@ -24,12 +29,23 @@
   flex-direction: column;
   margin: 3rem;
 }
+.contenedorArmas div p{
+  margin: 0 10%;
+}
 .contenedorImagenArmas {
   margin: 10rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* border:solid 2px  burlywood;
-    border-radius: .3rem; */
+}
+
+.imagenTB {
+  width: 175px;
+  height: 200px;
+}
+
+.imagenHud {
+  width: 900px;
+  height: 160px;
 }
 
 .textoimagenarmas {
@@ -38,17 +54,6 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
-/* .imagenTB{
-    width: 350px ;
-    height: 400px;
-}
-
-.imagenHud{
-    width: 10px;
-    height: 10px;
-} */
-
 .imagenArma {
   margin: 1rem;
   border: solid 4px rgb(172, 172, 172);
@@ -58,28 +63,64 @@
   background-color: rgba(21, 21, 21, 0.863);
 }
 
-.btnarmasrigth {
+/* BOTONES */
+
+.btnarmasleft {
+  position: absolute;
+  left: -10%;
+  top: 45%;
+  transform: rotate(180deg);
+  cursor: pointer;
   background: radial-gradient(circle, #910b97 0, #3f0542 66%);
   padding: 10px;
   border-radius: 50%;
   transition: 0.6s;
 }
-/* #d12ed8 #910b97 */
+.btnarmasrigth {
+  position: absolute;
+  right: -10%;
+  top: 46%;
+  cursor: pointer;
+  background: radial-gradient(circle, #910b97 0, #3f0542 66%);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
 .btnarmasrigth:hover {
   background: radial-gradient(circle, #ff43ef 25%, #3d063b 66%, #ff43efa2 20%);
   padding: 12px;
-  /* border: 8px solid #6e0474d8; */
-}
-
-.btnarmasleft {
-  background: radial-gradient(circle, #910b97 0, #3f0542 66%);
-  padding: 10px;
-  border-radius: 50%;
-  transition: 0.6s;
 }
 .btnarmasleft:hover {
   background: radial-gradient(circle, #ff43ef 25%, #3d063b 66%, #ff43efa2 20%);
   padding: 12px;
+}
+
+@media (min-width: 481px) and (max-width: 950px) {
+  
+  .contenedorPersonajesArmas {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagenTB {
+    width: 200px;
+    height: 150px;
+  }
+  .imagenHud {
+    width: 400px;
+    height: 100px;
+    padding: 1rem;
+  }
+  
+  .imagenArma {
+    width: 200px;
+    height: 150px;
+  }
+  .textoimagenarmas {
+    top: -30px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -95,140 +136,30 @@
     padding: 1rem;
   }
   .contenedorPersonajesArmas {
-    margin: 90rem 1rem;
+  margin: 60rem 20% 0 20%;
   }
   .contenedorImagenArmas {
+    overflow: auto;
+    height: 600px;
     grid-template-columns: 1fr;
   }
   .imagenArma {
-    width: 200px;
+    width: 150px;
     height: 150px;
   }
-}
-.contenedorPersonajesArmas {
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 90rem 30rem;
-  /* overflow: hidden;
-    background-color: rgba(33, 2, 57, 0.892); */
+  .btnarmasleft {
+    left: -50%;
+    top: 45%;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+  }
+  .btnarmasrigth {
+    right: -50%;
+    top: 45%;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+  }
 }
 
-.contenedorInfoJuego {
-  display: flex;
-  margin: 0 3rem;
-}
-
-.contenedorPersonajes {
-  display: flex;
-  flex-direction: column;
-  margin: 0 3rem;
-}
-
-.contenedorArmas {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem;
-}
-.contenedorImagenArmas {
-  margin: 10rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  /* border:solid 2px  burlywood;
-    border-radius: .3rem; */
-}
-
-.imagenTB {
-  width: 350px;
-  height: 400px;
-}
-
-.imagenHud {
-  width: 900px;
-  height: 160px;
-}
-
-.imagenArma {
-  margin: 1rem;
-  border: solid 4px rgb(172, 172, 172);
-  border-radius: 0.4rem;
-  width: 300px;
-  height: 200px;
-  background-color: rgba(21, 21, 21, 0.863);
-}
-
-.btnarmasrigth {
-  position: absolute;
-  right: -10%;
-  top: 46%;
-  cursor: pointer;
-}
-.btnarmasleft {
-  position: absolute;
-  left: -10%;
-  top: 45%;
-  transform: rotate(180deg);
-  cursor: pointer;
-}
-
-@media (max-width: 480px) {
-  .imagenTB {
-    width: 200px;
-    height: 150px;
-    padding: 1rem;
-  }
-  .imagenHud {
-    width: 400px;
-    height: 100px;
-    padding: 1rem;
-  }
-  .contenedorPersonajesArmas {
-    margin: 90rem 1rem;
-  }
-  .contenedorImagenArmas {
-    grid-template-columns: 1fr;
-  }
-  .imagenArma {
-    width: 200px;
-    height: 150px;
-  }
-}
-@media (min-width: 481px) and (max-width: 950px) {
-  .imagenTB {
-    width: 200px;
-    height: 150px;
-  }
-  .imagenHud {
-    width: 400px;
-    height: 100px;
-    padding: 1rem;
-  }
-  .contenedorPersonajesArmas {
-    margin: 90rem auto;
-    width: 500px;
-    height: 400px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .contenedorImagenArmas {
-    grid-template-columns: 1fr 1fr;
-    margin: 4rem;
-  }
-  .imagenArma {
-    width: 200px;
-    height: 150px;
-  }
-  .textoimagenarmas {
-    top: -30px;
-  }
-}
-/* @media (min-width: 481px) and (max-width: 1245px) {
-  .imagenArma {
-    width: 180px;
-    height: 100px;
-    align-items: center;
-  } */
-/* } */

@@ -1,26 +1,15 @@
 import styles from '../styles/textoCloacas.module.css'
-import Image from 'next/image'
-import imgricardo from '../public/img/ourteam/yoxd.jpg'
-
+import PropsMiembros from './props/props.miebros'
+import Team from '@/public/img/ourteam/team'
 const TextoCloacas = ()=>{
-
-
     return(
         <div>
             <h2 className={styles.texto}>Team</h2>
         <div className={styles.contain} >
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>Ricardo Rosales</p><p>CTO</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>
-            <div className={styles.containinfo} ><Image className={styles.img} src={imgricardo}  alt='imagen de perfil'/><p>ricardo rosales</p><p>cto</p></div>    
+            <PropsMiembros nombre="Felipe Araya" cargo="CEO" imagen={Team[2]} linkedin={"https://www.linkedin.com/in/felipe-araya-hernandez-682b11191/"}/>
+            <PropsMiembros nombre="Ricardo Rosales" cargo="CTO" imagen={Team[1]}/>
+            <PropsMiembros nombre="Fabio Canales" cargo="CMO" imagen={Team[3]}/>
+            <PropsMiembros nombre="Claudio Chuahicura" cargo="Full stack development" imagen={Team[0]} />
         </div>
         </div>
 

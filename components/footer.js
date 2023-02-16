@@ -10,7 +10,7 @@ import facebook from "../public/icon/facebook.svg";
 import facebookblue from "../public/icon/facebookblue.svg";
 import twitter from "../public/icon/twitter.svg";
 import twitterblue from "../public/icon/twitterblue.svg";
-import TB from "../public/img/tb.png";
+import TB from "../public/img/logos/tb.png";
 import Link from "next/link";
 import ImageHover from "./imagenRsociales";
 import { useState } from "react";
@@ -24,6 +24,7 @@ const Footer = () => {
         </Link>
         <div>
           <Link
+            target="_blank"
             className={styles.icon}
             href={"https://twitter.com/TerraBellum_NFT"}
           >
@@ -34,6 +35,7 @@ const Footer = () => {
             />
           </Link>
           <Link
+            target="_blank"
             className={styles.icon}
             href={"https://www.instagram.com/Terra_Bellum/"}
           >
@@ -44,6 +46,7 @@ const Footer = () => {
             />
           </Link>
           <Link
+            target="_blank"
             className={styles.icon}
             href={"https://facebook.com/TerraBellum_NFT"}
           >
@@ -53,14 +56,14 @@ const Footer = () => {
               alternativeImage={facebookblue}
             />
           </Link>
-          <Link className={styles.icon} href={"tiktok.com"}>
+          <Link target="_blank" className={styles.icon} href={"tiktok.com"}>
             <ImageHover
               className={styles.svgRedesSociales}
               initialImage={tiktok}
               alternativeImage={tiktokcolor}
             />
           </Link>
-          <Link className={styles.icon} href={"https://www.discord.com"}>
+          <Link target="_blank" className={styles.icon} href={"https://www.discord.com"}>
             <ImageHover
               className={styles.svgRedesSociales}
               initialImage={discord}
@@ -71,18 +74,19 @@ const Footer = () => {
 
         <div className={styles.footertext}>
           <Link
+            target="_blank"
             className={styles.enlacesfooter}
             href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
           >
             Whitepaper
           </Link>
-          <Link className={styles.enlacesfooter} href={"youtube.com"}>
+          <Link target="_blank" className={styles.enlacesfooter} href={"youtube.com"}>
             FAQ
           </Link>
-          <Link className={styles.enlacesfooter} href={"youtube.com"}>
+          <Link target="_blank" className={styles.enlacesfooter} href={"youtube.com"}>
             Privacy Policy
           </Link>
-          <Link className={styles.enlacesfooter} href={"youtube.com"}>
+          <Link target="_blank" className={styles.enlacesfooter} href={"youtube.com"}>
             Terms of Use
           </Link>
         </div>

@@ -1,10 +1,10 @@
 .redesSociales {
   position: relative;
-  background-color: rgba(10, 10, 10, 0.771);
+  background-color: rgb(10, 10, 10);
   border: rgb(174, 174, 174) solid;
   /* min-height: calc(100vh - 100px -300px); */
   text-align: center;
-  margin: 200% 0;
+  margin: 200% auto;
 }
 .footertext {
   color: aliceblue;
