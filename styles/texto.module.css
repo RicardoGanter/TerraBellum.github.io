@@ -10,26 +10,36 @@
 
 .contenedorInfoJuego {
   display: flex;
-  margin: 0 3rem;
+  margin: 5rem 3rem;
 }
-.contenedorInfoJuego div p{
+@media screen and (min-width: 1331px) {
+  .contenedorInfoJuego {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .contenedorInfoJuego {
+    font-size: 30px;
+  }
+}
+/* .contenedorInfoJuego div p {
   margin: 0 30% 0 0;
-}
+} */
 .contenedorPersonajes {
   display: flex;
   flex-direction: column;
   margin: 0 3rem;
 }
-.contenedorPersonajes div p{
+.contenedorPersonajes div p {
   margin: 2rem 10%;
 }
 
 .contenedorArmas {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  margin: 5rem 3rem;
 }
-.contenedorArmas div p{
+.contenedorArmas div p {
   margin: 0 10%;
 }
 .contenedorImagenArmas {
@@ -95,11 +105,10 @@
   padding: 12px;
 }
 
-@media (min-width: 481px) and (max-width: 950px) {
-  
+@media (max-width: 1280px) {
   .contenedorPersonajesArmas {
-    width: 500px;
-    height: 400px;
+    /* width: 500px;
+    height: 400px; */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -113,7 +122,7 @@
     height: 100px;
     padding: 1rem;
   }
-  
+
   .imagenArma {
     width: 200px;
     height: 150px;
@@ -136,7 +145,7 @@
     padding: 1rem;
   }
   .contenedorPersonajesArmas {
-  margin: 60rem 20% 0 20%;
+    margin: 60rem 20% 0 20%;
   }
   .contenedorImagenArmas {
     overflow: auto;
@@ -162,4 +171,24 @@
     transition: 0.6s;
   }
 }
-
+@media (min-width: 481px) and(max-width: 920px) {
+  .contenedorImagenArmas {
+    overflow: auto;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .btnarmasleft {
+    left: -20%;
+    top: 45%;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+  }
+  .btnarmasrigth {
+    right: -20%;
+    top: 45%;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+  }
+}
