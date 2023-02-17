@@ -46,7 +46,7 @@ const Texto = ()=>{
                         </p>
                     </div>
                     <div style={{display:'flex', flexDirection:'row'}}>
-                    <Image src={hud} className={styles.imagenHud} alt='imagen terrabellum' style={{width:'400px', height:'200px'}} />
+                    <Image src={Hud} className={styles.imagenHud} alt='imagen terrabellum' style={{width:'400px', height:'200px'}} />
                     <h3>lol</h3>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import Layout from '../components/layout'
-import Texto from '@/components/texto.jsx'
+import Texto from '@/components/texto.js'
 import Footer from '@/components/footer'
 import TextoCloacas from "@/components/miembros";
 import Nftcartas from "@/components/nftcartas.jsx";
