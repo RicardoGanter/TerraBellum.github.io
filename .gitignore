@@ -7,7 +7,8 @@
 # /public
 # testing
 /coverage
-/img/armas
+/img
+/components/texto.jsx
 # next.js
 /.next/
 /out/
