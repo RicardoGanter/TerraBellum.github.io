@@ -1,13 +1,41 @@
+
+:root, body {
+  height:100%;
+  margin: 0;
+  padding:0;
+  width: 100%;
+ }
 body {
-    background-color: red;
+    background-image: url("../public/img/fondo/Espacio\ 5-3\ 1.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 6000px;
+    background-size: 100% auto;
     color: white;
     font-size: 2rem;
-    margin: 0;
+    
 }
-
+#paper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height:100%;
+  width: 100%;
+ }
+#__next {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height:100%;
+  width: 100%;
+ }
+main {
+  background-image: url("../public/img/fondo/Espacio\ 5-3\ 1.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: white;
+    font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+ }
 /* filter: grayscale(100%); */
 p{
   font-family: 'Roboto';
