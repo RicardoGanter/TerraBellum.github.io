@@ -7,7 +7,7 @@
 # /public
 # testing
 /coverage
-
+/img/armas
 # next.js
 /.next/
 /out/
