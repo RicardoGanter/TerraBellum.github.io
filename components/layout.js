@@ -1,15 +1,13 @@
 import Head from "next/head";
 import Header from "./Header.js";
 
-const Layout = ({children,titulo})=>{
+const Layout = ()=>{
     return(
         <>
             <Head>
-            <title>TerraBellum - {titulo}</title>
+            <title>TerraBellum </title>
             </Head>  
             <Header/>
-            {children}
-            
         </>
     )
 };
