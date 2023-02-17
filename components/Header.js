@@ -11,6 +11,7 @@ const Header = () => {
     const [interresolution, setInterresolution] = useState(false)
 
     return (
+      
     <header className={styles.header}>
       {/* movil 480px */}
       <nav className={styles.navbarcontainMovile} >
@@ -20,6 +21,7 @@ const Header = () => {
         
         <div className={styles.optionMovile}>
           <div>InnomicToken</div>
+          <h1>lol</h1>  
           <div>personajes</div>
           <div>MarketPlace</div>
           <div>WithePaper</div>
