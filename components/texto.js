@@ -1,15 +1,15 @@
 import styles from '../styles/texto.module.css'
 import Image from 'next/image';
 import TB from '../public/img/logos/tb.png'
-import hud from '../public/img/hudd.png'
-import arma from '../public/img/armas/lazzer.png'
-import katana from '../public/img/armas/katana.png'
-import axe from '../public/img/armas/Axe.png'
-import incendiaria from '../public/img/armas/incendiaria.png'
+import Hud from '../public/img/hudd.png'
+import Arma from '../public/img/armas/lazzer.png'
+import Katana from '../public/img/armas/katana.png'
+import Axe from '../public/img/armas/Axe.png'
+import Incendiaria from '../public/img/armas/incendiaria.png'
 import Lanza_papas from '../public/img/armas/Lanza_papas.png'
-import patata from '../public/img/armas/patata.png'
+import Patata from '../public/img/armas/patata.png'
 import { useState } from 'react';
-import arrows from '../public/arrows.svg'
+import Arrows from '../public/arrows.svg'
 const Texto = ()=>{
     const [count, setCount] = useState(1);
 
@@ -61,50 +61,50 @@ const Texto = ()=>{
                     </div>
                     <div style={{position:'relative'}}>
 
-                        <Image className={styles.btnarmasleft}  src={arrows} onClick={()=> handleDecrement()} alt='arrows image'/>
-                        <Image className={styles.btnarmasrigth} src={arrows} onClick={()=>handleIncrement()} alt='arrows image'/>
+                        <Image className={styles.btnarmasleft}  src={Arrows} onClick={()=> handleDecrement()} alt='arrows image'/>
+                        <Image className={styles.btnarmasrigth} src={Arrows} onClick={()=>handleIncrement()} alt='arrows image'/>
                         {  (count==1) ? (
                     <div><h2 className={styles.textoimagenarmas} >granadas</h2>         
                     <div className={styles.contenedorImagenArmas}>                 
-                    <Image className={styles.imagenArma} src={patata}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
                     </div></div> ) : null }
                     
                     {  (count==2) ? (
                     <div><h2 className={styles.textoimagenarmas} >rifles</h2>         
                     <div className={styles.contenedorImagenArmas}>                 
-                    <Image className={styles.imagenArma} src={arma}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={Lanza_papas}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
                     </div></div> ) : null }
 
                     {  (count==3) ? (
                     <div><h2 className={styles.textoimagenarmas} >meele</h2>         
                     <div className={styles.contenedorImagenArmas}>                 
-                    <Image className={styles.imagenArma} src={axe}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={katana}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
                     </div></div> ) : null }
 
                     {  (count==4) ? (
                     <div><h2 className={styles.textoimagenarmas} >granadas</h2>         
                     <div className={styles.contenedorImagenArmas}>                 
-                    <Image className={styles.imagenArma} src={patata}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
-                    <Image className={styles.imagenArma} src={incendiaria}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
+                    <Image className={styles.imagenArma} src={Patata}alt='imagen terrabellum'  />
                     </div></div> ) : null }
 
                     </div>
