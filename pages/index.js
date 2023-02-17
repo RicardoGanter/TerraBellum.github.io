@@ -1,5 +1,5 @@
 import Layout from '../components/layout'
-import Texto from '@/components/texto.js'
+// import Texto from '@/components/texto.js'
 import Footer from '@/components/footer'
 import TextoCloacas from "@/components/miembros";
 import Nftcartas from "@/components/nftcartas.jsx";
@@ -9,7 +9,7 @@ export default function Home() {
     <>
     <Layout titulo="Home"/>
     <InicialText/>
-    <Texto/>
+    {/* <Texto/> */}
     <Nftcartas/>
     <TextoCloacas/>
     <Footer/>
