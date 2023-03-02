@@ -4,20 +4,18 @@ import Footer from "@/components/footer";
 import TextoCloacas from "@/components/miembros";
 import Nftcartas from "@/components/nftcartas.jsx";
 import InicialText from "@/components/inicialTexto";
-import Chart from "@/components/Chart";
+// import Chart from "@/components/Chart";
 export default function Home() {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <main>
-        <Layout titulo="Home" />
+      <Layout titulo="Home">
         <InicialText />
         <Texto />
-        <Chart />
+        {/* <Chart /> */}
 
         <Nftcartas />
         <TextoCloacas />
-      </main>
-      <Footer />
+      </Layout>
     </div>
   );
 }

@@ -1,0 +1,40 @@
+.contain {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+.texto {
+  text-align: center;
+}
+.img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+.img:hover {
+  filter: grayscale(0%);
+}
+.containinfo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+// @media (max-width: 480px) {
+//   .contain {
+//     grid-template-columns: 1fr 1fr;
+//   }
+//   .texto {
+//     color: black;
+//   }
+// }
+// @media (min-width: 480px) and (max-width: 1090px) {
+//   .contain {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+//   .texto {
+//     color: black;
+//   }
+// }

@@ -1,33 +1,35 @@
+@import "global.module";
+
 .redesSociales {
-  background-color: rgb(10, 10, 10);
+  background-color: $color_text_negro_claro;
   border: rgb(174, 174, 174) solid;
   /* min-height: calc(100vh - 100px -300px); */
   text-align: center;
   /* margin: 200% auto; */
 }
 .footertext {
-  color: aliceblue;
+  color: $color_text_gris;
   margin-top: 1rem;
 }
 
 .enlacesfooter {
   text-decoration: none;
-  color: aliceblue;
+  color: $color_text_gris;
   display: block;
   margin-bottom: 1rem;
+  :hover {
+    color: $color_text_negro_claro;
+  }
 }
 .svgRedesSociales {
   margin: 0 1rem;
   width: 50px;
   height: 50px;
+  :hover {
+    fill: aqua;
+  }
 }
 
-.enlacesfooter:hover {
-  color: rgb(38, 38, 38);
-}
-.svgRedesSociales:hover {
-  fill: aqua;
-}
 .icon {
   margin: 0 1rem;
 }

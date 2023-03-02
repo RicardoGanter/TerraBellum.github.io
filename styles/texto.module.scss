@@ -10,7 +10,7 @@
 
 .contenedorInfoJuego {
   display: flex;
-  margin: 5rem 3rem;
+  margin: 5rem 0rem;
 }
 @media screen and (min-width: 1331px) {
   .contenedorInfoJuego {
@@ -28,19 +28,19 @@
 .contenedorPersonajes {
   display: flex;
   flex-direction: column;
-  margin: 0 3rem;
+  margin: 0 0rem;
 }
 .contenedorPersonajes div p {
-  margin: 2rem 10%;
+  margin: 2rem 0%;
 }
 
 .contenedorArmas {
   display: flex;
   flex-direction: column;
-  margin: 5rem 3rem;
+  margin: 5rem 0rem;
 }
 .contenedorArmas div p {
-  margin: 0 10%;
+  margin: 0 0%;
 }
 .contenedorImagenArmas {
   margin: 10rem 0;
@@ -145,7 +145,7 @@
     padding: 1rem;
   }
   .contenedorPersonajesArmas {
-    margin: 60rem 20% 0 20%;
+    margin: 60rem 0% 0 0%;
   }
   .contenedorImagenArmas {
     overflow: auto;
@@ -208,7 +208,7 @@
     padding: 1rem;
   }
   .contenedorPersonajesArmas {
-    margin: 60rem 20% 0 20%;
+    margin: 60rem 0% 0 0%;
   }
   .contenedorImagenArmas {
     overflow: auto;

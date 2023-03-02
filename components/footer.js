@@ -1,4 +1,4 @@
-import styles from "../styles/footer.module.css";
+import styles from "../styles/footer.module.scss";
 import Image from "next/image";
 import discord from "../public/icon/discord.svg";
 import discordcolor from "../public/icon/discordcolor.svg";
@@ -63,7 +63,11 @@ const Footer = () => {
               alternativeImage={tiktokcolor}
             />
           </Link>
-          <Link target="_blank" className={styles.icon} href={"https://www.discord.com"}>
+          <Link
+            target="_blank"
+            className={styles.icon}
+            href={"https://www.discord.com"}
+          >
             <ImageHover
               className={styles.svgRedesSociales}
               initialImage={discord}
@@ -80,13 +84,25 @@ const Footer = () => {
           >
             Whitepaper
           </Link>
-          <Link target="_blank" className={styles.enlacesfooter} href={"youtube.com"}>
+          <Link
+            target="_blank"
+            className={styles.enlacesfooter}
+            href={"youtube.com"}
+          >
             FAQ
           </Link>
-          <Link target="_blank" className={styles.enlacesfooter} href={"youtube.com"}>
+          <Link
+            target="_blank"
+            className={styles.enlacesfooter}
+            href={"youtube.com"}
+          >
             Privacy Policy
           </Link>
-          <Link target="_blank" className={styles.enlacesfooter} href={"youtube.com"}>
+          <Link
+            target="_blank"
+            className={styles.enlacesfooter}
+            href={"youtube.com"}
+          >
             Terms of Use
           </Link>
         </div>
