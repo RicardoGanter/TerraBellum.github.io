@@ -48,3 +48,37 @@
 // };
 
 // const myChart = new Chart(ctx, config);
+
+const ctx = document.getElementById("myChart");
+const names = ["Carlos", "Pedro", "Maria", "Rosa", "Juan"];
+const age = [24, 10, 54, 51, 15];
+
+const myChart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: names,
+    datasets: [
+      {
+        label: "Edad",
+        data: age,
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+        ],
+        borderWidth: 1.5,
+      },
+    ],
+  },
+});

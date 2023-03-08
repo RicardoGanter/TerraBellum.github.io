@@ -12,7 +12,6 @@ export default function Home() {
         <InicialText />
         <Texto />
         {/* <Chart /> */}
-
         <Nftcartas />
         <TextoCloacas />
       </Layout>
