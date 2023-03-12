@@ -14,10 +14,15 @@
   align-items: center;
   margin: 0rem 2rem;
   *{
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 }
-
+.imagenTB {
+  margin: 0 1rem ;
+  width: 175px;
+  height: 200px;
+  
+}
 //contain person
 .contenedorPersonajes {
   display: flex;
@@ -26,16 +31,25 @@
   margin: 0 3rem;
 }
 
-.containhabilidad{
+.cointainhabilidadgift{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem;
+  flex-direction: column;
+}
+.gift{
+  margin: 0 1rem;
+  width: 20rem;
+  height: 367px;
   padding: 1rem;
   border-radius: 1rem;
   background-color: #3d063b;
 }
-
+.containhabilidad{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: #3d063b;
+}
 .hability{
   background-color: beige;
   margin: 1rem;
@@ -46,10 +60,11 @@
 }
 .Hb1{
   text-align: start;
-  margin: 2rem 1rem;
+  margin: 1rem 0;
   border-radius: 1rem;
-  height: 200px;
-  font-size: 2rem;
+  width: 550px;
+  height: 250px;
+  font-size: 1.6rem;
   background-color: #3d063b;
   *{
     margin: 1rem;
@@ -64,15 +79,9 @@
   margin: 0 10%;
 }
 .contenedorImagenArmas {
-  margin: 10rem 0;
+  margin: 3rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.imagenTB {
-  width: 175px;
-  height: 200px;
-  
 }
 
 .imagenHud {
@@ -81,10 +90,14 @@
 }
 
 .textoimagenarmas {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 5rem 0 0 0;
+  align-items: center;
+  text-align: center;
+  font-size: 2.7rem;
+  // position: absolute;
+  // top: 10px;
+  // left: 50%;
+  // transform: translateX(-50%);
 }
 .imagenArma {
   margin: 1rem;

@@ -1,0 +1,17 @@
+
+.contain{
+    margin: 4rem auto;
+    width: 700px;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    .grafico{
+        width: 65%;
+    background-color: rebeccapurple;
+    }
+    .infografico{
+    background-color: green;
+    }
+}
+

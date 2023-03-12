@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import TextoCloacas from "@/components/miembros";
 import Nftcartas from "@/components/nftcartas.jsx";
 import InicialText from "@/components/inicialTexto";
+import Grafico from "@/components/grafico.jsx";
 // import Chart from "@/components/Chart";
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Texto />
         {/* <Chart /> */}
         <Nftcartas />
+        <Grafico/>
         <TextoCloacas />
       </Layout>
     </div>

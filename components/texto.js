@@ -53,17 +53,14 @@ const Texto = () => {
               aun mas impactantes y efectivas en el juego
             </p>
           </div>
-          <div>
+          <div style={{display: 'flex'}}>
+          <div className={styles.cointainhabilidadgift}>
           <div className={styles.containhabilidad}>
             <Image src={Arma} className={styles.hability} alt='Habilidad' onClick={()=>{ setHabilidad(1)}}/>
             <Image src={Arma} className={styles.hability} alt='Habilidad' onClick={()=>{ setHabilidad(2)}}/>
             <Image src={Arma} className={styles.hability} alt='Habilidad' onClick={()=>{ setHabilidad(3)}}/>
           </div>
-          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
-                Lorem Ipsum is simply dummy text of the 
-                  Ipsum has been the industrys standard dummy te</div>
-        </div>
-        { habilidad == 1 ? (
+          { habilidad == 1 ? (
                <div className={styles.Hb1}>
                 <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
                 Lorem Ipsum is simply dummy text of the 
@@ -81,8 +78,12 @@ const Texto = () => {
                </div> )
 
         :null}
+          
         </div>
-
+        <div className={styles.gift}></div>
+        
+        </div>
+        </div>
         {/* CONTAIN ARMS */}
 
         <div className={styles.contenedorArmas}>
