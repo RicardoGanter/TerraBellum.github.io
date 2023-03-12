@@ -9,11 +9,11 @@ const Layout = ({ children }) => {
         <title></title>
         <meta name="sus" />
       </Head>
-      <main>
         <Header />
+        <body>
         <div style={{ margin: "80px 100px 0 100px" }}>{children}</div>
+        </body>
         <Footer></Footer>
-      </main>
     </>
   );
 };

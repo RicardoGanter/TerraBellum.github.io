@@ -20,7 +20,7 @@ const Footer = () => {
     <>
       <div className={styles.redesSociales}>
         <Link href={"/"}>
-          <Image src={TB} width={350} alt="Terrabellum" />
+          <Image src={TB} width={250} style={{margin:'2rem 0'}} alt="Terrabellum" />
         </Link>
         <div>
           <Link

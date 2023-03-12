@@ -15,7 +15,7 @@ const PropsMiembros = ({ imagen, nombre, cargo, linkedin }) => {
           alignItems: "center",
         }}
       >
-        <p>{cargo}</p>
+        <div style={{fontSize:'1.4rem', maxWidth:'110px'}}>{cargo}</div>
         <Link href={`${linkedin}`} target="_blank">
           <Image
             src={iconoLinkedin}

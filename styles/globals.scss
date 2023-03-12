@@ -1,24 +1,11 @@
-:root,
 body {
-  height: 100%;
+ 
   margin: 0;
-  padding: 0;
-  width: 100%;
-}
-// body {
-//   background-image: url("../public/img/fondo/Espacio\ 5-3\ 1.svg");
-//   background-repeat: no-repeat;
-//   // background-attachment: fixed;
-//   background-size: 100% auto;
-//   color: white;
-//   font-size: 2rem;
-// }
-body {
-  background-image: url("../public/img/fondo/Espacio\ 5-3\ 1.svg");
+  // background-image: url("../public/img/fondo/Espacio\ 5-3\ 1.svg");
+  background-color:  rgb(51, 37, 62);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-size: 100% auto;
+  // background-position: center;
   color: white;
 }
 #paper {
@@ -35,22 +22,11 @@ body {
   height: 100%;
   width: 100%;
 }
-main {
-  background-image: url("../public/img/fondo/Espacio\ 5-3\ 1.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-attachment: fixed;
-  // background-position: center;
-  color: white;
-  // font-size: 2rem;
-  // display: flex;
-  // flex-direction: column;
-}
 /* filter: grayscale(100%); */
 p {
   font-family: "Roboto";
   text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
-  text-align: center;
+  text-align: justify;
   font-size: 1.5rem;
 }
 

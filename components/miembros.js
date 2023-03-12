@@ -3,7 +3,7 @@ import PropsMiembros from "./props/props.miebros";
 import Team from "@/public/img/ourteam/team";
 const TextoCloacas = () => {
   return (
-    <div>
+    <div >
       <h2 className={styles.texto}>Team</h2>
       <div className={styles.contain}>
         <PropsMiembros

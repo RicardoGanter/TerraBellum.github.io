@@ -30,10 +30,6 @@ const Header = () => {
         {navbarcontainMovile ? (
           <div className={styles.optionMovile}>
             <div>InnomicToken</div>
-            <h1>lol</h1>
-            <h1>lol</h1>
-            <h1>lol</h1>
-            <h1>lol</h1>
             <div>personajes</div>
             <div>MarketPlace</div>
             <div>WithePaper</div>
@@ -65,12 +61,16 @@ const Header = () => {
       {/* 1080px */}
       <nav className={styles.navbarcontain}>
         <div className={styles.group1}>
-          <button className={`${styles.botonright} ${styles.btnnavbar}`}>
-            InnomicToken
-          </button>
-          <button className={`${styles.botonright} ${styles.btnnavbar}`}>
-            personajes
-          </button>
+        <Link
+            className={`${styles.botonright} ${styles.btnnavbar}`}
+            target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
+          >InnomicToken</Link>
+          <Link
+            className={`${styles.botonright} ${styles.btnnavbar}`}
+            target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
+          >personajes</Link>
         </div>
 
         <Link href={"/"}>
@@ -78,10 +78,16 @@ const Header = () => {
         </Link>
 
         <div className={styles.group1}>
-          <button className={`${styles.botonright} ${styles.btnnavbar}`}>
-            MarketPlace
-          </button>
-          <button className={styles.btnnavbar}>WithePaper</button>
+          <Link
+            className={`${styles.botonright} ${styles.btnnavbar}`}
+            target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
+          > WithePaper</Link>
+          <Link
+            className={`${styles.botonright} ${styles.btnnavbar}`}
+            target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
+          >WithePaper</Link>
         </div>
       </nav>
     </header>
