@@ -1,4 +1,6 @@
 .textoinicial {
+  position: relative;
+  // z-index: 1;
   font-size: 2rem;
   margin: 37rem 15% 0 15%;
   animation: textosos 4s ease-in normal;
@@ -6,7 +8,6 @@
   color: aliceblue;
   text-shadow: 3px 2px 4px #000000;
 }
-
 @keyframes textosos {
   from {
     opacity: 0%;

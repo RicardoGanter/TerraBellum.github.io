@@ -1,4 +1,29 @@
-.fondo {
-  position: relative;
+.fondo1 {
+  background-image: url('../public/Fondo_Todo/Fondo_A_1920_3010.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.fondo2 {
+  background-image: url('../public/Fondo_Todo/Fondo_B_1920_3010.png');
+  background-size: cover;
+  height: 6000px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.fondo3{
+  background-image: url('../public/Fondo_Todo/Fondo_C_1920_3010.png');
+  background-size: cover;
+  height: 3000px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+
+@media (min-height: 1920px){
+  .fondo1 {
+    width: 100%;
+    height: 6000px;
+  }
 }

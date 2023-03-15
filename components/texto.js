@@ -1,7 +1,6 @@
 import styles from "../styles/texto.module.scss";
 import Image from "next/image";
 import TB from "../public/img/logos/tb.png";
-import Hud from "../public/img/hudd.png";
 import Arma from "../public/img/armas/lazzer.png";
 import Katana from "../public/img/armas/katana.png";
 import Axe from "../public/img/armas/Axe.png";
@@ -80,7 +79,7 @@ const Texto = () => {
         :null}
           
         </div>
-        <div className={styles.gift}></div>
+        {/* <div className={styles.gift}></div> */}
         
         </div>
         </div>
@@ -96,17 +95,11 @@ const Texto = () => {
               tener exito en las partidas
             </p>
           </div>
-          <div style={{ position: "relative" }}>
+          <div style={{ position: "relative",display:'flex', flexDirection:'row' }}>
             <Image
               className={styles.btnarmasleft}
               src={Arrows}
               onClick={() => handleDecrement()}
-              alt="arrows image"
-            />
-            <Image
-              className={styles.btnarmasrigth}
-              src={Arrows}
-              onClick={() => handleIncrement()}
               alt="arrows image"
             />
             {count == 1 ? (
@@ -260,6 +253,12 @@ const Texto = () => {
                 </div>
               </div>
             ) : null}
+            <Image
+              className={styles.btnarmasrigth}
+              src={Arrows}
+              onClick={() => handleIncrement()}
+              alt="arrows image"
+            />
           </div>
         </div>
       </div>

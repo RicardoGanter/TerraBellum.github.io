@@ -4,6 +4,8 @@ import PropsNftcarta from "./props/props.nftcartas";
 import image from '../public/img/spectre_plus1.jpg'
 const Nftcartas = () => {
   return (
+    <>
+    <div>a</div>
     <div className={styles.contain}>
       <div className={styles.infotexto}>
         <h3 style={{textAlign:'justify', fontSize:'1.5rem'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
@@ -23,6 +25,7 @@ const Nftcartas = () => {
         <PropsNftcarta name={"RedSpectre"} Rare={"legendaria"} img={image}/>
       </div>
     </div>
+    </>
   );
 };
 export default Nftcartas;
