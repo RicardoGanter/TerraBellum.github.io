@@ -1,14 +1,26 @@
-.contain {
-  margin: 4rem auto;
-  align-self: center;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-}
+// .containmain{
+//   display: flex;
+//   justify-content: center;
+// }
+
 .texto {
   text-align: center;
   justify-content: center;
+  
 }
+
+.contain {
+  margin: 4rem 10rem;
+  // align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  // display: grid;
+  // gap: 1rem;
+  // grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  flex-wrap: wrap;
+}
+
 .img {
   border-radius: 50%;
   width: 150px;

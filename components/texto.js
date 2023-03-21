@@ -2,11 +2,7 @@ import styles from "../styles/texto.module.scss";
 import Image from "next/image";
 import TB from "../public/img/logos/tb.png";
 import Arma from "../public/img/armas/lazzer.png";
-import Katana from "../public/img/armas/katana.png";
-import Axe from "../public/img/armas/Axe.png";
-import Incendiaria from "../public/img/armas/incendiaria.png";
-import Lanza_papas from "../public/img/armas/Lanza_papas.png";
-import Patata from "../public/img/armas/patata.png";
+import Armas from "./props/props.armas";
 import { useState } from "react";
 import Arrows from "../public/arrows.svg";
 const Texto = () => {
@@ -18,7 +14,6 @@ const Texto = () => {
       setCount(count + 1);
     }
   };
-
   const handleDecrement = () => {
     if (count > 1) {
       setCount(count - 1);
@@ -65,11 +60,13 @@ const Texto = () => {
                 Lorem Ipsum is simply dummy text of the 
                   Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley</div> 
                </div> ) :
+
              habilidad == 2 ? ( <div className={styles.Hb1}>
               <div>Lolem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
               Lorem Ipsum is simply dummy text of the 
                 Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley</div> 
              </div> ) :
+
               habilidad == 3 ? ( <div className={styles.Hb1}>
                 <div>Lalem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
                 Lorem Ipsum is simply dummy text of the 
@@ -77,14 +74,11 @@ const Texto = () => {
                </div> )
 
         :null}
-          
         </div>
         {/* <div className={styles.gift}></div> */}
-        
         </div>
         </div>
         {/* CONTAIN ARMS */}
-
         <div className={styles.contenedorArmas}>
           <div>
             <p>
@@ -103,155 +97,20 @@ const Texto = () => {
               alt="arrows image"
             />
             {count == 1 ? (
-              <div>
-                <h2 className={styles.textoimagenarmas}>granadas</h2>
-                <div className={styles.contenedorImagenArmas}>
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                </div>
-              </div>
+              <Armas tituloArmas={"Granada"} imgArma1={Arma} />
             ) : null}
 
             {count == 2 ? (
-              <div>
-                <h2 className={styles.textoimagenarmas}>rifles</h2>
-                <div className={styles.contenedorImagenArmas}>
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                </div>
-              </div>
+              <Armas tituloArmas={"Rifle"} imgArma1={Arma} imgArma2={Arma} imgArma3={Arma} imgArma4={Arma}
+              imgArma5={Arma} imgArma6={Arma}/>
             ) : null}
 
             {count == 3 ? (
-              <div>
-                <h2 className={styles.textoimagenarmas}>meele</h2>
-                <div className={styles.contenedorImagenArmas}>
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                </div>
-              </div>
+              <Armas tituloArmas={"Mele"} />
             ) : null}
 
             {count == 4 ? (
-              <div>
-                <h2 className={styles.textoimagenarmas}>granadas</h2>
-                <div className={styles.contenedorImagenArmas}>
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                  <Image
-                    className={styles.imagenArma}
-                    src={Patata}
-                    alt="imagen terrabellum"
-                  />
-                </div>
-              </div>
+              <Armas tituloArmas={"granada"} />
             ) : null}
             <Image
               className={styles.btnarmasrigth}
@@ -265,5 +124,4 @@ const Texto = () => {
     </>
   );
 };
-
 export default Texto;

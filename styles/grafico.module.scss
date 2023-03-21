@@ -13,10 +13,48 @@
         height: 100%;
     }
     .infografico{
-    background-color: rgb(128, 0, 105);
+    background-color: rgb(36, 35, 36);
     // padding:  10rem ;
-    height:100%;
-    width: 20%;
+    height: 80%;
+    width: 30%;
+    }
+    
+}
+.btnopc{
+    position: absolute;
+    // background-color: red;
+    width: 700px;
+    height: 450px;
+    *{
+        cursor: pointer;
+    }
+    .btnopc1{
+        position: absolute;
+        // z-index: 2;
+        left: 24%;
+        top: 70%;
+        background-color: rgb(185, 0, 0);
+        padding: .5rem 1.5rem;
+        // border-radius: 50%;
+    }
+    .btnopc2{
+        position: absolute;
+        // z-index: 2;
+        left: 50%;
+        top: 60%;
+        background-color: rebeccapurple;
+        padding: 2rem;
+        border-radius: 50%;
+    }
+    .btnopc3{
+        position: absolute;
+        // z-index: 2;
+        left: 60%;
+        top: 50%;
+        background-color: rebeccapurple;
+        padding: 2rem;
+        border-radius: 50%;
     }
 }
+
 

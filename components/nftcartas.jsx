@@ -2,9 +2,29 @@ import styles from "../styles/nftcartas.module.scss";
 // import PropsNftcartas from "./props/props.nftcartas";
 import PropsNftcarta from "./props/props.nftcartas";
 import image from '../public/img/spectre_plus1.jpg'
+import { useRef } from 'react';
+import { useSpring, animated } from 'react-spring';
+import { useIntersection } from 'react-use';
+
 const Nftcartas = () => {
+  const animatedRef = useRef(null);
+  const intersection = useIntersection(animatedRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5,
+  });
+  
+  const fadeIn = useSpring({
+    opacity: intersection && intersection.intersectionRatio >= 0.5 ? 1 : 0,
+    transform: intersection && intersection.intersectionRatio >= 0.5 ? 'translateY(0)' : 'translateY(20%)',
+    config: {
+      duration: 1500,
+    },
+  });
+
+
   return (
-    <>
+    <animated.div ref={animatedRef} style={fadeIn}>
     <div>a</div>
     <div className={styles.contain}>
       <div className={styles.infotexto}>
@@ -25,7 +45,7 @@ const Nftcartas = () => {
         <PropsNftcarta name={"RedSpectre"} Rare={"legendaria"} img={image}/>
       </div>
     </div>
-    </>
+    </animated.div>
   );
 };
 export default Nftcartas;

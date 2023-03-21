@@ -20,6 +20,8 @@
     "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
+    "react-spring": "^9.7.1",
+    "react-use": "^17.4.0",
     "sass": "^1.58.1"
   }
 }
