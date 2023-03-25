@@ -97,7 +97,8 @@ const Texto = () => {
               alt="arrows image"
             />
             {count == 1 ? (
-              <Armas tituloArmas={"Granada"} imgArma1={Arma} />
+              <Armas tituloArmas={"Granada"} imgArma1={Arma} imgArma2={Arma} imgArma3={Arma} imgArma4={Arma}
+              imgArma5={Arma} imgArma6={Arma}/>
             ) : null}
 
             {count == 2 ? (
@@ -106,11 +107,13 @@ const Texto = () => {
             ) : null}
 
             {count == 3 ? (
-              <Armas tituloArmas={"Mele"} />
+              <Armas tituloArmas={"Mele"} imgArma1={Arma} imgArma2={Arma} imgArma3={Arma} imgArma4={Arma}
+              imgArma5={Arma} imgArma6={Arma}/>
             ) : null}
 
             {count == 4 ? (
-              <Armas tituloArmas={"granada"} />
+              <Armas tituloArmas={"granada"} imgArma1={Arma} imgArma2={Arma} imgArma3={Arma} imgArma4={Arma}
+              imgArma5={Arma} imgArma6={Arma}/>
             ) : null}
             <Image
               className={styles.btnarmasrigth}

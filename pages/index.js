@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 import TextoCloacas from "@/components/miembros";
 import Nftcartas from "@/components/nftcartas.jsx";
 import InicialText from "@/components/inicialTexto";
-import Grafico from "@/components/grafico2.jsx";
+import Grafico from "@/components/grafico4.jsx";
 import Image from "next/image";
 import styles from '../styles/home.module.scss'
 

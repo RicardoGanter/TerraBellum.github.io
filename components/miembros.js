@@ -47,9 +47,33 @@ const TextoCloacas = () => {
         />
         <PropsMiembros
           nombre="Daniel Novoa"
-          cargo="Gerente general"
+          cargo="CDO"
+          imagen={Team.danielN}
+          linkedin={"https://www.linkedin.com/in/daniel-novoa-vega-17942826b/"}
+        />
+        <PropsMiembros
+          nombre="Felipe Baez"
+          cargo="Comunista"
+          imagen={Team.ricardoRG}
+          
+        />
+        <PropsMiembros
+          nombre="Enzo Vergara"
+          cargo="Full stack development"
+          imagen={Team.enzoVB}
+          linkedin={"https://www.linkedin.com/in/enzo-vergara-bracho-4197381ba/"}
+        />
+        <PropsMiembros
+          nombre="Scarlet"
+          cargo="Diseñadora"
           imagen={Team.danielN}
           
+        />
+        <PropsMiembros
+          nombre="Fernando Rios"
+          cargo="Full stack development"
+          imagen={Team.FernandoRU}
+          linkedin={"https://www.linkedin.com/in/fernando-rios-7b3274175/"}
         />
       </div>
     </div>
