@@ -1,54 +1,65 @@
 .fondo1 {
   position: relative;
-  background-image: url('../public/Fondo_Todo/Fondo_A_1920_3010.png');
-  background-size: cover;
+  background-image: url('../public/img/Fondo/space1.png');
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
-    opacity: 30%;
+    opacity: 0%;
   }
 }
-
-
 .fondo2 {
-  background-image: url('../public/Fondo_Todo/Fondo_B_1920_3010.png');
+  background-image: url('../public/img/Fondo/cuidad1.png');
   background-size: cover;
-  height: 6000px;
-  width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
-  
+  height: 100vh;
+  width: 100%;
 }
 .fondo3{
-  background-image: url('../public/Fondo_Todo/Fondo_C_1920_3010.png');
+  background-image: url('../public/img/Fondo/cloaca.jpg');
   background-size: cover;
-  height: 3000px;
-  width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
-
-
-@media (min-height: 1920px){
-  .fondo1 {
-    width: 100%;
-    height: 6000px;
-  }
+.fondo5{
+  background-image: url('../public/img/Fondo/cueva.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
-
-@media (max-width: 1919px){
-  .fondo1 {
-
-    background-size: contain;
-  }
-
-  .fondo2 {
-
-    background-size: contain;
-  }
-
+.fondo4{
+  background-image: url('../public/img/Fondo/lava.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
+// @media (min-height: 1920px){
+//   .fondo1 {
+//     width: 100%;
+//     height: 6000px;
+//   }
+// }
+
+// @media (max-width: 1919px){
+//   .fondo1 {
+
+//     background-size: contain;
+//   }
+
+//   .fondo2 {
+
+//     background-size: contain;
+//   }
+
+// }

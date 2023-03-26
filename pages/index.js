@@ -1,33 +1,36 @@
-import Layout from "../components/layout";
-import Texto from "@/components/texto.js";
-import Footer from "@/components/footer";
-import TextoCloacas from "@/components/miembros";
-import Nftcartas from "@/components/nftcartas.jsx";
-import InicialText from "@/components/inicialTexto";
-import Grafico from "@/components/grafico4.jsx";
+import Texto from "@/components/infocharacters/text.jsx";
+import Footer from "@/components/footer/footer.jsx";
+import TextoCloacas from "@/components/team/team.jsx";
+import Nftcartas from "@/components/nftcarts/nftcarts.jsx";
+import InicialText from "@/components/textbackground1/text.jsx";
+import Grafico from "@/components/graphic/graphic.jsx";
 import styles from '../styles/home.module.scss'
-
-
-// import Chart from "@/components/Chart";
+import Header from "@/components/header/Header";
+import Infoweapons from "@/components/infoweapons/infoweapons";
 export default function Home() {
   return (
     <div>
-      <Layout titulo="Home">
+        <Header/>
         <div className={styles.fondo1}>
         <InicialText />
         <Texto />
         </div>
-        {/* <Chart /> */}
         <div className={styles.fondo2}>
-        <div style={{position:'relative', top:'2400px'}}>
-        <Nftcartas />
-        <Grafico />
-        </div>
+        <Infoweapons/>
         </div>
         <div className={styles.fondo3}>
+        {/* <div style={{position:'relative', top:'2400px'}}> */}
+        <Nftcartas />
+        {/* </div> */}
+        </div>
+        <div className={styles.fondo5}>
+          <div className={styles.containGrafic}>
+          <Grafico/>
+          </div>
+        </div>
+        <div className={styles.fondo4}>
         <TextoCloacas />
         </div>
-      </Layout>
       <Footer />
     </div>
   );
