@@ -7,9 +7,11 @@ import Grafico from "@/components/graphic/graphic.jsx";
 import styles from '../styles/home.module.scss'
 import Header from "@/components/header/Header";
 import Infoweapons from "@/components/infoweapons/infoweapons";
+import { a } from "react-spring";
 export default function Home() {
   return (
-    <div>
+    <div className={styles.contain}>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <Header/>
         <div className={styles.fondo1}>
         <InicialText />

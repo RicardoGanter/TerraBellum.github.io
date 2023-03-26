@@ -16,6 +16,12 @@
     opacity: 100%;
   }
 }
+@media (max-width: 480px){
+  .textoinicial{
+    width: 480px;
+    font-size: 1rem;
+  }
+}
 @media (min-width: 481px) and (max-width: 1150px) {
   .textoinicial {
     font-size: 1.5rem;
