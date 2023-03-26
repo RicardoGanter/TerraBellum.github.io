@@ -1,4 +1,4 @@
-import incendiaria from './incendiaria.png'
+import incendiaria from './Incendiaria.png'
 import lanzapapas from './lanzapapas.png'
 import Patata from './Patata.png'
 

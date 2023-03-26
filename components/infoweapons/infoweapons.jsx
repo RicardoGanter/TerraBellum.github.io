@@ -51,8 +51,8 @@ const Infoweapons = ()=>{
                 imgArma2={Machinegun.escopetadoble}
                 imgArma3={Machinegun.lazzer}
                 imgArma4={Machinegun.rifle}
-                // imgArma5={Machinegun.escopeta}
-                // imgArma6={Machinegun.escopeta}
+                imgArma5={Machinegun.escopeta}
+                imgArma6={Machinegun.escopeta}
               />
             ) : null}
 
@@ -63,8 +63,8 @@ const Infoweapons = ()=>{
                 imgArma2={Meele.dagas}
                 imgArma3={Meele.espada}
                 imgArma4={Meele.hacha}
-                // imgArma5={Meele.}
-                // imgArma6={Meele.}
+                imgArma5={Meele.hacha}
+                imgArma6={Meele.hacha}
               />
             ) : null}
 
@@ -74,9 +74,9 @@ const Infoweapons = ()=>{
                 imgArma1={Granade.Patata}
                 imgArma2={Granade.incendiaria}
                 imgArma3={Granade.lanzapapas}
-                // imgArma4={Granade.}
-                // imgArma5={Granade.}
-                // imgArma6={Granade.}
+                imgArma4={Granade.lanzapapas}
+                imgArma5={Granade.lanzapapas}
+                imgArma6={Granade.lanzapapas}
               />
             ) : null}
 
