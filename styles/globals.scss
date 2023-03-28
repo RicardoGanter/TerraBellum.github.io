@@ -3,33 +3,17 @@ body {
   height: 100%;
   margin:  auto;
   overflow-x: hidden;
-  // background-image: url("../public/img/fondo/Espacio\ 5-3\ 1.svg");
   background-color:  rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  // background-position: center;
   color: white;
 }
 @media only screen and (max-width: 480px){
   body{
     display: flex;
+    align-items: center;
   }
 }
-// #paper {
-//   display: flex;
-//   flex: 1;
-//   flex-direction: column;
-//   height: 100%;
-//   width: 100%;
-// }
-// #__next {
-//   display: flex;
-//   flex: 1;
-//   flex-direction: column;
-//   height: 100%;
-//   width: 100%;
-// }
-/* filter: grayscale(100%); */
 p {
   font-family: "Roboto";
   text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;

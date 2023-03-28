@@ -1,8 +1,10 @@
 .fondo1 {
   position: relative;
-  background-image: url('../public/img/Fondo/space1.png');
-  background-size: contain;
+  background-image: url('../public/img/Fondo/fondo1.webp');
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 190vh;
+  width: 100%;
   &::before {
     content: "";
     position: absolute;
@@ -13,15 +15,15 @@
   }
 }
 .fondo2 {
-  background-image: url('../public/img/Fondo/cuidad1.png');
+  background-image: url('../public/img/Fondo/fondo2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
 }
 .fondo3{
-  background-image: url('../public/img/Fondo/cloaca.jpg');
+  background-image: url('../public/img/Fondo/fondo3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,30 +31,21 @@
   width: 100%;
 }
 .fondo5{
-  background-image: url('../public/img/Fondo/cueva.png');
+  background-image: url('../public/img/Fondo/fondo4.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 220vh;
   width: 100%;
 }
 .fondo4{
-  background-image: url('../public/img/Fondo/lava.png');
+  background-image: url('../public/img/Fondo/fondo5.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 360vh;
   width: 100%;
 }
-
-@media only screen and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-  .contain{
-    max-width: 480px;
-  }
-}
-
-
-
 // @media (min-height: 1920px){
 //   .fondo1 {
 //     width: 100%;

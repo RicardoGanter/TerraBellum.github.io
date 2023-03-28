@@ -103,18 +103,18 @@ const Grafico = () => {
 
   return (
     <div className={styles.contain}>
-      {/* <Chart
+      <Chart
         options={options}
         series={options.series}
         type={"line"}
         width={700}
         height={500}
-      /> */}
-      {/* <div className={styles.btnopc}>
+      />
+      <div className={styles.btnopc}>
         <div className={styles.btnopc1} onClick={()=>setBtn(1)}></div>
         <div className={styles.btnopc2} onClick={()=>setBtn(2)}></div>
         <div className={styles.btnopc3} onClick={()=>setBtn(3)}></div>
-      </div> */}
+      </div>
       <div className={styles.infografico}>
         
         <div style={{ margin: "10px" }}>
