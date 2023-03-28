@@ -31,6 +31,11 @@ p {
   /* background: rgb(61, 46, 104); */
   background: linear-gradient(-45deg, #5052e5, #934be6);
 }
+@media only screen and (max-width: 2000px) and (max-device-width: 2000px) {
+  body {
+    display: flex;
+  }
+}
 
 @media (max-width: 480px) {
   p {
