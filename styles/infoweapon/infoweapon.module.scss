@@ -1,0 +1,73 @@
+.contenedorPersonajesArmas {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* overflow: hidden;
+      background-color: rgba(33, 2, 57, 0.892); */
+}
+.contenedorArmas {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+.contenedorArmas div p {
+    margin: 0 10%;
+}
+
+//------------------------ INI BOTTON-----------------------------
+
+.btnarmasleft {
+    margin: 22rem 1rem;
+    transform: rotate(180deg);
+    cursor: pointer;
+    background: radial-gradient(circle, #910b97 0, #3f0542 66%);
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+  }
+  .btnarmasrigth {
+    margin: 22rem 1rem;
+    cursor: pointer;
+    background: radial-gradient(circle, #910b97 0, #3f0542 66%);
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+  }
+  .btnarmasrigth:hover {
+    background: radial-gradient(circle, #ff43ef 25%, #3d063b 66%, #ff43efa2 20%);
+  }
+  .btnarmasleft:hover {
+    background: radial-gradient(circle, #ff43ef 25%, #3d063b 66%, #ff43efa2 20%);
+  }
+
+
+  //-------------------------RESPONSIVE-----------------------------
+
+  @media (min-width:481px) and (max-width: 719px) {
+    // .contenedorPersonajesArmas {
+    //   margin: 60rem 20% 0 20%;
+    // }
+    .btnarmasleft {
+      left: -50%;
+      top: 45%;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.6s;
+    }
+    .btnarmasrigth {
+      right: -20%;
+      top: 45%;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.6s;
+    }
+  }
+
+  @media (min-width: 720px) and (max-width: 1280px) {
+    .contenedorPersonajesArmas {
+      align-items: center;
+      justify-content: center;
+    }
+  }

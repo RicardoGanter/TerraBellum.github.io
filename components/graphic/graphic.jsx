@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import styles from "../../styles/grafico.module.scss";
+import styles from "../../styles/graphic/graphic.module.scss";
 import { useState } from "react";
 const Chart = dynamic(() => import("react-apexcharts"), {
   ssr: false,

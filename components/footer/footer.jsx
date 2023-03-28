@@ -1,4 +1,4 @@
-import styles from "../../styles/footer.module.scss";
+import styles from "../../styles/footer/footer.module.scss";
 import Image from "next/image";
 import discord from "../../public/icon/discord.svg";
 import discordcolor from "../../public/icon/discordcolor.svg";

@@ -1,11 +1,12 @@
 import Image from "next/image"
-import Armas from "../infocharacters/props.armas"
-import styles from '../../styles/texto.module.scss'
+import Armas from "./props.weapon"
+import styles from '../../styles/infoweapon/infoweapon.module.scss'
 import Arrows from "../../public/arrows.svg";
 import Machinegun from "@/public/img/armas/machinegun/Machinegun";
 import { useState } from "react";
 import Meele from "@/public/img/armas/mele/meele";
 import Granade from "@/public/img/armas/granade/granade";
+import { wrap } from "framer-motion";
 const Infoweapons = ()=>{
     const [count, setCount] = useState(1);
     const handleIncrement = () => {
@@ -36,6 +37,7 @@ const Infoweapons = ()=>{
               position: "relative",
               display: "flex",
               flexDirection: "row",
+              justifyContent:"center",
             }}
           >
             <Image
@@ -80,17 +82,17 @@ const Infoweapons = ()=>{
               />
             ) : null}
 
-            {/* {count == 4 ? (
+              {count == 4 ? (
               <Armas
-                tituloArmas={"granada"}
-                imgArma1={Arma}
-                imgArma2={Arma}
-                imgArma3={Arma}
-                imgArma4={Arma}
-                imgArma5={Arma}
-                imgArma6={Arma}
+                tituloArmas={"Granade"}
+                imgArma1={Granade.Patata}
+                imgArma2={Granade.incendiaria}
+                imgArma3={Granade.lanzapapas}
+                imgArma4={Granade.lanzapapas}
+                imgArma5={Granade.lanzapapas}
+                imgArma6={Granade.lanzapapas}
               />
-            ) : null} */}
+            ) : null}
             <Image
               className={styles.btnarmasrigth}
               src={Arrows}

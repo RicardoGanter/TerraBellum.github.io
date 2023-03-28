@@ -1,4 +1,4 @@
-import styles from "../../styles/inicialTexto.module.scss";
+import styles from "../../styles/textbackground1/text.module.scss";
 const InicialText = () => {
   return (
     <>

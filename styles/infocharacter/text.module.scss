@@ -1,0 +1,110 @@
+.contenedorPersonajesinfo {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 18rem 20% 16rem 20%;
+}
+.contenedorInfoJuego {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 2rem;
+  * {
+    font-size: 1.7rem;
+  }
+}
+.imagenTB {
+  margin: 0 1rem;
+  width: 175px;
+  height: 200px;
+}
+.contenedorPersonajes {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 0 3rem;
+}
+
+.cointainhabilidadgift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.containhabilidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: #3d063b;
+}
+.gift {
+  margin: 0 1rem;
+  width: 20rem;
+  height: 367px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #3d063b;
+}
+
+.hability {
+  background-color: beige;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.Hb1 {
+  text-align: start;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  width: 550px;
+  height: 250px;
+  font-size: 1.6rem;
+  background-color: #3d063b;
+  * {
+    margin: 1rem;
+  }
+}
+
+//-------------------------RESPONSIVE---------------------------------
+
+@media (max-width: 480px) {
+  .imagenTB {
+    width: 200px;
+    height: 150px;
+    padding: 1rem;
+  }
+  .imagenHud {
+    width: 300px;
+    height: 100px;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 719px) {
+  .imagenTB {
+    width: 200px;
+    height: 150px;
+    padding: 1rem;
+  }
+  .imagenHud {
+    width: 300px;
+    height: 100px;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+  .imagenTB {
+    width: 200px;
+    height: 150px;
+  }
+  .imagenHud {
+    width: 400px;
+    height: 100px;
+    padding: 1rem;
+  }
+}

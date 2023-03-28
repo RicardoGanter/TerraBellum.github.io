@@ -1,4 +1,4 @@
-import styles from "../../styles/texto.module.scss";
+import styles from "../../styles/infocharacter/text.module.scss";
 import Image from "next/image";
 import TB from "../../public/img/logos/tb.png";
 import Machinegun from "@/public/img/armas/machinegun/Machinegun";
@@ -10,7 +10,7 @@ const Texto = () => {
   //armas
   return (
     <>
-      <div className={styles.contenedorPersonajesArmas}>
+      <div className={styles.contenedorPersonajesinfo}>
         <div className={styles.contenedorInfoJuego}>
           <div>
             <p>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/textoCloacas.module.scss";
+import styles from "../../styles/team/props.team.module.scss";
 import iconoLinkedin from "../../public/icon/linkedin.svg";
 import Link from "next/link";
 

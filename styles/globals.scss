@@ -8,12 +8,12 @@ body {
   background-size: 100% auto;
   color: white;
 }
-@media only screen and (max-width: 480px){
-  body{
-    display: flex;
-    align-items: center;
-  }
-}
+// @media only screen and (max-width: 480px){
+//   body{
+//     display: flex;
+//     align-items: center;
+//   }
+// }
 p {
   font-family: "Roboto";
   text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;

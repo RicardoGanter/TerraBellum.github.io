@@ -19,23 +19,6 @@
   // grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   flex-wrap: wrap;
 }
-
-.img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  filter: grayscale(100%);
-  transition: 1s;
-}
-.img:hover {
-  filter: grayscale(0%);
-}
-.containinfo {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
 // @media (max-width: 480px) {
 //   .contain {
 //     grid-template-columns: 1fr 1fr;

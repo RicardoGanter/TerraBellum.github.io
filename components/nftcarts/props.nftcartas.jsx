@@ -1,4 +1,4 @@
-import styles from "../../styles/nftcarta.module.scss";
+import styles from "../../styles/nftcarta/props.nftcarta.module.scss";
 import React, { useState, useEffect } from 'react'
 import Image from "next/image";
 const PropsNftcarta = ({ name,img,Ida,Rare}) => {

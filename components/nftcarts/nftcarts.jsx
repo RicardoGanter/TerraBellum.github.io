@@ -1,4 +1,4 @@
-import styles from "../../styles/nftcartas.module.scss";
+import styles from "../../styles/nftcarta/nftcarta.module.scss";
 // import PropsNftcartas from "./props/props.nftcartas";
 import PropsNftcarta from "./props.nftcartas";
 import Characters from "@/public/img/characters/characters";

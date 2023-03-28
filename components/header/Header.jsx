@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../../styles/Header.module.scss";
+import styles from "../../styles/header/header.module.scss";
 import Image from "next/image";
 import logo from "../../public/img/logos/terrabellum.png";
 import logomovil from "../../public/img/logos/tb.png";

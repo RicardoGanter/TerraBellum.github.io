@@ -1,4 +1,4 @@
-import styles from "../../styles/textoCloacas.module.scss";
+import styles from "../../styles/team/team.module.scss";
 import PropsMiembros from "./props.miebros";
 import Team from "@/public/img/ourteam/team";
 const TextoCloacas = () => {
@@ -17,7 +17,7 @@ const TextoCloacas = () => {
         />
         <PropsMiembros
           nombre="Diego Cordero"
-          cargo="CTO"
+          cargo="Blockchain development"
           imagen={Team.diegoCA}
           linkedin={"https://www.linkedin.com/in/diego-cordero-5290221ab/"}
         />
@@ -28,10 +28,22 @@ const TextoCloacas = () => {
           linkedin={"https://www.linkedin.com/in/ricardo-adolfo-rosales-ganter-03362b242/"}
         />
         <PropsMiembros
+          nombre="Daniel Novoa"
+          cargo="CDO"
+          imagen={Team.danielN}
+          linkedin={"https://www.linkedin.com/in/daniel-novoa-vega-17942826b/"}
+        />
+        <PropsMiembros
           nombre="Fabio Canales"
           cargo="CMO"
           imagen={Team.fabioC}
           linkedin={"https://www.linkedin.com/in/fabio-antonio-canales-bustamante-94757221b/"}
+        />
+        <PropsMiembros
+          nombre="Enzo Vergara"
+          cargo="Full stack development"
+          imagen={Team.enzoVB}
+          linkedin={"https://www.linkedin.com/in/enzo-vergara-bracho-4197381ba/"}
         />
         <PropsMiembros
           nombre="Claudio Chuhaicura"
@@ -41,21 +53,9 @@ const TextoCloacas = () => {
         />
         <PropsMiembros
           nombre="Isaac Encalada"
-          cargo="NOC"
+          cargo="Full stack development"
           imagen={Team.isaacE}
           linkedin={"https://www.linkedin.com/in/isaac-encalada-ruz-8493a626b/"}
-        />
-        <PropsMiembros
-          nombre="Daniel Novoa"
-          cargo="CDO"
-          imagen={Team.danielN}
-          linkedin={"https://www.linkedin.com/in/daniel-novoa-vega-17942826b/"}
-        />
-        <PropsMiembros
-          nombre="Enzo Vergara"
-          cargo="Full stack development"
-          imagen={Team.enzoVB}
-          linkedin={"https://www.linkedin.com/in/enzo-vergara-bracho-4197381ba/"}
         />
         <PropsMiembros
           nombre="Fernando Rios"
