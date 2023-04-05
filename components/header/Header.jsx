@@ -68,7 +68,7 @@ const Header = () => {
             className={`${styles.botonright} ${styles.btnnavbar}`}
             target="_blank"
             href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
-          >personajes</Link>
+          >characters</Link>
         </div>
 
         <Link href={"/"}>
@@ -80,7 +80,7 @@ const Header = () => {
             className={`${styles.botonright} ${styles.btnnavbar}`}
             target="_blank"
             href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
-          > WhitePaper</Link>
+          > Economy</Link>
           <Link
             className={`${styles.botonright} ${styles.btnnavbar}`}
             target="_blank"
