@@ -11,6 +11,7 @@ import { a } from "react-spring";
 export default function Home() {
   return (
     <div className={styles.contain}>
+      <h1>aaa</h1>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <Header/>
         <div className={styles.fondo1}>
