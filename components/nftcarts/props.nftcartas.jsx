@@ -10,9 +10,9 @@ const PropsNftcarta = ({ name,img,Ida,Rare,Level}) => {
       <div className={styles.contain}>
       <Image src={img}  className={styles.nft} alt="photo NFT"/>
       <div className={styles.hability}>
-        <div>Name : {name} </div>
-        <div>rare : {Rare}</div>
-        <div>Level : {Level}</div>
+        <pre>Name  : {name}</pre>
+        <pre>Rare  : {Rare}</pre>
+        <pre>Level : {Level}</pre>
       </div>
       <h1>{Ida}</h1>
       </div>
@@ -23,9 +23,9 @@ const PropsNftcarta = ({ name,img,Ida,Rare,Level}) => {
       <div className={styles.contain}>
       <Image src={img}  className={styles.nft} alt="photo NFT"/>
       <div className={styles.hability}>
-        <div>Name : {name} </div>
-        <div>rare : {Rare}</div>
-        <div>Level : {Level}</div>
+        <pre>Name  : {name} </pre>
+        <pre>Rare  : {Rare}</pre>
+        <pre>Level : {Level}</pre>
       </div>
       <h1>{Ida}</h1>
       </div>
@@ -36,9 +36,9 @@ const PropsNftcarta = ({ name,img,Ida,Rare,Level}) => {
       <div className={styles.contain}>
       <Image src={img}  className={styles.nft} alt="photo NFT"/>
       <div className={styles.hability}>
-        <div>Name : {name} </div>
-        <div>rare : {Rare}</div>
-        <div>Level : {Level}</div>
+        <pre>Name  : {name} </pre>
+        <pre>Rare  : {Rare}</pre>
+        <pre>Level : {Level}</pre>
       </div>
       <h1>{Ida}</h1>
       </div>

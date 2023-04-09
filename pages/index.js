@@ -16,28 +16,37 @@ export default function Home() {
 
         <div className={styles.fondo1} id="Home">
           
-          <div style={{position:"absolute", top:"30vh"}}
+          <div
+          style={{top:"60vh"}}
           className={styles.margincontain}
           >
           <InicialText/>
           </div>
-          <div style={{position:"absolute",bottom:0}}>
+          <div style={{position:"absolute",bottom:0}}
+          className={styles.margincontain}
+          >
           <Texto />
           </div>
           
         </div>
 
         <div className={styles.fondo2}>
-          <div style={{position:"absolute", top:"50%"}}>
+          <div 
+          style={{top:"50vh"}}
+          className={styles.margincontain}>
           <Infoweapons/>
           </div>
         </div>
         <div className={styles.fondo3} id="Innomictoken">
+        <div
+        className={styles.margincontain}>
         <Nftcartas />
         </div>
+        </div>
         <div className={styles.fondo4}>
-          <div className={styles.containGrafic} id="Grafico"
-          style={{position:"absolute", top:"50%"}}
+          <div className={`${styles.containGrafic},${styles.margincontain}`} id="Grafico"
+          // style={{position:"absolute", top:"50%"}}
+          
           >
           {/* <Grafico/> */}
           <Chart/>
@@ -47,6 +56,7 @@ export default function Home() {
         >
           <div
           style={{position:"absolute", top:"20%"}}
+          className={styles.margincontain}
           >
           <TextoCloacas />
           </div>
