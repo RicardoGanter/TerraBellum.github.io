@@ -12,23 +12,38 @@ export default function Home() {
     <div className={styles.contain}>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <Header/>
+
         <div className={styles.fondo1} id="Home">
-        <InicialText/>
-        <Texto />
+          <div style={{position:"absolute", top:"30vh"}}>
+          <InicialText/>
+          </div>
+          <div style={{position:"absolute",bottom:0}}>
+          <Texto />
+          </div>
         </div>
+
         <div className={styles.fondo2}>
-        <Infoweapons/>
+          <div style={{position:"absolute", top:"50%"}}>
+          <Infoweapons/>
+          </div>
         </div>
         <div className={styles.fondo3} id="Innomictoken">
         <Nftcartas />
         </div>
-        <div className={styles.fondo5}>
-        <div className={styles.containGrafic} id="Grafico">
-        <Grafico/>
+        <div className={styles.fondo4}>
+          <div className={styles.containGrafic} id="Grafico"
+          style={{position:"absolute", top:"50%"}}
+          >
+          <Grafico/>
+          </div>
         </div>
-        </div>
-        <div className={styles.fondo4} id="Team">
-        <TextoCloacas />
+        <div className={styles.fondo5} id="Team"
+        >
+          <div
+          style={{position:"absolute", top:"20%"}}
+          >
+          <TextoCloacas />
+          </div>
         </div>
       <Footer />
     </div>

@@ -1,9 +1,14 @@
 .contain{
   display: flex;
   flex-direction: column;
+  div{
+    position: relative;
+  }
 }
 
 .fondo1 {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-image: url('../public/img/Fondo/fondo1.webp');
   background-size: cover;
@@ -35,7 +40,7 @@
   height: 100vh;
   width: 100%;
 }
-.fondo5{
+.fondo4{
   background-image: url('../public/img/Fondo/fondo4.webp');
   background-size: cover;
   background-position: center;
@@ -43,7 +48,10 @@
   height: 220vh;
   width: 100%;
 }
-.fondo4{
+.fondo5{
+ 
+
+
   background-image: url('../public/img/Fondo/fondo5.webp');
   background-size: cover;
   background-position: center;
@@ -51,6 +59,7 @@
   height: 360vh;
   width: 100%;
 }
+
 
 @media (max-width: 1019px){
   .fondo1, .fondo2, .fondo3, .fondo4, .fondo5{

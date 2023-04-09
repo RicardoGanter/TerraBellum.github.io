@@ -3,8 +3,6 @@ const InicialText = () => {
   return (
     <>
       <div className={styles.fondo}>
-        {/* <Image src={fondo} alt='aa' className={styles.fondo}/> */}
-        <div>a</div>
         <h1 className={styles.textoinicial}>
           Terrabellum is a strategic action game set in a world in conflict
           between corporatism and collectivism. With destructible maps and
