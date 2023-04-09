@@ -65,12 +65,12 @@ const Texto = () => {
               </div>
               {habilidad == 1 ? (
                 <div className={styles.Hb1}>
-                  <div>
+                  <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Lorem Ipsum is simply dummy text
                     of the Ipsum has been the industrys standard dummy text ever
                     since the 1500s, when an unknown printer took a galley
-                  </div>
+                  </p>
                 </div>
               ) : habilidad == 2 ? (
                 <div className={styles.Hb1}>
