@@ -39,9 +39,9 @@ const Nftcartas = () => {
         {/* <PropsNftcartas colorInit="red" colorfin="red" textinit="loool" />
         <PropsNftcartas colorInit="red" />
         <PropsNftcartas colorInit="red" /> */}
-        <PropsNftcarta name={"RedSpectre"} Rare={"normal"} img={Characters.agent}/>
-        <PropsNftcarta name={"RedSpectre"} Rare={"pococomun"} img={Characters.aifos}/>
-        <PropsNftcarta name={"RedSpectre"} Rare={"legendaria"} img={Characters.redspectre2}/>
+        <PropsNftcarta name={"Agent 87"} Rare={"common"} Level={"1"} img={Characters.agent}/>
+        <PropsNftcarta name={"Aifos"} Rare={"uncommon"} Level={"2"} img={Characters.aifos}/>
+        <PropsNftcarta name={"RedSpectre"} Rare={"legendary"} Level={"3"} img={Characters.redspectre2}/>
       </div>
     </div>
     </animated.div>
