@@ -120,23 +120,23 @@ const Grafico = () => {
         <div style={{ margin: "10px" }}>
         { btn===1 ?  
           <p>
-            Nuestro sistema económico limita la emisión de nft a un maximo
-            semanal y elimina por completo la emision de token, permitiendo que
-            sus valores tiendan al alza.
+            Our economic system limits the emission of nft to a maximum
+            weekly and completely eliminates token issuance, allowing
+            their values ​​tend to rise.
           </p>
           : btn===2 ? 
           <p>
-            Es muy normal ver que en estos proyectos, los valores de nfts se
-            desplomen en poco tiempo, para ello terrabellum tiene un sistema de
-            garantia, todos los nft tienen una garantia de valor para asegurar
-            que los precios no bajen mas que ese monto. actuando como un floor
+            It is very normal to see that in these projects, the values ​​of nfts are
+            collapse in a short time, for this terrabellum has a system of
+            guarantee, all nft have a guarantee of value to ensure
+            that the prices do not fall more than that amount. acting like a floor
             price
           </p>
           : btn===3 ?
           <p>
-            Terrabellum busca llegar a todo tipo de jugadores,
-             no necesariamente personas que usen cryptos,
-              por eso las personas que jueguen sin nft o tokens podran jugar torneos con premios REALES, todos los premios se pagaran con ingresos de anuncios, asi aumentaremos la demanda por tokens, con lo que terrabellum genere con anuncios!!
+            Terrabellum seeks to reach all types of players,
+            not necessarily people who use cryptos,
+            that s why people who play without nft or tokens will be able to play tournaments with REAL prizes, all prizes will be paid with ad revenue, so we will increase the demand for tokens, with what terrabellum generates with ads!!
           </p>
           : null
         }

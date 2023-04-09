@@ -7,6 +7,7 @@ import Grafico from "@/components/graphic/graphic.jsx";
 import styles from '../styles/index.module.scss'
 import Header from "@/components/header/Header";
 import Infoweapons from "@/components/infoweapons/infoweapon";
+import Chart from "@/components/graphic/graphic2";
 export default function Home() {
   return (
     <div className={styles.contain}>
@@ -14,12 +15,16 @@ export default function Home() {
         <Header/>
 
         <div className={styles.fondo1} id="Home">
-          <div style={{position:"absolute", top:"30vh"}}>
+          
+          <div style={{position:"absolute", top:"30vh"}}
+          className={styles.margincontain}
+          >
           <InicialText/>
           </div>
           <div style={{position:"absolute",bottom:0}}>
           <Texto />
           </div>
+          
         </div>
 
         <div className={styles.fondo2}>
@@ -34,7 +39,8 @@ export default function Home() {
           <div className={styles.containGrafic} id="Grafico"
           style={{position:"absolute", top:"50%"}}
           >
-          <Grafico/>
+          {/* <Grafico/> */}
+          <Chart/>
           </div>
         </div>
         <div className={styles.fondo5} id="Team"
