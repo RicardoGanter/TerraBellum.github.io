@@ -10,7 +10,6 @@
 }
 
 .contain {
-  // align-self: center;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -18,6 +17,7 @@
   // gap: 1rem;
   // grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   flex-wrap: wrap;
+  margin: 5rem 0;
 }
 // @media (max-width: 480px) {
 //   .contain {

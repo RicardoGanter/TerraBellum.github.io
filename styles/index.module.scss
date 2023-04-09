@@ -52,28 +52,9 @@
   width: 100%;
 }
 
-@media (max-width: 1919px){
+@media (max-width: 1019px){
   .fondo1, .fondo2, .fondo3, .fondo4, .fondo5{
     height: unset;
+    display: flexbox;
   }
 }
-
-// @media (min-height: 1920px){
-//   .fondo1 {
-//     width: 100%;
-//     height: 6000px;
-//   }
-// }
-
-// @media (max-width: 1919px){
-//   .fondo1 {
-
-//     background-size: contain;
-//   }
-
-//   .fondo2 {
-
-//     background-size: contain;
-//   }
-
-// }

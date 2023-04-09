@@ -8,6 +8,14 @@ import { useState } from "react";
 const Header = () => {
   const [navbarcontainMovile, setNavbarcontainMovile] = useState(false);
   const [interresolution, setInterresolution] = useState(false);
+  
+  const Scrollclick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  
+  }
   return (
     <header className={styles.header}>
       {/* movil 480px */}
@@ -59,28 +67,28 @@ const Header = () => {
       {/* 1080px */}
       <nav className={styles.navbarcontain}>
         <div className={styles.group1}>
-        <Link
+        <div
             className={`${styles.botonright} ${styles.btnnavbar}`}
-            target="_blank"
-            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
-          >InnomicToken</Link>
-          <Link
+            onClick={()=>{Scrollclick("Innomictoken")}}
+           >InnomicToken</div>
+          <div
             className={`${styles.botonright} ${styles.btnnavbar}`}
-            target="_blank"
-            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
-          >characters</Link>
+            onClick={() => Scrollclick('Team')}
+          >characters</div>
         </div>
 
-        <Link href={"/"}>
+        <div 
+          onClick={()=>{Scrollclick("Home")}}
+        >
           <Image src={logo} alt="Logo" className={styles.img} />
-        </Link>
+        </div>
 
         <div className={styles.group1}>
-          <Link
+          <div
             className={`${styles.botonright} ${styles.btnnavbar}`}
             target="_blank"
-            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
-          > Economy</Link>
+            onClick={()=>{Scrollclick("Grafico")}}
+           > Economy</div>
           <Link
             className={`${styles.botonright} ${styles.btnnavbar}`}
             target="_blank"
