@@ -105,6 +105,7 @@ const Footer = () => {
           >
             Terms of Use
           </Link>
+          
         </div>
       </div>
     </>
