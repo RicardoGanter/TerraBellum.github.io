@@ -25,15 +25,16 @@ const Nftcartas = () => {
 
   return (
     <animated.div ref={animatedRef} style={fadeIn}>
-    <div className={styles.contain}>
       <div className={styles.infotexto}>
-        <h3 style={{textAlign:'justify', fontSize:'1.5rem'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-          has been the industrys standard dummy text ever since the 1500s, when an unknown printer 
-          took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-          five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
-           Ipsum.</h3>
+        <h3 style={{textAlign:'justify', fontSize:'1.5rem'}}>
+        There are different types of NFTs in Terrabellum,
+         including NFT hero, which is the most valuable type.
+          These NFTs allow you to use the heros 
+          character and generate tokens by playing. There are four types
+          of hero NFTs: Golden, Purple, Common, and Exclusive, each with
+          its own benefits, including maintaining the heros power,
+         increasing the probability of get the power you want.  
+        </h3>
       </div>
       <div className={styles.cards_grid}>
         {/* <PropsNftcartas colorInit="red" colorfin="red" textinit="loool" />
@@ -43,7 +44,6 @@ const Nftcartas = () => {
         <PropsNftcarta name={"Aifos"} Rare={"uncommon"} Level={"2"} img={Characters.aifos}/>
         <PropsNftcarta name={"RedSpectre"} Rare={"legendary"} Level={"3"} img={Characters.redspectre2}/>
       </div>
-    </div>
     </animated.div>
   );
 };
