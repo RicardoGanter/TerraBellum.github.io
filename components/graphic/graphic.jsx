@@ -81,7 +81,16 @@ const Grafico = () => {
           speed: 500,
         },
       },
+      toolbar:{
+        show: false,
+      },
+      
+      tooltip:{
+        followCursor: false
+      },
+      background: 'rgba(20, 20, 20, .7)',
     },
+    
     title: {
       text: "",
     },
@@ -103,20 +112,21 @@ const Grafico = () => {
 
   return (
     <div className={styles.contain}>
+      <div className={styles.btnopc}>
       <Chart
         options={options}
         series={options.series}
-        type={"line"}
-        width={700}
-        height={500}
+        type={"area"}
+        className={styles.lol}
       />
-      <div className={styles.btnopc}>
-        <div className={styles.btnopc1} onClick={()=>setBtn(1)}></div>
-        <div className={styles.btnopc2} onClick={()=>setBtn(2)}></div>
-        <div className={styles.btnopc3} onClick={()=>setBtn(3)}></div>
+      <div style={{display: "flex", flexDirection: "row", gap: "2rem", justifyContent:"center"}}>
+        <p className={styles.btnopc1} onClick={()=>setBtn(1)}>Economy</p>
+        <p className={styles.btnopc1} onClick={()=>setBtn(2)}>Garanty</p>
+        <p className={styles.btnopc1} onClick={()=>setBtn(3)}>inclusive</p>
       </div>
+      </div>
+
       <div className={styles.infografico}>
-        
         <div style={{ margin: "10px" }}>
         { btn===1 ?  
           <p>

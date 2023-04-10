@@ -1,59 +1,68 @@
 .contain{
-    align-items: center;
-    width: 1100px;
-    height: 600px;
-    // background-color: red;
+    // background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    // align-items: center;
-    .grafico{
-        width: 80%;
-        height: 100%;
-    }
+    gap: 2rem;
+    margin: 0 5rem;
+    // .grafico{
+    //     position: absolute;
+    //     border-radius: 1rem;
+    // }
     .infografico{
-    background-color: rgb(36, 35, 36);
-    // padding:  10rem ;
-    // height: 80%;
-    width: 70%;
+    position: absolute;
+    background-color: rgb(73, 14, 73);
+    width: 40%;
+    right: 3%;
+    top: 3%;
+    height: fit-content;
+    border-radius: 1rem;
     }
-    
 }
 .btnopc{
-    position: absolute;
-    // background-color: red;
-    width: 700px;
-    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     *{
         cursor: pointer;
     }
+
     .btnopc1{
-        position: absolute;
-        // z-index: 2;
-        left: 24%;
-        top: 70%;
-        background-color: rgb(185, 0, 0);
-        padding: .5rem 1.5rem;
-        // border-radius: 50%;
+        padding: 1.5rem;
+        background-color: rgb(73, 14, 73);
+        width: fit-content;
+        border-radius: 1rem;
     }
-    .btnopc2{
-        position: absolute;
-        // z-index: 2;
-        left: 50%;
-        top: 60%;
-        background-color: rebeccapurple;
-        padding: 2rem;
-        border-radius: 50%;
+    .btnopc1:hover{
+        background-color: rgb(113, 23, 113);
     }
-    .btnopc3{
-        position: absolute;
-        // z-index: 2;
-        left: 60%;
-        top: 50%;
-        background-color: rebeccapurple;
-        padding: 2rem;
-        border-radius: 50%;
-    }
+
+    // .btnopc1{
+    //     position: absolute;
+    //     // z-index: 2;
+    //     left: 30%;
+    //     top: 70%;
+    //     background-color: rgb(185, 0, 0);
+    //     padding: .5rem 1.5rem;
+    //     // border-radius: 50%;
+    // }
+    // .btnopc2{
+    //     position: absolute;
+    //     // z-index: 2;
+    //     left: 50%;
+    //     top: 60%;
+    //     background-color: rebeccapurple;
+    //     padding: 2rem;
+    //     border-radius: 50%;
+    // }
+    // .btnopc3{
+    //     position: absolute;
+    //     // z-index: 2;
+    //     left: 60%;
+    //     top: 50%;
+    //     background-color: rebeccapurple;
+    //     padding: 2rem;
+    //     border-radius: 50%;
+    // }
 }
 
 
