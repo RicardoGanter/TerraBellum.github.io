@@ -7,15 +7,12 @@ import Grafico from "@/components/graphic/graphic.jsx";
 import styles from '../styles/index.module.scss'
 import Header from "@/components/header/Header";
 import Infoweapons from "@/components/infoweapons/infoweapon";
-import Chart from "@/components/graphic/graphic2";
 export default function Home() {
   return (
     <div className={styles.contain}>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <Header/>
-
         <div className={styles.fondo1} id="Home">
-          
           <div
           style={{top:"60vh"}}
           className={styles.margincontain}
@@ -48,7 +45,6 @@ export default function Home() {
           style={{top:"50%"}}
           >
           <Grafico/>
-          {/* <Chart/> */}
           </div>
         </div>
         <div className={styles.fondo5} id="Team"

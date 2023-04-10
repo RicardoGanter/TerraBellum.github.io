@@ -85,9 +85,6 @@ const Grafico = () => {
         show: false,
       },
       
-      tooltip:{
-        followCursor: false
-      },
       background: 'rgba(20, 20, 20, .7)',
     },
     
@@ -118,6 +115,8 @@ const Grafico = () => {
         series={options.series}
         type={"area"}
         className={styles.lol}
+        width={"100%"}
+        height={700}
       />
       <div style={{display: "flex", flexDirection: "row", gap: "2rem", justifyContent:"center"}}>
         <p className={styles.btnopc1} onClick={()=>setBtn(1)}>Economy</p>
@@ -132,7 +131,7 @@ const Grafico = () => {
           <p>
             Our economic system limits the emission of nft to a maximum
             weekly and completely eliminates token issuance, allowing
-            their values ​​tend to rise.
+            their values tend to rise.
           </p>
           : btn===2 ? 
           <p>
