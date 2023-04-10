@@ -9,9 +9,10 @@ import Header from "@/components/header/Header";
 import Infoweapons from "@/components/infoweapons/infoweapon";
 export default function Home() {
   return (
+    <>
+    <Header/>
     <div className={styles.contain}>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <Header/>
         <div className={styles.fondo1} id="Home">
           <div
           style={{top:"60vh"}}
@@ -58,5 +59,6 @@ export default function Home() {
         </div>
       <Footer />
     </div>
+    </>
   );
 }

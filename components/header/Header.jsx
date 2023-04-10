@@ -45,7 +45,8 @@ const Header = () => {
 
       {/* resolucion intermedia 1020px */}
       <div className={styles.interresolution}>
-        <Image src={logo} alt="logo tb" className={styles.img} />
+        <Image src={logo} alt="logo tb" 
+        className={styles.img} />
         <Image
           onClick={() => {
             setInterresolution(!interresolution);
