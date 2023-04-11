@@ -1,0 +1,41 @@
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20%;
+}
+
+
+.imagetoken{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: rgb(72, 59, 136);
+}
+.text{
+    background-color: rgb(93, 48, 104);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.containtable{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    .table1{
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        background-color: rgb(93, 48, 104);
+        border-radius: .5rem;
+        div{
+            margin: .6rem;
+            p{
+                background-color: rgb(57, 28, 85) ;
+                padding: .5rem;
+                font-size: 1rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+}

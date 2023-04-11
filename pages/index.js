@@ -7,6 +7,7 @@ import Grafico from "@/components/graphic/graphic.jsx";
 import styles from '../styles/index.module.scss'
 import Header from "@/components/header/Header";
 import Infoweapons from "@/components/infoweapons/infoweapon";
+import Innomictoken from "@/components/innomictoken/innomictoken";
 export default function Home() {
   return (
     <>
@@ -54,6 +55,7 @@ export default function Home() {
           style={{position:"absolute", top:"20%"}}
           className={styles.margincontain}
           >
+          <Innomictoken/>
           <TextoCloacas />
           </div>
         </div>
