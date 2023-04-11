@@ -1,18 +1,18 @@
-.contain{
+.contain {
   display: flex;
   flex-direction: column;
-  div{
+  div {
     position: relative;
   }
 }
-.margincontain{
- margin: 0 20%;
+.margincontain {
+  margin: 0 20%;
 }
 .fondo1 {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url('../public/img/Fondo/fondo1.webp');
+  background-image: url("../public/img/Fondo/fondo1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 210vh;
@@ -27,34 +27,31 @@
   // }
 }
 .fondo2 {
-  background-image: url('../public/img/Fondo/fondo2.webp');
+  background-image: url("../public/img/Fondo/fondo2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 150vh;
   width: 100%;
 }
-.fondo3{
-  background-image: url('../public/img/Fondo/fondo3.jpg');
+.fondo3 {
+  background-image: url("../public/img/Fondo/fondo3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
-.fondo4{
-  background-image: url('../public/img/Fondo/fondo4.webp');
+.fondo4 {
+  background-image: url("../public/img/Fondo/fondo4.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 220vh;
   width: 100%;
 }
-.fondo5{
- 
-
-
-  background-image: url('../public/img/Fondo/fondo5.webp');
+.fondo5 {
+  background-image: url("../public/img/Fondo/fondo5.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,9 +59,9 @@
   width: 100%;
 }
 
+// @media (max-width: 1300px){
+//   .fondo1, .fondo2, .fondo3, .fondo4, .fondo5{
+//     height: unset;
 
-@media (max-width: 1300px){
-  .fondo1, .fondo2, .fondo3, .fondo4, .fondo5{
-    height: unset;
-  }
-}
+//   }
+// }
