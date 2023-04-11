@@ -9,6 +9,12 @@ const Chart = dynamic(() => import("react-apexcharts"), {
 
 const Grafico = () => {
   const [btn, setBtn] = useState(1);
+  const [colors, setColors] =useState([])
+  const switchColor = (color1) => {
+    setColors(color1);
+  }
+
+
 
   const data = [
     {
@@ -87,7 +93,24 @@ const Grafico = () => {
       
       background: 'rgba(20, 20, 20, .7)',
     },
-    
+    fill: {
+      type: 'gradient',
+      gradient: {
+        shade: 'dark',
+        colorStops: [
+          { offset: colors, color: '#003eb9' },
+          { offset: 0, color: '#39b061' },
+        ],
+        shadeIntensity: 1,
+        type: 'horizontal',
+        opacityFrom: 1,
+        opacityTo: 1,
+      },
+    },
+    stroke:{
+      width:15,
+      curve: 'smooth',
+    },
     title: {
       text: "",
     },
@@ -95,13 +118,10 @@ const Grafico = () => {
       type: "datetime",
     },
     tooltip: {
-      x: {
-        format: "dd MMM yyyy",
-      },
+      enabled: false
     },
     series: [
       {
-        name: "OHLC",
         data: data,
       },
     ],
@@ -113,15 +133,25 @@ const Grafico = () => {
       <Chart
         options={options}
         series={options.series}
-        type={"area"}
+        type={"line"}
         className={styles.lol}
         width={"100%"}
         height={700}
       />
       <div style={{display: "flex", flexDirection: "row", gap: "2rem", justifyContent:"center"}}>
-        <p className={styles.btnopc1} onClick={()=>setBtn(1)}>Economy</p>
-        <p className={styles.btnopc1} onClick={()=>setBtn(2)}>Garanty</p>
-        <p className={styles.btnopc1} onClick={()=>setBtn(3)}>inclusive</p>
+        <p 
+        className={styles.btnopc1} 
+        onClick={()=>{setBtn(1); 
+        switchColor(20)}}
+        >Anti Ifation NFT</p>
+
+        <p className={styles.btnopc1} 
+        onClick={()=>{setBtn(2);
+          switchColor(25)}}>Drop limit</p>
+
+        <p className={styles.btnopc1} 
+        onClick={()=>{setBtn(3);
+          switchColor(50)}}>F2P Long-Term</p>
       </div>
       </div>
 
