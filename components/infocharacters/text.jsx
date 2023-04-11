@@ -1,7 +1,8 @@
 import styles from "../../styles/infocharacter/text.module.scss";
 import Image from "next/image";
 import TB from "../../public/img/logos/tb.png";
-import Machinegun from "@/public/img/armas/machinegun/Machinegun";
+import hability1 from '../../public/img/habilidades/HABILIDAD.webp'
+import hability2 from '../../public/img/habilidades/HABILIDAD2.webp'
 import { useState } from "react";
 
 const Texto = () => {
@@ -39,7 +40,7 @@ const Texto = () => {
             <div className={styles.cointainhabilidadgift}>
               <div className={styles.containhabilidad}>
                 <Image
-                  src={Machinegun.lazzer}
+                  src={hability1}
                   className={styles.hability}
                   alt="Habilidad"
                   onClick={() => {
@@ -47,7 +48,7 @@ const Texto = () => {
                   }}
                 />
                 <Image
-                  src={Machinegun.lazzer}
+                  src={hability2}
                   className={styles.hability}
                   alt="Habilidad"
                   onClick={() => {
@@ -55,7 +56,7 @@ const Texto = () => {
                   }}
                 />
                 <Image
-                  src={Machinegun.lazzer}
+                  src={hability1}
                   className={styles.hability}
                   alt="Habilidad"
                   onClick={() => {
