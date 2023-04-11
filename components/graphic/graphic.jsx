@@ -10,76 +10,106 @@ const Chart = dynamic(() => import("react-apexcharts"), {
 const Grafico = () => {
   const [btn, setBtn] = useState(1);
   const [colors, setColors] =useState([])
-  const switchColor = (color1) => {
-    setColors(color1);
+  const switchColor = (color1=0,color2=0) => {
+    setColors({color1,color2});
   }
 
 
 
-  const data = [
-    {
-      x: new Date("2022-01-01"),
-      y: [13500, 13700, 13400, 13500],
-    },
-    {
-      x: new Date("2022-02-01"),
-      y: [16000, 16000, 16000, 16250],
-    },
-    {
-      x: new Date("2022-03-01"),
-      y: [19500, 19300, 19600, 19150],
-    },
-    {
-      x: new Date("2022-04-01"),
-      y: [15750, 15650, 15300, 15525],
-    },
-    {
-      x: new Date("2022-05-01"),
-      y: [16000, 16500, 16800, 16250],
-    },
-    {
-      x: new Date("2022-06-01"),
-      y: [15500, 15000, 15200, 15800],
-    },
-    {
-      x: new Date("2022-07-01"),
-      y: [16000, 16500, 15500, 16250],
+  const data = 
+      [
+      {
+        "x": "2023-01-01",
+        "y": [0, 0, 0, 0]
       },
       {
-      x: new Date("2022-08-01"),
-      y: [16500, 17000, 16000, 16750],
+        "x": "2023-01-15",
+        "y": [0, 0, 0, 0]
       },
       {
-      x: new Date("2022-09-01"),
-      y: [17000, 17500, 16500, 17250],
+        "x": "2023-02-01",
+        "y": [0, 0, 0, 0]
       },
       {
-      x: new Date("2022-10-01"),
-      y: [17500, 18000, 17000, 17750],
+        "x": "2023-02-15",
+        "y": [0, 0, 0, 0]
       },
       {
-      x: new Date("2022-11-01"),
-      y: [18000, 18500, 17500, 18250],
+        "x": "2023-03-01",
+        "y": [1, 1, 1, 1]
       },
       {
-      x: new Date("2022-12-01"),
-      y: [18500, 19000, 18000, 18750],
+        "x": "2023-03-15",
+        "y": [1, 1, 1, 1]
       },
       {
-      x: new Date("2023-01-01"),
-      y: [19000, 19500, 18500, 19250],
+        "x": "2023-04-01",
+        "y": [1.5625, 2.125, 9, 9]
       },
       {
-      x: new Date("2023-02-01"),
-      y: [19500, 20000, 19000, 19750],
+        "x": "2023-04-15",
+        "y": [4.5625, 4.125, 9, 9]
       },
       {
-      x: new Date("2023-03-01"),
-      y: [20000, 20500, 19500, 20250],
-      }
+        "x": "2023-05-01",
+        "y": [5.125, 6.6875, 9, 9]
+      },
+      {
+        "x": "2023-05-15",
+        "y": [6.6875, 7.25, 9, 9]
+      },
+      {
+        "x": "2023-06-01",
+        "y": [9, 9, 4, 4]
+      },
+      {
+        "x": "2023-06-15",
+        "y": [4, 4, 4, 4]
+      },
+      {
+        "x": "2023-07-01",
+        "y": [4, 4, 4, 4]
+      },
+      {
+        "x": "2023-07-15",
+        "y": [4, 4, 4, 4]
+      },
+      {
+        "x": "2023-08-01",
+        "y": [4, 4, 4, 4]
+      },
+      {
+        "x": "2023-08-15",
+        "y": [4, 4, 4, 4]
+      },
+      {
+        "x": "2023-09-01",
+        "y": [6, 6, 4, 4]
+      },
+      {
+        "x": "2023-09-15",
+        "y": [4, 4, 4, 4]
+      },
+      {
+        "x": "2023-10-01",
+        "y": [5, 5, 5, 5]
+      },
+      {
+        "x": "2023-10-15",
+        "y": [5, 5, 5, 5]
+      },
+      {
+        "x": "2023-11-01",
+        "y": [5, 5, 5, 5]
+      },
+      {
+        "x": "2023-11-15",
+        "y": [5, 5, 5, 5]
+      },
   ];
   const options = {
     chart: {
+      
       animations: {
         enabled: true,
         easing: "linear",
@@ -98,8 +128,11 @@ const Grafico = () => {
       gradient: {
         shade: 'dark',
         colorStops: [
-          { offset: colors, color: '#003eb9' },
-          { offset: 0, color: '#39b061' },
+          { offset: colors.color1, color: '#4bcd37' },
+
+          { offset: colors.color1, color: '#cd3737' },
+          { offset: colors.color2, color: '#cd3737' },
+          { offset: 0, color: '#a500b9' },
         ],
         shadeIntensity: 1,
         type: 'horizontal',
@@ -136,22 +169,22 @@ const Grafico = () => {
         type={"line"}
         className={styles.lol}
         width={"100%"}
-        height={700}
+        height={"100%"}
       />
       <div style={{display: "flex", flexDirection: "row", gap: "2rem", justifyContent:"center"}}>
         <p 
         className={styles.btnopc1} 
         onClick={()=>{setBtn(1); 
-        switchColor(20)}}
+        switchColor(13.9)}}
         >Anti Ifation NFT</p>
 
         <p className={styles.btnopc1} 
         onClick={()=>{setBtn(2);
-          switchColor(25)}}>Drop limit</p>
+          switchColor(13.9,35.5)}}>Drop limit</p>
 
         <p className={styles.btnopc1} 
         onClick={()=>{setBtn(3);
-          switchColor(50)}}>F2P Long-Term</p>
+          switchColor(50,51)}}>F2P Long-Term</p>
       </div>
       </div>
 
