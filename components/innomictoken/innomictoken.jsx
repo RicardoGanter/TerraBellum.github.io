@@ -1,5 +1,7 @@
 import styles from '../../styles/innomictoken/innomictoken.module.scss'
-
+import Image from 'next/image';
+import check from '../../public/check-solid.svg'
+import xmark from '../../public/xmark-solid.svg'
 const Innomictoken = ()=>{
 
 
@@ -31,32 +33,34 @@ const Innomictoken = ()=>{
         <div className={styles.containtable}>
             <div className={styles.table1}>
                 <div>
-                    <p>O</p>
-                    <p>L</p>
-                    <p>L</p>
-                    <p>N</p>
+                    <p>a</p>
+                    <Image src={check} alt={"Imgage Check"} className={styles.tf}/>
+                    <Image src={check} alt={"Imgage Check"} className={styles.tf}/>
+                    <Image src={check} alt={"Imgage Check"} className={styles.tf}/>
+                    <Image src={check} alt={"Imgage Check"} className={styles.tf}/>
                 </div>
                 <div>
-                    <p>Axie infity</p>
-                    <p>peruano maximo</p>
-                    <p>peruano maximo</p>
-                    <p>peruano maximo</p>
-                    <p>peruano maximo</p>
+                    <p>Innomic Token</p>
+                    <p>LIMITED Supply</p>
+                    <p>MULTI-GAME token</p>
+                    <p>LONG-TERM FOCUSED</p>
+                    <p>HIGH DEMAND</p>
                 </div>
             </div>
             <div className={styles.table1}>
                 <div>
-                    <p>O</p>
-                    <p>L</p>
-                    <p>L</p>
-                    <p>N</p>
+                    <p>a</p>
+                    <Image src={xmark} alt={"Imgage Check"} className={styles.tf}/>
+                    <Image src={xmark} alt={"Imgage Check"} className={styles.tf}/>
+                    <Image src={xmark} alt={"Imgage Check"} className={styles.tf}/>
+                    <Image src={xmark} alt={"Imgage Check"} className={styles.tf}/>
                 </div>
                 <div>
-                    <p>Terrabellum</p>
-                    <p>peruano maximo</p>
-                    <p>peruano maximo</p>
-                    <p>peruano maximo</p>
-                    <p>peruano maximo</p>
+                    <p>Others</p>
+                    <p>UNLIMITED Supply</p>
+                    <p>SINGLE-GAME token</p>
+                    <p>LONG-TERM FOCUSED</p>
+                    <p>SPECULATIVE DEMAND</p>
                 </div>
             </div>
         </div>
