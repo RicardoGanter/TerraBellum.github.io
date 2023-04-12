@@ -23,6 +23,7 @@ export default function Home() {
           </div>
           <div style={{position:"absolute",bottom:0}}
           className={styles.margincontain}
+          id="Characters"
           >
           <Texto />
           </div>
@@ -36,7 +37,7 @@ export default function Home() {
           <Infoweapons/>
           </div>
         </div>
-        <div className={styles.fondo3} id="Innomictoken">
+        <div className={styles.fondo3}>
         <div
         className={styles.margincontain}>
         <Nftcartas />
@@ -49,13 +50,14 @@ export default function Home() {
           <Grafico/>
           </div>
         </div>
-        <div className={styles.fondo5} id="Team"
+        <div className={styles.fondo5}
         >
           <div
           style={{position:"absolute", top:"20%"}}
           className={styles.margincontain}
+          id="Innomictoken"
           >
-          <Innomictoken/>
+          <Innomictoken />
           <TextoCloacas />
           </div>
         </div>

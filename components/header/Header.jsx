@@ -71,11 +71,11 @@ const Header = () => {
         <div
             className={`${styles.botonright} ${styles.btnnavbar}`}
             onClick={()=>{Scrollclick("Innomictoken")}}
-           >InnomicToken</div>
+           >Innomic Token</div>
           <div
             className={`${styles.botonright} ${styles.btnnavbar}`}
-            onClick={() => Scrollclick('Team')}
-          >characters</div>
+            onClick={() => Scrollclick('Characters')}
+          >Characters</div>
         </div>
 
         <div 
@@ -89,7 +89,7 @@ const Header = () => {
             className={`${styles.botonright} ${styles.btnnavbar}`}
             target="_blank"
             onClick={()=>{Scrollclick("Grafico")}}
-           > Economy</div>
+           >Innomics</div>
           <Link
             className={`${styles.botonright} ${styles.btnnavbar}`}
             target="_blank"
