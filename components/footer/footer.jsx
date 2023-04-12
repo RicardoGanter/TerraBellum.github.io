@@ -105,7 +105,9 @@ const Footer = () => {
           >
             Terms of Use
           </Link>
-          
+          <div> 
+          © Copyrights 2023 Innomic GameChanger SPA - All Rights Reserved
+          </div>
         </div>
       </div>
     </>
