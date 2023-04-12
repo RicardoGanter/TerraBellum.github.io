@@ -1,8 +1,9 @@
 import styles from "../../styles/infocharacter/text.module.scss";
 import Image from "next/image";
 import TB from "../../public/img/logos/tb.png";
-import hability1 from '../../public/img/habilidades/HABILIDAD.webp'
+import hability1 from '../../public/img/habilidades/HABILIDAD1.webp'
 import hability2 from '../../public/img/habilidades/HABILIDAD2.webp'
+import hability3 from '../../public/img/habilidades/HABILIDAD3.webp'
 import { useState } from "react";
 
 const Texto = () => {
@@ -56,7 +57,7 @@ const Texto = () => {
                   }}
                 />
                 <Image
-                  src={hability1}
+                  src={hability3}
                   className={styles.hability}
                   alt="Habilidad"
                   onClick={() => {
@@ -75,21 +76,21 @@ const Texto = () => {
                 </div>
               ) : habilidad == 2 ? (
                 <div className={styles.Hb1}>
-                  <div>
+                  <p>
                     Lolem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Lorem Ipsum is simply dummy text
                     of the Ipsum has been the industrys standard dummy text ever
                     since the 1500s, when an unknown printer took a galley
-                  </div>
+                  </p>
                 </div>
               ) : habilidad == 3 ? (
                 <div className={styles.Hb1}>
-                  <div>
+                  <p>
                     Lalem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Lorem Ipsum is simply dummy text
                     of the Ipsum has been the industrys standard dummy text ever
                     since the 1500s, when an unknown printer took a galley
-                  </div>
+                  </p>
                 </div>
               ) : null}
             </div>

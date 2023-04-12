@@ -28,14 +28,27 @@
   flex-direction: column;
   justify-content: center;
   margin: 5rem auto;
+  .Hb1 {
+    text-align: start;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    // width: 550px;
+    // height: 250px;
+    font-size: 1.6rem;
+  }
+  .containhabilidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .hability {
+      width: 250px;
+      height: auto;
+      cursor: pointer;
+      margin: auto;
+    }
+  }
 }
-.containhabilidad {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-radius: 1rem;
-  // background-color: #3d063b;
-}
+
 .gift {
   margin: 0 1rem;
   width: 20rem;
@@ -45,22 +58,7 @@
   background-color: #3d063b;
 }
 
-.hability {
-  
-  // margin: 1rem;
-  width: 15rem;
-  height: auto;
-  // border-radius: 50%;
-  cursor: pointer;
-}
-.Hb1 {
-  text-align: start;
-  margin: 1rem 0;
-  border-radius: 1rem;
-  // width: 550px;
-  // height: 250px;
-  font-size: 1.6rem;
-}
+
 
 //-------------------------RESPONSIVE---------------------------------
 
