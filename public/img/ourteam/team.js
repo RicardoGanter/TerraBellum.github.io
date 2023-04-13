@@ -7,5 +7,6 @@ import isaacE from './isaace.jpg'
 import danielN from './danieln.jpg'
 import FernandoRU from './feña.jpg'
 import enzoVB from './enzo.jpg'
-const Team = {claudioCH,enzoVB, ricardoRG, felipeA, fabioC,diegoCA,isaacE,danielN,FernandoRU}
+import felipebl from './felipebl.jpeg'
+const Team = {claudioCH,enzoVB, ricardoRG, felipeA, fabioC,diegoCA,isaacE,danielN,FernandoRU,felipebl}
 export default Team;

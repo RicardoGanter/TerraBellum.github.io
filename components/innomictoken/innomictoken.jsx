@@ -8,15 +8,15 @@ const Innomictoken = ()=>{
 
     return(
         <div className={styles.contain}>
-        <div>
-            <p
+        {/* <div> */}
+            {/* <p
             className={styles.text}
             >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit accusantium distinctio hic, ratione quo blanditiis,
                 beatae exercitationem eum,
                 atque deserunt nam earum sapiente animi voluptatibus repellendus
-                autem delectus temporibus suscipit?</p>
-        </div>
+                autem delectus temporibus suscipit?</p> */}
+        {/* </div> */}
 
         {/* cambiar div a image  */}
         <div>
