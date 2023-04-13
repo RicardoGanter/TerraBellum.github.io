@@ -10,7 +10,10 @@ const Grafico = () => {
   const [btn, setBtn] = useState(1);
   const [colors, setColors] =useState([])
   const [bgcolor,setBgcolor] =useState("rgb(73, 14, 73)")
-
+  const [linecolor, setLinecolor] = useState("")
+  const switchlinecolor = (color1='rgb(231, 231, 43)')=>{
+    setLinecolor(color1)
+  }
   const switchColor = (color1=0,color2=0,color3=0) => {
     setColors({color1,color2,color3});
   }
@@ -87,12 +90,12 @@ const Grafico = () => {
       gradient: {
         shade: 'dark',
         colorStops: [
-          { offset: colors.color1, color: '#4bcd37' },
-          { offset: colors.color1, color: '#cd3737' },
-          { offset: colors.color2, color: '#cd3737' },
-          { offset: colors.color2, color: '#6dcb5f' },
-          { offset: colors.color3, color: '#6dcb5f' },
-          { offset: 0, color: '#a500b9' },
+          { offset: colors.color1, color: linecolor },
+          { offset: colors.color1, color: linecolor },
+          { offset: colors.color2, color: linecolor },
+          { offset: colors.color2, color: linecolor },
+          { offset: colors.color3, color: linecolor },
+          { offset: 0, color: '#949494' },
         ],
         shadeIntensity: 1,
         type: 'horizontal',
@@ -136,18 +139,25 @@ const Grafico = () => {
         className={styles.btnopc1} 
         onClick={()=>{setBtn(1); 
         switchColor(16.5);
-        setBgcolor("rgb(253, 255, 140)")}}
-        >Anti Ifation NFT</p>
+        setBgcolor("rgb(231, 231, 43)");
+        switchlinecolor("rgb(231, 231, 43)",);
+      }}
+        
+        >Anti Infation NFT</p>
 
         <p className={styles.btnopc1} 
         onClick={()=>{setBtn(2);
           switchColor(16.5,33.3);
-          setBgcolor("rgb(164,250,158)")}}>Drop limit</p>
+          setBgcolor("rgb(164,250,158)");
+          switchlinecolor("rgb(164,250,158)");
+          }}>Drop limit</p>
 
         <p className={styles.btnopc1} 
         onClick={()=>{setBtn(3);
           switchColor(16.5,33.3,100);
-          setBgcolor("rgb(143, 157, 255)")}}>F2P Long-Term</p>
+          setBgcolor("rgb(143, 157, 255)");
+          switchlinecolor("rgb(143, 157, 255)");
+          }}>F2P Long-Term</p>
       </div>
       </div>
 
