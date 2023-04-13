@@ -2,6 +2,7 @@ import styles from '../../styles/innomictoken/innomictoken.module.scss'
 import Image from 'next/image';
 import check from '../../public/check-solid.svg'
 import xmark from '../../public/xmark-solid.svg'
+import token from '../../public/img/token/token.webp'
 const Innomictoken = ()=>{
 
 
@@ -19,7 +20,8 @@ const Innomictoken = ()=>{
 
         {/* cambiar div a image  */}
         <div>
-            <div className={styles.imagetoken}></div>
+            <Image src={token}
+            className={styles.imagetoken} alt={"Image tonken"} />
         </div>
         <div>
             <p
@@ -33,7 +35,7 @@ const Innomictoken = ()=>{
         <div className={styles.containtable}>
             <div className={styles.table1}>
                 <div>
-                    <p>a</p>
+                    <p className={styles.tf}></p>
                     <Image src={check} alt={"Imgage Check"} className={styles.tf}/>
                     <Image src={check} alt={"Imgage Check"} className={styles.tf}/>
                     <Image src={check} alt={"Imgage Check"} className={styles.tf}/>
@@ -49,7 +51,7 @@ const Innomictoken = ()=>{
             </div>
             <div className={styles.table1}>
                 <div>
-                    <p>a</p>
+                    <p className={styles.tf}></p>
                     <Image src={xmark} alt={"Imgage Check"} className={styles.tf}/>
                     <Image src={xmark} alt={"Imgage Check"} className={styles.tf}/>
                     <Image src={xmark} alt={"Imgage Check"} className={styles.tf}/>

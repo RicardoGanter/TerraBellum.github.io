@@ -4,49 +4,67 @@
     justify-content: center;
     align-items: center;
     margin: auto 15%;
-}
-
-
-.imagetoken{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    padding: 1rem;
-    background-color: rgb(72, 59, 136);
-}
-.text{
-    background-color: rgb(93, 48, 104);
-    padding: 1rem;
-    border-radius: 1rem;
-}
-.containtable{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    .table1{
-        display: grid;
-        grid-template-columns: 1fr 7fr;
+    position: relative;
+    .imagetoken{
+        // background-color: rebeccapurple;
+        width: 500px;
+        height: 500px;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-name: slidein;
+    
+    }
+    @keyframes slidein {
+        from{
+            margin-top: 5%;
+            margin-bottom: -5%;
+        }
+        50%{
+            margin-top: -5%;
+            margin-bottom: 5%;
+        }
+        to{
+            margin-top: 5%;
+            margin-bottom: -5%;
+        }
+      }
+    .text{
         background-color: rgb(93, 48, 104);
-        border-radius: .5rem;
-        div{
-            display: flex;
-            flex-direction: column;
-            margin: 0 .6rem;
-            justify-content: space-between;
-            .tf{
-                height: auto;
-                width: 1.3rem;
-                background-color: rgb(57, 28, 85) ;
-                padding: .2rem;
-                border-radius: .5rem;
-                margin: 1rem 0;
-            }
-            p{
-                background-color: rgb(57, 28, 85) ;
-                padding: .5rem;
-                font-size: 1rem;
-                border-radius: .5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .containtable{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        .table1{
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            background-color: rgb(93, 48, 104);
+            border-radius: .5rem;
+            div{
+                display: flex;
+                flex-direction: column;
+                margin: 0 .6rem;
+                justify-content: space-between;
+                .tf{
+                    height: 1rem;
+                    width:auto;
+                    background-color: rgb(57, 28, 85) ;
+                    padding: .5rem .6rem;
+                    border-radius: .5rem;
+                    margin: 1rem 0;
+                }
+                p{
+                    background-color: rgb(57, 28, 85) ;
+                    padding: .5rem;
+                    font-size: 1rem;
+                    border-radius: .5rem;
+                }
             }
         }
     }
+    
 }
+
+

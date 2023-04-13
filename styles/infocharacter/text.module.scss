@@ -41,14 +41,20 @@
     flex-direction: row;
     justify-content: center;
     .hability {
-      width: 250px;
+      width: 10rem;
       height: auto;
       cursor: pointer;
       margin: auto;
     }
   }
 }
-
+.activeButton{
+  background-color: rgba(222,42,222,1);
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+-moz-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+}
 .gift {
   margin: 0 1rem;
   width: 20rem;

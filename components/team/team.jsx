@@ -4,7 +4,7 @@ import Team from "@/public/img/ourteam/team";
 const TextoCloacas = () => {
   return (
     <div className={styles.containmain}>
-      <h2 className={styles.texto}>Owners</h2>
+      <h2 className={styles.texto}>Founders</h2>
 
       <div className={styles.contain}>
         <PropsMiembros

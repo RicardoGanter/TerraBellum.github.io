@@ -21,7 +21,7 @@ export default function Home() {
           >
           <InicialText/>
           </div>
-          <div style={{position:"absolute",bottom:0}}
+          <div style={{position:"absolute",bottom:"50vh"}}
           className={styles.margincontain}
           id="Characters"
           >
@@ -32,7 +32,7 @@ export default function Home() {
 
         <div className={styles.fondo2}>
           <div 
-          style={{top:"50vh"}}
+          style={{top:"-30vh"}}
           className={styles.margincontain}>
           <Infoweapons/>
           </div>
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className={styles.fondo4}>
           <div className={`${styles.containGrafic},${styles.margincontain}`} id="Grafico"
-          style={{top:"50%"}}
+          style={{top:"45%"}}
           >
           <Grafico/>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
         <div className={styles.fondo5}
         >
           <div
-          style={{position:"absolute", top:"20%"}}
+          style={{top:"20%"}}
           className={styles.margincontain}
           id="Innomictoken"
           >

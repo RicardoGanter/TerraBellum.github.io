@@ -7,7 +7,11 @@ import hability3 from '../../public/img/habilidades/HABILIDAD3.webp'
 import { useState } from "react";
 
 const Texto = () => {
-  
+  const [activeButton, setActiveButton] = useState(1);
+
+  const handleButtonClick = (buttonNumber) => {
+    setActiveButton(buttonNumber);
+  }
   const [habilidad, setHabilidad] = useState(1);
   //armas
   return (
@@ -42,27 +46,32 @@ const Texto = () => {
               <div className={styles.containhabilidad}>
                 <Image
                   src={hability1}
-                  className={styles.hability}
+                  className={`${styles.hability} ${activeButton === 1 ? styles.activeButton : ''}`}
                   alt="Habilidad"
+                  id="lal"
                   onClick={() => {
                     setHabilidad(1);
+                    handleButtonClick(1);
                   }}
                 />
                 <Image
                   src={hability2}
-                  className={styles.hability}
+                  className={`${styles.hability} ${activeButton == 2 ? styles.activeButton : ''}`}
                   alt="Habilidad"
+                  id="lal"
                   onClick={() => {
                     setHabilidad(2);
+                    handleButtonClick(2);
                   }}
                 />
                 <Image
                   src={hability3}
-                  className={styles.hability}
+                  className={`${styles.hability} ${activeButton === 3 ? styles.activeButton : ''}`}
                   alt="Habilidad"
                   onClick={() => {
                     setHabilidad(3);
-                  }}
+                    handleButtonClick(3)}
+                  }
                 />
               </div>
               {habilidad == 1 ? (
