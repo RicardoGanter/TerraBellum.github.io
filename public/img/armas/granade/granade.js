@@ -1,6 +1,6 @@
-import incendiaria from './Incendiaria.png'
-import lanzapapas from './lanzapapas.png'
-import Patata from './Patata.png'
+import incendiaria from "./Incendiaria.webp";
+import lanzapapas from "./lanzapapas.webp";
+import Patata from "./Patata.webp";
 
-const Granade = {incendiaria, lanzapapas, Patata}
-export default Granade
+const Granade = { incendiaria, lanzapapas, Patata };
+export default Granade;

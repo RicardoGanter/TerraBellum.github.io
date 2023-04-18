@@ -1,9 +1,9 @@
 import styles from "../../styles/infocharacter/text.module.scss";
 import Image from "next/image";
-import TB from "../../public/img/logos/tb.png";
-import hability1 from '../../public/img/habilidades/HABILIDAD1.webp'
-import hability2 from '../../public/img/habilidades/HABILIDAD2.webp'
-import hability3 from '../../public/img/habilidades/HABILIDAD3.webp'
+import TB from "../../public/img/logos/tb.webp";
+import hability1 from "../../public/img/habilidades/HABILIDAD1.webp";
+import hability2 from "../../public/img/habilidades/HABILIDAD2.webp";
+import hability3 from "../../public/img/habilidades/HABILIDAD3.webp";
 import { useState } from "react";
 
 const Texto = () => {
@@ -11,7 +11,7 @@ const Texto = () => {
 
   const handleButtonClick = (buttonNumber) => {
     setActiveButton(buttonNumber);
-  }
+  };
   const [habilidad, setHabilidad] = useState(1);
   //armas
   return (
@@ -46,7 +46,9 @@ const Texto = () => {
               <div className={styles.containhabilidad}>
                 <Image
                   src={hability1}
-                  className={`${styles.hability} ${activeButton === 1 ? styles.activeButton : ''}`}
+                  className={`${styles.hability} ${
+                    activeButton === 1 ? styles.activeButton : ""
+                  }`}
                   alt="Habilidad"
                   id="lal"
                   onClick={() => {
@@ -56,7 +58,9 @@ const Texto = () => {
                 />
                 <Image
                   src={hability2}
-                  className={`${styles.hability} ${activeButton == 2 ? styles.activeButton : ''}`}
+                  className={`${styles.hability} ${
+                    activeButton == 2 ? styles.activeButton : ""
+                  }`}
                   alt="Habilidad"
                   id="lal"
                   onClick={() => {
@@ -66,12 +70,14 @@ const Texto = () => {
                 />
                 <Image
                   src={hability3}
-                  className={`${styles.hability} ${activeButton === 3 ? styles.activeButton : ''}`}
+                  className={`${styles.hability} ${
+                    activeButton === 3 ? styles.activeButton : ""
+                  }`}
                   alt="Habilidad"
                   onClick={() => {
                     setHabilidad(3);
-                    handleButtonClick(3)}
-                  }
+                    handleButtonClick(3);
+                  }}
                 />
               </div>
               {habilidad == 1 ? (
@@ -106,7 +112,7 @@ const Texto = () => {
             {/* <div className={styles.gift}></div> */}
           </div>
         </div>
-        {/* CONTAIN ARMS */} 
+        {/* CONTAIN ARMS */}
       </div>
     </>
   );

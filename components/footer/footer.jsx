@@ -10,7 +10,7 @@ import facebook from "../../public/icon/facebook.svg";
 import facebookblue from "../../public/icon/facebookblue.svg";
 import twitter from "../../public/icon/twitter.svg";
 import twitterblue from "../../public/icon/twitterblue.svg";
-import TB from "../../public/img/logos/tb.png";
+import TB from "../../public/img/logos/tb.webp";
 import Link from "next/link";
 import ImageHover from "./imagenRsociales";
 import { useState } from "react";
@@ -20,7 +20,12 @@ const Footer = () => {
     <>
       <div className={styles.redesSociales}>
         <Link href={"/"}>
-          <Image src={TB} width={250} style={{margin:'2rem 0'}} alt="Terrabellum" />
+          <Image
+            src={TB}
+            width={250}
+            style={{ margin: "2rem 0" }}
+            alt="Terrabellum"
+          />
         </Link>
         <div>
           <Link
@@ -105,8 +110,8 @@ const Footer = () => {
           >
             Terms of Use
           </Link>
-          <div> 
-          © Copyrights 2023 Innomic GameChanger SPA - All Rights Reserved
+          <div>
+            © Copyrights 2023 Innomic GameChanger SPA - All Rights Reserved
           </div>
         </div>
       </div>

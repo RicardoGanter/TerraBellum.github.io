@@ -1,7 +1,7 @@
-import Axe from './Axe.png'
-import espada from './espada.png'
-import hacha from './hacha.png'
-import dagas from './dagas.png'
+import Axe from "./Axe.webp";
+import espada from "./espada.webp";
+import hacha from "./hacha.webp";
+import dagas from "./dagas.webp";
 
-const Meele = {Axe, espada, hacha, dagas}
-export default Meele
+const Meele = { Axe, espada, hacha, dagas };
+export default Meele;

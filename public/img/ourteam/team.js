@@ -1,12 +1,23 @@
-import claudioCH from './claudiochuahicura.jpg'
-import ricardoRG from './ricardorosales.jpg'
-import felipeA from './felipearaya.jpg'
-import fabioC from './fabiocanales.jpg'
-import diegoCA from './canela.jpg'
-import isaacE from './isaace.jpg'
-import danielN from './danieln.jpg'
-import FernandoRU from './feña.jpg'
-import enzoVB from './enzo.jpg'
-import felipebl from './felipebl.jpeg'
-const Team = {claudioCH,enzoVB, ricardoRG, felipeA, fabioC,diegoCA,isaacE,danielN,FernandoRU,felipebl}
+import claudioCH from "./claudiochuahicura.webp";
+import ricardoRG from "./ricardorosales.webp";
+import felipeA from "./felipearaya.webp";
+import fabioC from "./fabiocanales.webp";
+import diegoCA from "./canela.webp";
+import isaacE from "./isaace.webp";
+import danielN from "./danieln.webp";
+import FernandoRU from "./feña.webp";
+import enzoVB from "./enzo.webp";
+import felipebl from "./felipebl.webp";
+const Team = {
+  claudioCH,
+  enzoVB,
+  ricardoRG,
+  felipeA,
+  fabioC,
+  diegoCA,
+  isaacE,
+  danielN,
+  FernandoRU,
+  felipebl,
+};
 export default Team;

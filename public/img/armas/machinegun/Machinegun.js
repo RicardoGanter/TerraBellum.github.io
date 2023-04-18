@@ -1,6 +1,6 @@
-import escopeta from './escopeta.png'
-import escopetadoble from './escopetadoble.png'
-import lazzer from './lazzer.png'
-import rifle from './rifle.png'
-const Machinegun = { escopeta, escopetadoble, lazzer, rifle }
+import escopeta from "./escopeta.webp";
+import escopetadoble from "./escopetadoble.webp";
+import lazzer from "./lazzer.webp";
+import rifle from "./rifle.webp";
+const Machinegun = { escopeta, escopetadoble, lazzer, rifle };
 export default Machinegun;
