@@ -44,7 +44,7 @@ const Header = () => {
 
       {/* resolucion intermedia 1020px */}
       <div className={styles.interresolution}>
-        <Image src={logo} alt="logo tb" className={styles.img} />
+        <Image src={logo} alt="Logo tb" className={styles.img}/>
         <Image
           onClick={() => {
             setInterresolution(!interresolution);
@@ -81,15 +81,9 @@ const Header = () => {
             Characters
           </div>
         </div>
-
-        <div
-          onClick={() => {
+          <Image src={logo} alt="Logo" className={styles.img} onClick={() => {
             Scrollclick("Home");
-          }}
-        >
-          <Image src={logo} alt="Logo" className={styles.img} />
-        </div>
-
+          }}/>
         <div className={styles.group1}>
           <div
             className={`${styles.botonright} ${styles.btnnavbar}`}

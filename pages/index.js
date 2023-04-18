@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         </div>
         <div className={styles.fondo4}>
-          <div className={`${styles.containGrafic},${styles.margincontain}`} id="Grafico"
+          <div id="Grafico"
           style={{top:"45%"}}
           >
           <Grafico/>
