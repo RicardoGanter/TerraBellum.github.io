@@ -8,15 +8,23 @@ import styles from '../styles/index.module.scss'
 import Header from "@/components/header/Header";
 import Infoweapons from "@/components/infoweapons/infoweapon";
 import Innomictoken from "@/components/innomictoken/innomictoken";
+import Image from "next/image";
+import fondo1 from '../public/img/Fondo/fondo1.webp'
+import fondo2 from '../public/img/Fondo/fondo2.webp'
+import fondo3 from '../public/img/Fondo/fondo3.webp'
+import fondo4 from '../public/img/Fondo/fondo4.webp'
+import fondo5 from '../public/img/Fondo/fondo5.webp'
+
 export default function Home() {
   return (
     <>
     <Header/>
     <div className={styles.contain}>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <div className={styles.fondo1} id="Home">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <div id="Home">
+          <Image src={fondo1} alt="lol"  className={styles.fondo}/>
           <div
-          style={{top:"60vh"}}
+          style={{ position: "absolute", top: "60vh", left: "0%"}}
           className={styles.margincontain}
           >
           <InicialText/>
@@ -27,33 +35,35 @@ export default function Home() {
           >
           <Texto />
           </div>
-          
         </div>
-
-        <div className={styles.fondo2}>
-          <div 
-          style={{top:"-30vh"}}
-          className={styles.margincontain}>
-          <Infoweapons/>
-          </div>
+        <div style={{ position: "relative" }}>
+        <Image alt="lol" src={fondo2} className={styles.fondo} />
+        <div style={{ position: "absolute", top: "50%", left: "0%"}} className={styles.margincontain}>
+          <Infoweapons />
         </div>
-        <div className={styles.fondo3}>
+        </div>
+        <div >
+          <Image src={fondo3} alt="lol" className={styles.fondo}/>
         <div
+        style={{ position: "absolute", top: "10%", left: "0%"}}
         className={styles.margincontain}>
         <Nftcartas />
         </div>
         </div>
-        <div className={styles.fondo4}>
-          <div className={`${styles.containGrafic},${styles.margincontain}`} id="Grafico"
-          style={{top:"45%"}}
+        <div >
+          <Image src={fondo4} alt="lol" className={styles.fondo} />
+          <div id="Grafico"
+          style={{ position: "absolute", top: "45%", left: "0%"}}
           >
           <Grafico/>
           </div>
         </div>
-        <div className={styles.fondo5}
-        >
+
+
+        <div>
+          <Image src={fondo5} alt="Image Background" className={styles.fondo}/>
           <div
-          style={{top:"20%"}}
+          style={{ position: "absolute", top: "20%", left: "0%"}}
           className={styles.margincontain}
           id="Innomictoken"
           >
