@@ -13,22 +13,22 @@
     opacity: 100%;
   }
 }
-@media (max-width: 480px){
-  .textoinicial{
+@media (max-width: 480px) {
+  .textoinicial {
     width: 480px;
     font-size: 1rem;
   }
 }
 @media (min-width: 481px) and (max-width: 1150px) {
   .textoinicial {
-    font-size: 1.5rem;
-    margin: 25rem 10% 0 10%;
+    font-size: 2rem;
+    // margin: 25rem 10% 0 10%;
   }
 }
 
 @media (max-width: 480px) {
   .textoinicial {
     font-size: 1rem;
-    margin: 25rem 10% 0 10%;
+    margin: 5rem 10% 0 10%;
   }
 }
