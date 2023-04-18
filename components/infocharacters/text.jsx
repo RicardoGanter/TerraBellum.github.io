@@ -16,22 +16,22 @@ const Texto = () => {
   //armas
   return (
     <>
-      <div className={styles.contenedorPersonajesinfo}>
-        <div className={styles.contenedorInfoJuego}>
-          <div>
+      <main className={styles.contenedorPersonajesinfo}>
+        <section className={styles.contenedorInfoJuego}>
+          <article>
             <p>
               Terrabellum is an exciting action game with immersive combat in
               destructible maps, featuring unique characters with special
               abilities. Compete against three other players in a match where
               the last one standing takes the victory.
             </p>
-          </div>
+          </article>
           <Image
             src={TB}
             className={styles.imagenTB}
             alt="imagen terrabellum"
           />
-        </div>
+        </section>
         <div className={styles.contenedorPersonajes}>
           <div>
             <p>
@@ -113,7 +113,7 @@ const Texto = () => {
           </div>
         </div>
         {/* CONTAIN ARMS */}
-      </div>
+      </main>
     </>
   );
 };

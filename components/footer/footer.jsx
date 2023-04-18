@@ -18,7 +18,7 @@ import { useState } from "react";
 const Footer = () => {
   return (
     <>
-      <div className={styles.redesSociales}>
+      <footer className={styles.redesSociales}>
         <Link href={"/"}>
           <Image
             src={TB}
@@ -114,7 +114,7 @@ const Footer = () => {
             © Copyrights 2023 Innomic GameChanger SPA - All Rights Reserved
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 };
