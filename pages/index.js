@@ -1,14 +1,29 @@
-import Texto from "@/components/infocharacters/text.jsx";
 import Footer from "@/components/footer/footer.jsx";
-import TextoCloacas from "@/components/team/team.jsx";
-import Nftcartas from "@/components/nftcarts/nftcarts.jsx";
-import InicialText from "@/components/textbackground1/text.jsx";
-import Grafico from "@/components/graphic/graphic.jsx";
 import styles from '../styles/index.module.scss'
 import Header from "@/components/header/Header";
-import Infoweapons from "@/components/infoweapons/infoweapon";
-import Innomictoken from "@/components/innomictoken/innomictoken";
+import dynamic from "next/dynamic";
 export default function Home() {
+  const D_Grafico = dynamic(() => import("@/components/graphic/graphic.jsx"), {
+    ssr: false
+  })
+  const D_InicialText = dynamic(() => import("@/components/textbackground1/text.jsx"), {
+    ssr: false
+  })
+  const D_Infoweapons = dynamic(() => import("@/components/infoweapons/infoweapon"), {
+    ssr: false
+  })
+  const D_Nftcartas = dynamic(() => import("@/components/nftcarts/nftcarts.jsx"), {
+    ssr: false
+  })
+  const D_TextoCloacas = dynamic(() => import("@/components/team/team.jsx"), {
+    ssr: false
+  })
+  const D_Innomictoken = dynamic(() => import("@/components/innomictoken/innomictoken"), {
+    ssr: false
+  })
+  const D_Texto = dynamic(() => import("@/components/infocharacters/text.jsx"), {
+    ssr: false
+  })
   return (
     <>
     <Header/>
@@ -19,35 +34,34 @@ export default function Home() {
           style={{top:"60vh"}}
           className={styles.margincontain}
           >
-          <InicialText/>
+          <D_InicialText/>
           </div>
           <div style={{position:"absolute",bottom:"50vh"}}
           className={styles.margincontain}
           id="Characters"
           >
-          <Texto />
+          <D_Texto/>
           </div>
-          
         </div>
 
         <div className={styles.fondo2}>
           <div 
           style={{top:"-30vh"}}
           className={styles.margincontain}>
-          <Infoweapons/>
+          <D_Infoweapons/>
           </div>
         </div>
         <div className={styles.fondo3}>
         <div
         className={styles.margincontain}>
-        <Nftcartas />
+        <D_Nftcartas/>
         </div>
         </div>
         <div className={styles.fondo4}>
           <div id="Grafico"
           style={{top:"45%"}}
           >
-          <Grafico/>
+          <D_Grafico/>
           </div>
         </div>
         <div className={styles.fondo5}
@@ -57,8 +71,8 @@ export default function Home() {
           className={styles.margincontain}
           id="Innomictoken"
           >
-          <Innomictoken />
-          <TextoCloacas />
+          <D_Innomictoken />
+          <D_TextoCloacas />
           </div>
         </div>
       <Footer />
