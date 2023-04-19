@@ -54,8 +54,7 @@ return(
         <D_Nftcartas/>
         </div>
   </div>
-)
-}
+)}
 
 export const Fondo4= ()=>{
   const D_Grafico = dynamic(() => import("@/components/graphic/graphic.jsx"), {
@@ -69,9 +68,7 @@ return(
           <D_Grafico/>
           </div>
         </div>
-)
-}
-
+)}
 
 export const Fondo5= ()=>{
   const D_TextoCloacas = dynamic(() => import("@/components/team/team.jsx"), {

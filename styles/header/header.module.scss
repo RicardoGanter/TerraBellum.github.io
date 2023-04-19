@@ -92,16 +92,17 @@
      align-items: center;
      justify-content: center;
      transition: 0.3s;
-  }
-  .optionMovile div {
-    margin: 2rem 0;
-    cursor: pointer;
-  }
-  .optionMovile div:hover {
-    background-color: aliceblue;
-    border-radius: 2rem;
-    padding: 0 1rem;
-    color: black;
+     p {
+      font-size: 4rem;
+      margin: 4rem 0;
+      cursor: pointer;
+    }
+    p:hover {
+      background-color: aliceblue;
+      border-radius: 1rem;
+      padding: 0 1rem;
+      color: black;
+    }
   }
 }
 
@@ -153,15 +154,15 @@
     align-items: center;
     justify-content: center;
     transition: 1s;
-  }
-  .optionMovile div {
-    margin: 2rem 0;
-    cursor: pointer;
-    padding: 1rem 2rem;
-  }
-  .optionMovile div:hover {
-    background-color: aliceblue;
-    border-radius: 1rem;
-    color: black;
+    p {
+      margin: 2rem 0;
+      cursor: pointer;
+      padding: 1rem 2rem;
+    }
+    p:hover {
+      background-color: aliceblue;
+      border-radius: 1rem;
+      color: black;
+    }
   }
 }

@@ -12,7 +12,7 @@ const Header = () => {
   const Scrollclick = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      window.scrollBy({ top: element.getBoundingClientRect().top - 310, behavior: "smooth" });
     }
   };
   return (
@@ -34,10 +34,10 @@ const Header = () => {
         />
         {navbarcontainMovile ? (
           <div className={styles.optionMovile}>
-            <div>InnomicToken</div>
-            <div>personajes</div>
-            <div>MarketPlace</div>
-            <div>WhitePaper</div>
+            <p onClick={() => Scrollclick("Innomictoken")}>Innomic Token</p>
+            <p onClick={() => Scrollclick("Characters")}>Characters</p>
+            <p onClick={() => Scrollclick("Grafico")}>Innomic</p>
+            <p onClick={() => Scrollclick("")}>WhitePaper</p>
           </div>
         ) : null}
       </nav>
@@ -55,10 +55,18 @@ const Header = () => {
         />
         {interresolution ? (
           <div className={styles.optionMovile}>
-            <div>InnomicToken</div>
-            <div>personajes</div>
-            <div>MarketPlace</div>
-            <div>WhitePaper</div>
+            <p onClick={() => { Scrollclick("Innomictoken"); setInterresolution(false) }}>Innomic Token</p>
+            <p onClick={() => { Scrollclick("Characters"); setInterresolution(false) }}>Characters</p>
+            <p onClick={() => { Scrollclick("Grafico"); setInterresolution(false) }}>Innomic</p>
+            <Link 
+            style={{textDecoration:"none", color:"white"}}
+            target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
+            onClick={() => setInterresolution(false)}>
+              <p>
+                WhitePaper
+              </p>
+            </Link>
           </div>
         ) : null}
       </div>
