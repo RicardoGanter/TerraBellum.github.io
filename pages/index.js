@@ -2,6 +2,7 @@ import Footer from "@/components/footer/footer.jsx";
 import styles from '../styles/index.module.scss'
 import Header from "@/components/header/Header";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 export default function Home() {
   const D_Grafico = dynamic(() => import("@/components/graphic/graphic.jsx"), {
     ssr: false
@@ -26,9 +27,12 @@ export default function Home() {
   })
   return (
     <>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>TerraBellum</title>
+    </Head>
     <Header/>
     <div className={styles.contain}>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <div className={styles.fondo1} id="Home">
           <div
           style={{top:"60vh"}}

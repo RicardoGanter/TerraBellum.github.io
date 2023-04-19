@@ -81,7 +81,7 @@ const Header = () => {
             Characters
           </div>
         </div>
-          <Image src={logo} alt="Logo" className={styles.img} onClick={() => {
+          <Image priority={true} src={logo} alt="Logo" className={styles.img} onClick={() => {
             Scrollclick("Home");
           }}/>
         <div className={styles.group1}>
