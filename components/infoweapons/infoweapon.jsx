@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Armas from "./props.weapon"
 import styles from '../../styles/infoweapon/infoweapon.module.scss'
