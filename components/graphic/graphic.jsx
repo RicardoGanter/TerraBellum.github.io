@@ -1,3 +1,4 @@
+"use client"
 import dynamic from "next/dynamic";
 import styles from "../../styles/graphic/graphic.module.scss";
 import { useState } from "react";
