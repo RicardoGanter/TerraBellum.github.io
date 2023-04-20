@@ -1,3 +1,4 @@
+"use client"
 import "@/styles/globals.scss";
 import Footer from "@/components/footer/footer.jsx";
 import styles from '../styles/index.module.scss'

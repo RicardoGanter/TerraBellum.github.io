@@ -1,4 +1,3 @@
-"use client"
 import Link from "next/link";
 import styles from "../../styles/header/header.module.scss";
 import Image from "next/image";

@@ -1,3 +1,4 @@
+"use client"
 const Loading = ()=>{
     <h1>
         Loading...
