@@ -21,6 +21,7 @@ const Header = () => {
       {/* movil 480px */}
       <nav className={styles.navbarcontainMovile}>
         <Image
+          priority={true}
           src={logomovil}
           alt="logo TB movil"
           className={styles.imagentb}
@@ -45,7 +46,7 @@ const Header = () => {
 
       {/* resolucion intermedia 1020px */}
       <div className={styles.interresolution}>
-        <Image src={logo} alt="Logo tb" className={styles.img}/>
+        <Image priority={true} src={logo} alt="Logo tb" className={styles.img}/>
         <Image
           onClick={() => {
             setInterresolution(!interresolution);
