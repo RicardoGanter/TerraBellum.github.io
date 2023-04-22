@@ -5,6 +5,7 @@ const nextConfig = {
     appDir: true
   },
   output: 'export',
-  images: { unoptimized: true } 
+  images: { unoptimized: true } ,
+  outputTracing: 'all'
 }
 module.exports = nextConfig
