@@ -4,8 +4,5 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
-  output: 'export',
-  images: { unoptimized: true } ,
-  outputTracing: 'all'
 }
 module.exports = nextConfig
