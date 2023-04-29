@@ -13,7 +13,7 @@ const Header = () => {
   const Scrollclick = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      window.scrollBy({ top: element.getBoundingClientRect().top - 310, behavior: "smooth" });
+      window.scrollBy({ top: element.getBoundingClientRect().top - 110, behavior: "smooth" });
     }
   };
   return (
@@ -77,7 +77,7 @@ const Header = () => {
       <nav className={styles.navbarcontain}>
         <div className={styles.group1}>
           <div
-            className={`${styles.botonright} ${styles.btnnavbar}`}
+            className={styles.btnnavbar}
             onClick={() => {
               Scrollclick("Innomictoken");
             }}
@@ -85,7 +85,7 @@ const Header = () => {
             Innomic Token
           </div>
           <div
-            className={`${styles.botonright} ${styles.btnnavbar}`}
+            className={styles.btnnavbar}
             onClick={() => Scrollclick("Characters")}
           >
             Characters
@@ -96,7 +96,7 @@ const Header = () => {
           }}/>
         <div className={styles.group1}>
           <div
-            className={`${styles.botonright} ${styles.btnnavbar}`}
+            className={styles.btnnavbar}
             target="_blank"
             onClick={() => {
               Scrollclick("Grafico");
@@ -105,7 +105,7 @@ const Header = () => {
             Innomics
           </div>
           <Link
-            className={`${styles.botonright} ${styles.btnnavbar}`}
+            className={styles.btnnavbar}
             target="_blank"
             href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
           >

@@ -11,7 +11,7 @@ export default function Home() {
         <Fondo3/>
         <Fondo4/>
         <Fondo5/>
-        <Footer />
+        <Footer/>
       </div>
     </div>
   );
