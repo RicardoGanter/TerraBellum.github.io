@@ -3,6 +3,11 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 20%,
+   rgba(0,0,0,0) 100%);
+  border-radius: 1rem 1rem 0 0;
+  padding: 2rem;
 }
 .contenedorInfoJuego {
   display: flex;
@@ -45,6 +50,7 @@
       height: auto;
       cursor: pointer;
       margin: auto;
+      transition: .5s;
     }
     .hability:hover{
       background-color: rgba(222,42,222,1);
