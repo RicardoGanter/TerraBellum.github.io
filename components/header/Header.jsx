@@ -97,7 +97,6 @@ const Header = () => {
         <div className={styles.group1}>
           <div
             className={styles.btnnavbar}
-            target="_blank"
             onClick={() => {
               Scrollclick("Grafico");
             }}
