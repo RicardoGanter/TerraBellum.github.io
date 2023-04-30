@@ -7,6 +7,8 @@ import Machinegun from "@/public/img/armas/machinegun/Machinegun";
 import { useState } from "react";
 import Meele from "@/public/img/armas/mele/meele";
 import Granade from "@/public/img/armas/granade/granade";
+import buton from '../../public/BUTON.svg'
+
 const Infoweapons = ()=>{
     const [count, setCount] = useState(1);
     const handleIncrement = () => {
