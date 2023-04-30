@@ -2,7 +2,9 @@
 
 .redesSociales {
   background-color: $color_text_negro_claro;
-  border: rgb(174, 174, 174) solid;
+  -webkit-box-shadow: inset 0px 154px 16px -143px rgba(209,209,209,0.83);
+  -moz-box-shadow: inset 0px 154px 16px -143px rgba(209,209,209,0.83);
+  box-shadow: inset 0px 154px 16px -143px rgba(209,209,209,0.83);
   /* min-height: calc(100vh - 100px -300px); */
   /* margin: 200% auto; */
   display: flex;
