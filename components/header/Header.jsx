@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import styles from "../../styles/header/header.module.scss";
 import Image from "next/image";
@@ -12,7 +13,7 @@ const Header = () => {
   const Scrollclick = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      window.scrollBy({ top: element.getBoundingClientRect().top - 110, behavior: "smooth" });
     }
   };
   return (
@@ -20,6 +21,7 @@ const Header = () => {
       {/* movil 480px */}
       <nav className={styles.navbarcontainMovile}>
         <Image
+          priority={true}
           src={logomovil}
           alt="logo TB movil"
           className={styles.imagentb}
@@ -34,17 +36,17 @@ const Header = () => {
         />
         {navbarcontainMovile ? (
           <div className={styles.optionMovile}>
-            <div>InnomicToken</div>
-            <div>personajes</div>
-            <div>MarketPlace</div>
-            <div>WhitePaper</div>
+            <p onClick={() => Scrollclick("Innomictoken")}>Innomic Token</p>
+            <p onClick={() => Scrollclick("Characters")}>Characters</p>
+            <p onClick={() => Scrollclick("Grafico")}>Innomic</p>
+            <p onClick={() => Scrollclick("")}>WhitePaper</p>
           </div>
         ) : null}
       </nav>
 
       {/* resolucion intermedia 1020px */}
       <div className={styles.interresolution}>
-        <Image src={logo} alt="logo tb" className={styles.img} />
+        <Image priority={true} src={logo} alt="Logo tb" className={styles.img}/>
         <Image
           onClick={() => {
             setInterresolution(!interresolution);
@@ -55,10 +57,18 @@ const Header = () => {
         />
         {interresolution ? (
           <div className={styles.optionMovile}>
-            <div>InnomicToken</div>
-            <div>personajes</div>
-            <div>MarketPlace</div>
-            <div>WhitePaper</div>
+            <p onClick={() => { Scrollclick("Innomictoken"); setInterresolution(false) }}>Innomic Token</p>
+            <p onClick={() => { Scrollclick("Characters"); setInterresolution(false) }}>Characters</p>
+            <p onClick={() => { Scrollclick("Grafico"); setInterresolution(false) }}>Innomic</p>
+            <Link 
+            style={{textDecoration:"none", color:"white"}}
+            target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
+            onClick={() => setInterresolution(false)}>
+              <p>
+                WhitePaper
+              </p>
+            </Link>
           </div>
         ) : null}
       </div>
@@ -67,7 +77,7 @@ const Header = () => {
       <nav className={styles.navbarcontain}>
         <div className={styles.group1}>
           <div
-            className={`${styles.botonright} ${styles.btnnavbar}`}
+            className={styles.btnnavbar}
             onClick={() => {
               Scrollclick("Innomictoken");
             }}
@@ -75,25 +85,18 @@ const Header = () => {
             Innomic Token
           </div>
           <div
-            className={`${styles.botonright} ${styles.btnnavbar}`}
+            className={styles.btnnavbar}
             onClick={() => Scrollclick("Characters")}
           >
             Characters
           </div>
         </div>
-
-        <div
-          onClick={() => {
+          <Image priority={true} src={logo} alt="Logo" className={styles.img} onClick={() => {
             Scrollclick("Home");
-          }}
-        >
-          <Image src={logo} alt="Logo" className={styles.img} />
-        </div>
-
+          }}/>
         <div className={styles.group1}>
           <div
-            className={`${styles.botonright} ${styles.btnnavbar}`}
-            target="_blank"
+            className={styles.btnnavbar}
             onClick={() => {
               Scrollclick("Grafico");
             }}
@@ -101,7 +104,7 @@ const Header = () => {
             Innomics
           </div>
           <Link
-            className={`${styles.botonright} ${styles.btnnavbar}`}
+            className={styles.btnnavbar}
             target="_blank"
             href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
           >

@@ -1,5 +1,5 @@
+"use client"
 import styles from "../../styles/nftcarta/nftcarta.module.scss";
-// import PropsNftcartas from "./props/props.nftcartas";
 import PropsNftcarta from "./props.nftcartas";
 import Characters from "@/public/img/characters/characters";
 import { useRef } from 'react';
@@ -13,7 +13,6 @@ const Nftcartas = () => {
     rootMargin: '0px',
     threshold: 0.5,
   });
-  
   const fadeIn = useSpring({
     opacity: intersection && intersection.intersectionRatio >= 0.5 ? 1 : 0,
     transform: intersection && intersection.intersectionRatio >= 0.5 ? 'translateY(0)' : 'translateY(20%)',
@@ -21,8 +20,6 @@ const Nftcartas = () => {
       duration: 1500,
     },
   });
-
-
   return (
     <animated.div ref={animatedRef} style={fadeIn}>
       <div className={styles.infotexto}>
@@ -37,9 +34,6 @@ const Nftcartas = () => {
         </h3>
       </div>
       <div className={styles.cards_grid}>
-        {/* <PropsNftcartas colorInit="red" colorfin="red" textinit="loool" />
-        <PropsNftcartas colorInit="red" />
-        <PropsNftcartas colorInit="red" /> */}
         <PropsNftcarta name={"Agent 87"} Rare={"common"} Level={"1"} img={Characters.agent}/>
         <PropsNftcarta name={"Aifos"} Rare={"uncommon"} Level={"2"} img={Characters.aifos}/>
         <PropsNftcarta name={"RedSpectre"} Rare={"legendary"} Level={"3"} img={Characters.redspectre2}/>

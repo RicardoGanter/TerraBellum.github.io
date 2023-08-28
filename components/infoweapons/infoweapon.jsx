@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Armas from "./props.weapon"
 import styles from '../../styles/infoweapon/infoweapon.module.scss'
@@ -6,7 +7,8 @@ import Machinegun from "@/public/img/armas/machinegun/Machinegun";
 import { useState } from "react";
 import Meele from "@/public/img/armas/mele/meele";
 import Granade from "@/public/img/armas/granade/granade";
-import { wrap } from "framer-motion";
+import buton from '../../public/BUTON.svg'
+
 const Infoweapons = ()=>{
     const [count, setCount] = useState(1);
     const handleIncrement = () => {

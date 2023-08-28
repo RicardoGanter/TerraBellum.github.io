@@ -1,3 +1,4 @@
+"use client"
 import styles from "../../styles/footer/footer.module.scss";
 import Image from "next/image";
 import discord from "../../public/icon/discord.svg";
@@ -13,7 +14,6 @@ import twitterblue from "../../public/icon/twitterblue.svg";
 import TB from "../../public/img/logos/tb.webp";
 import Link from "next/link";
 import ImageHover from "./imagenRsociales";
-import { useState } from "react";
 
 const Footer = () => {
   return (

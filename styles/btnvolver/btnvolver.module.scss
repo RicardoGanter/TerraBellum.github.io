@@ -1,0 +1,12 @@
+.btn{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    padding: 1rem ;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px 0px 24px -1px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px 0px 24px -1px rgba(0,0,0,1);
+box-shadow: inset 0px 0px 24px -1px rgba(0,0,0,1);
+}

@@ -9,8 +9,9 @@
   align-items: center;
   height: 75px;
   background-color: rgb(0, 0, 0);
-  box-sizing: border-box;
-  border-bottom: 5px solid rgb(123, 123, 123);
+  -webkit-box-shadow: inset 0px -78px 10px -70px rgba(209,209,209,1);
+  -moz-box-shadow: inset 0px -78px 10px -70px rgba(209,209,209,1);
+  box-shadow: inset 0px -78px 10px -70px rgba(209,209,209,1);
 }
 .group1{
   display: flex;
@@ -25,7 +26,7 @@
   background-color: black;
   margin: .4rem;
   padding: 0.8rem 1rem;
-  border-radius: 0.6rem;
+  border-radius: 0.3rem;
   font-size: 1.3rem;
   text-decoration-line: none;
   color: white;
@@ -37,14 +38,13 @@
   background-color: aliceblue;
   opacity: 80;
   color: black;
+  -webkit-box-shadow: inset 16px -18px 49px -21px rgba(0,0,0,0.71);
+  -moz-box-shadow: inset 16px -18px 49px -21px rgba(0,0,0,0.71);
+  box-shadow: inset 16px -18px 49px -21px rgba(0,0,0,0.71);
 }
 .img {
-  /* position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%); */
   height: 130px;
-  width: 450px;
+  width: 413px;
 }
 .img:hover{
   cursor: pointer;
@@ -96,16 +96,17 @@
      align-items: center;
      justify-content: center;
      transition: 0.3s;
-  }
-  .optionMovile div {
-    margin: 2rem 0;
-    cursor: pointer;
-  }
-  .optionMovile div:hover {
-    background-color: aliceblue;
-    border-radius: 2rem;
-    padding: 0 1rem;
-    color: black;
+     p {
+      font-size: 4rem;
+      margin: 4rem 0;
+      cursor: pointer;
+    }
+    p:hover {
+      background-color: aliceblue;
+      border-radius: 1rem;
+      padding: 0 1rem;
+      color: black;
+    }
   }
 }
 
@@ -128,7 +129,7 @@
     border-bottom: 5px solid rgb(123, 123, 123);
   }
   .imagentb {
-    width: 100px;
+    width: 91px;
     height: 100px;
   }
   .imagenbar {
@@ -157,15 +158,15 @@
     align-items: center;
     justify-content: center;
     transition: 1s;
-  }
-  .optionMovile div {
-    margin: 2rem 0;
-    cursor: pointer;
-    padding: 1rem 2rem;
-  }
-  .optionMovile div:hover {
-    background-color: aliceblue;
-    border-radius: 1rem;
-    color: black;
+    p {
+      margin: 2rem 0;
+      cursor: pointer;
+      padding: 1rem 2rem;
+    }
+    p:hover {
+      background-color: aliceblue;
+      border-radius: 1rem;
+      color: black;
+    }
   }
 }

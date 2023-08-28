@@ -16,7 +16,7 @@ body {
 // }
 p {
   font-family: "Roboto";
-  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+  // text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
   text-align: justify;
   font-size: 1.5rem;
 }
@@ -30,7 +30,6 @@ pre{
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2em;
-  /* background: rgb(61, 46, 104); */
   background: linear-gradient(-45deg, #5052e5, #934be6);
 }
 @media only screen and (max-width: 2000px) and (max-device-width: 2000px) {
@@ -38,9 +37,13 @@ pre{
     display: flex;
   }
 }
-
+@media (min-width: 480px) and (max-width: 1200px) {
+  p {
+    font-size: .5rem !important;
+  }
+}
 @media (max-width: 480px) {
   p {
-    font-size: 1rem;
+    font-size: .5rem;
   }
 }

@@ -1,3 +1,4 @@
+"use client"
 import styles from "../../styles/infocharacter/text.module.scss";
 import Image from "next/image";
 import TB from "../../public/img/logos/tb.webp";
