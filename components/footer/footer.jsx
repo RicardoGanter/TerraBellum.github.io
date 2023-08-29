@@ -11,7 +11,7 @@ import facebook from "../../public/icon/facebook.svg";
 import facebookblue from "../../public/icon/facebookblue.svg";
 import twitter from "../../public/icon/twitter.svg";
 import twitterblue from "../../public/icon/twitterblue.svg";
-import TB from "../../public/img/logos/tb.webp";
+import TB from "../../public/img/logos/logo_28.png";
 import Link from "next/link";
 import ImageHover from "./imagenRsociales";
 

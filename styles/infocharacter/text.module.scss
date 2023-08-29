@@ -2,12 +2,9 @@
   position: relative;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 20%,
-   rgba(0,0,0,0) 100%);
+  flex-direction: column; 
   border-radius: 1rem 1rem 0 0;
-  padding: 2rem;
+  padding: 2rem; 
 }
 .contenedorInfoJuego {
   display: flex;
@@ -20,7 +17,7 @@
 .imagenTB {
   margin-left: 2rem;
   width: 182px;
-  height: 200px;
+  height: 160px;
 }
 .contenedorPersonajes {
   display: flex;
@@ -32,43 +29,49 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 5rem auto;
   .Hb1 {
+    background-color: rgba(0, 0, 0, 0.852);
     text-align: start;
-    margin: 1rem 0;
+    margin: 2rem 0;
     border-radius: 1rem;
-    // width: 550px;
-    // height: 250px;
+    max-width: 850px; 
     font-size: 1.6rem;
+    p{
+      margin: 2rem;
+    }
   }
   .containhabilidad {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row; 
+    justify-content: start; 
+    margin: 0 auto;
+    gap: 2rem;
     .hability {
-      width: 10rem;
+      width: 12rem;
       height: auto;
       cursor: pointer;
       margin: auto;
       transition: .5s;
     }
-    .hability:hover{
-      background-color: rgba(222,42,222,1);
-      border-radius: 100%;
-      -webkit-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
-    -moz-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
-    box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+    // .hability:hover{
+    //   background-color: rgba(222,42,222,1);
+    //   border-radius: 100%;
+    //   -webkit-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+    // -moz-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+    // box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
     
-    }
+    // }
   }
 }
-.activeButton{
-  background-color: rgba(222,42,222,1);
-  border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
--moz-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
-}
+// .activeButton{
+//   background-color: rgba(222,42,222,1);
+//   border-radius: 100%;
+//   -webkit-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+// -moz-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+// box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
+// }
 .gift {
   margin: 0 1rem;
   width: 20rem;

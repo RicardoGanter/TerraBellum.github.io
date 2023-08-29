@@ -2,10 +2,15 @@
 import Link from "next/link";
 import styles from "../../styles/header/header.module.scss";
 import Image from "next/image";
-import logo from "../../public/img/logos/terrabellum.webp";
-import logomovil from "../../public/img/logos/tb.webp";
+import logo from "../../public/img/logos/logo_30.png";
+import logomovil from "../../public/img/logos/logo_28.png";
 import bar from "../../public/icon/bar.svg";
 import { useState } from "react";
+import iconcoin from '../../public/icon/header/🦆 icon _coin_.svg'
+import icon_google from '../../public/icon/header/🦆 icon _google docs_.svg'
+import iconhome from '../../public/icon/header/🦆 icon _home_.svg'
+import iconuser from '../../public/icon/header/🦆 icon _user_.svg'
+
 const Header = () => {
   const [navbarcontainMovile, setNavbarcontainMovile] = useState(false);
   const [interresolution, setInterresolution] = useState(false);
@@ -75,39 +80,32 @@ const Header = () => {
 
       {/* 1080px */}
       <nav className={styles.navbarcontain}>
+        <Image priority={true} src={logo} alt="Logo" className={styles.img} onClick={() => {
+          Scrollclick("Home");
+        }}/>
         <div className={styles.group1}>
-          <div
-            className={styles.btnnavbar}
-            onClick={() => {
-              Scrollclick("Innomictoken");
-            }}
-          >
-            Innomic Token
-          </div>
-          <div
-            className={styles.btnnavbar}
-            onClick={() => Scrollclick("Characters")}
-          >
+          <div className={styles.btnnavbar}
+            onClick={() => Scrollclick("Characters")}>
+              <Image src={iconuser} />
             Characters
           </div>
-        </div>
-          <Image priority={true} src={logo} alt="Logo" className={styles.img} onClick={() => {
-            Scrollclick("Home");
-          }}/>
-        <div className={styles.group1}>
-          <div
-            className={styles.btnnavbar}
-            onClick={() => {
-              Scrollclick("Grafico");
-            }}
-          >
+          <div  className={styles.btnnavbar}
+            onClick={() => { Scrollclick("Innomictoken") }}>
+            Innomic Token
+          </div> 
+          <div className={styles.btnnavbar}
+            onClick={() => { Scrollclick("Grafico") }}>
+              <Image src={iconcoin} />
             Innomics
           </div>
-          <Link
-            className={styles.btnnavbar}
-            target="_blank"
-            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
-          >
+          <Link className={styles.btnnavbar} 
+            href={"https://dapp.terrabellum.io/"} >
+              <Image src={iconhome} />
+            Marketplace
+          </Link>
+          <Link className={styles.btnnavbar} target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}>
+              <Image src={icon_google} />
             WhitePaper
           </Link>
         </div>

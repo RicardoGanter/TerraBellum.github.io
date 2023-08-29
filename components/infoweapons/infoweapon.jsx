@@ -8,6 +8,12 @@ import { useState } from "react";
 import Meele from "@/public/img/armas/mele/meele";
 import Granade from "@/public/img/armas/granade/granade";
 import buton from '../../public/BUTON.svg'
+import sniper from '@/public/img/armas/SNIPER conv. (1).png'
+import baasooka from '@/public/img/armas/BAZOOKA LNB (1).png'
+import deagle from '@/public/img/armas/DESERT_BIRD (2).png'
+import Katana from '@/public/img/armas/Katana (1).png'
+import LANZA from '@/public/img/armas/LANZA (2).png'
+import MINIGUN from '@/public/img/armas/MINIGUN (2).png'
 
 const Infoweapons = ()=>{
     const [count, setCount] = useState(1);
@@ -42,25 +48,25 @@ const Infoweapons = ()=>{
               justifyContent:"center",
             }}
           >
-            <Image
+            {/* <Image
               className={styles.btnarmasleft}
               src={Arrows}
               onClick={() => handleDecrement()}
               alt="arrows image"
-            />
+            /> */}
             {count == 1 ? (
               <Armas
-                tituloArmas={"Machine gun"}
-                imgArma1={Machinegun.escopeta}
-                imgArma2={Machinegun.escopetadoble}
-                imgArma3={Machinegun.lazzer}
-                imgArma4={Machinegun.rifle}
-                imgArma5={Machinegun.escopeta}
-                imgArma6={Machinegun.escopeta}
+                tituloArmas={"Weapons"}
+                imgArma1={MINIGUN}
+                imgArma2={LANZA}
+                imgArma3={Katana}
+                imgArma4={sniper}
+                imgArma5={deagle}
+                imgArma6={baasooka}
               />
             ) : null}
 
-            {count == 2 ? (
+            {/* {count == 2 ? (
               <Armas
                 tituloArmas={"Meele"}
                 imgArma1={Meele.Axe}
@@ -94,13 +100,13 @@ const Infoweapons = ()=>{
                 imgArma5={Granade.lanzapapas}
                 imgArma6={Granade.lanzapapas}
               />
-            ) : null}
-            <Image
+            ) : null} */}
+            {/* <Image
               className={styles.btnarmasrigth}
               src={Arrows}
               onClick={() => handleIncrement()}
               alt="arrows image"
-            />
+            /> */}
           </div>
           </div>
           </div>

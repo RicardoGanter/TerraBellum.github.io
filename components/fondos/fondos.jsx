@@ -14,6 +14,7 @@ const D_Texto = dynamic(() => import("@/components/infocharacters/text.jsx"), {
           style={{top:"60vh"}}
           className={styles.margincontain}
           >
+          <div className={styles.blur}/>
           <D_InicialText/>
           </div>
           <div style={{position:"absolute",bottom:"50vh"}}

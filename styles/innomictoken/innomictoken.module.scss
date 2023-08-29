@@ -27,7 +27,7 @@
         }
       }
     .text{
-        background-color: rgb(93, 48, 104);
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 1rem;
         border-radius: 1rem;
     }
@@ -38,29 +38,33 @@
         justify-content: space-between;
         gap: 1rem;
         .table1{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 7fr;
-            background-color: rgb(93, 48, 104);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%; 
             border-radius: .5rem;
             div{
                 display: flex;
-                flex-direction: column;
-                margin: 0 .6rem;
-                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0 .6rem; 
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 8px;
                 .tf{
-                    height: 1rem;
-                    width:auto;
-                    background-color: rgb(57, 28, 85) ;
-                    padding: .5rem .6rem;
-                    border-radius: .5rem;
-                    margin: 1rem 0;
+                    margin: 0 2rem;
+                    height: 2rem;
+                    width:auto; 
+                //     padding: .5rem .6rem;
+                //     border-radius: .5rem;
+                //     margin: 1rem 0;
                 }
                 p{
-                    background-color: rgb(57, 28, 85) ;
+                    // background-color: rgb(57, 28, 85) ;
                     padding: .5rem;
                     font-size: 1rem;
-                    border-radius: .5rem;
+                    // border-radius: .5rem;
                 }
             }
         }

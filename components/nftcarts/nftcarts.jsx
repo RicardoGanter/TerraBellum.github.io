@@ -5,7 +5,10 @@ import Characters from "@/public/img/characters/characters";
 import { useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { useIntersection } from 'react-use';
-
+import Image from "next/image";
+import LEGENDARIA from '../../public/img/characters/LEGENDARIA.png'
+import NORMAL from '../../public/img/characters/NORMAL.png'
+import RARA from '../../public/img/characters/RARA.png'
 const Nftcartas = () => {
   const animatedRef = useRef(null);
   const intersection = useIntersection(animatedRef, {
@@ -34,9 +37,9 @@ const Nftcartas = () => {
         </h3>
       </div>
       <div className={styles.cards_grid}>
-        <PropsNftcarta name={"Agent 87"} Rare={"common"} Level={"1"} img={Characters.agent}/>
-        <PropsNftcarta name={"Aifos"} Rare={"uncommon"} Level={"2"} img={Characters.aifos}/>
-        <PropsNftcarta name={"RedSpectre"} Rare={"legendary"} Level={"3"} img={Characters.redspectre2}/>
+        <Image className={styles.card} src={NORMAL}/>
+        <Image className={styles.card} src={RARA}/>
+        <Image className={styles.card} src={LEGENDARIA}/> 
       </div>
     </animated.div>
   );

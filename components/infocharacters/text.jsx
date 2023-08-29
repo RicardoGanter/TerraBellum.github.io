@@ -1,10 +1,10 @@
 "use client"
 import styles from "../../styles/infocharacter/text.module.scss";
 import Image from "next/image";
-import TB from "../../public/img/logos/tb.webp";
-import hability1 from "../../public/img/habilidades/HABILIDAD1.webp";
-import hability2 from "../../public/img/habilidades/HABILIDAD2.webp";
-import hability3 from "../../public/img/habilidades/HABILIDAD3.webp";
+import TB from "../../public/img/logos/logo_28.png";
+import hability1 from "../../public/img/habilidades/RS_3_HB1.png";
+import hability2 from "../../public/img/habilidades/RS_3_HB2.png";
+import hability3 from "../../public/img/habilidades/RS_3_HB3.png";
 import { useState } from "react";
 
 const Texto = () => {

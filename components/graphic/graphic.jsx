@@ -1,7 +1,7 @@
 "use client"
 import dynamic from "next/dynamic";
 import styles from "../../styles/graphic/graphic.module.scss";
-import { useState } from "react";
+import { useState } from "react"; 
 const Chart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
@@ -126,7 +126,7 @@ const Grafico = () => {
 
   return (
     <div className={styles.contain}>
-      <div className={styles.btnopc}>
+      {/* <div className={styles.btnopc}>
       <Chart
         options={options}
         series={options.series}
@@ -189,9 +189,12 @@ const Grafico = () => {
           </p>
           : null
         }
-        </div>
-        
-      </div>
+        </div>  */}
+        <video controls style={{margin: "0 auto"}}>
+          <source src="/img/armas/GRAFICO_INNOMIC_2.mp4" type="video/mp4" />
+          Tu navegador no admite el elemento de video.
+        </video>
+      {/* </div> */}
     </div>
   );
 };

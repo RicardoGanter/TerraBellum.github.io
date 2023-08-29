@@ -62,13 +62,7 @@ const TextoCloacas = () => {
           cargo="CISO"
           imagen={Team.isaacE}
           linkedin={"https://www.linkedin.com/in/isaac-encalada-ruz-8493a626b/"}
-        />
-        <PropsMiembros
-          nombre="Fernando Rios"
-          cargo="Full stack development"
-          imagen={Team.FernandoRU}
-          linkedin={"https://www.linkedin.com/in/fernando-rios-7b3274175/"}
-        />
+        /> 
       </div>
     </div>
   );
