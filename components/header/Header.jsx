@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/header/header.module.scss";
 import Image from "next/image";
 import logo from "../../public/img/logos/logo_30.png";
-import logomovil from "../../public/img/logos/logo_28.png";
+import logomovil from "../../public/img/logos/logo_30.png";
 import bar from "../../public/icon/bar.svg";
 import { useState } from "react";
 import iconcoin from '../../public/icon/header/🦆 icon _coin_.svg'
@@ -31,6 +31,38 @@ const Header = () => {
           alt="logo TB movil"
           className={styles.imagentb}
         />
+      </nav>
+      <nav className={styles.navbarcontainMovileBottom}>
+      <div className={styles.group1}>
+          <div className={styles.btnnavbar}
+            onClick={() => Scrollclick("Characters")}>
+              <Image src={iconuser} /> 
+          </div>
+          {/* <div  className={styles.btnnavbar}
+            onClick={() => { Scrollclick("Innomictoken") }}> 
+          </div>  */}
+          <div className={styles.btnnavbar}
+            onClick={() => { Scrollclick("Grafico") }}>
+              <Image src={iconcoin} /> 
+          </div>
+          <Link className={styles.btnnavbar} 
+            href={"https://dapp.terrabellum.io/"} >
+              <Image src={iconhome} /> 
+          </Link>
+          <Link className={styles.btnnavbar} target="_blank"
+            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}>
+              <Image src={icon_google} /> 
+          </Link>
+        </div>
+      </nav>
+
+
+        {/* <Image
+          priority={true}
+          src={logomovil}
+          alt="logo TB movil"
+          className={styles.imagentb}
+        />
         <Image
           onClick={() => {
             setNavbarcontainMovile(!navbarcontainMovile);
@@ -46,8 +78,7 @@ const Header = () => {
             <p onClick={() => Scrollclick("Grafico")}>Innomic</p>
             <p onClick={() => Scrollclick("")}>WhitePaper</p>
           </div>
-        ) : null}
-      </nav>
+        ) : null} */}
 
       {/* resolucion intermedia 1020px */}
       <div className={styles.interresolution}>

@@ -10,12 +10,9 @@ const D_Texto = dynamic(() => import("@/components/infocharacters/text.jsx"), {
   })
   return(
         <div loading="lazy" className={styles.fondo1} id="Home">
-          <div
-          style={{top:"60vh"}}
-          className={styles.margincontain}
-          >
-          <div className={styles.blur}/>
-          <D_InicialText/>
+          <div className={`${styles.margincontain} ${styles.position1}`}>
+            <div className={styles.blur}/>
+            <D_InicialText/>
           </div>
           <div style={{position:"absolute",bottom:"50vh"}}
           className={styles.margincontain}

@@ -15,6 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <link rel="shortcut icon" href="https://terrabellum.s3.sa-east-1.amazonaws.com/logo_28.webp"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
       </head>
       {/* <link rel="icon" href="/favicon.ico" type="image/x-icon"/> */}
       <body>

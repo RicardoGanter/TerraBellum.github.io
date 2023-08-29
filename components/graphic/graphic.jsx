@@ -190,7 +190,7 @@ const Grafico = () => {
           : null
         }
         </div>  */}
-        <video controls style={{margin: "0 auto"}}>
+        <video controls style={{margin: "0 auto", width:"100%"}}>
           <source src="/img/armas/GRAFICO_INNOMIC_2.mp4" type="video/mp4" />
           Tu navegador no admite el elemento de video.
         </video>

@@ -45,6 +45,14 @@
 
   //-------------------------RESPONSIVE-----------------------------
 
+  @media (max-width:480px){
+    .contenedorArmas div p {
+      margin: 0 10%;
+      font-size: 1rem;
+  }
+  }
+
+
   @media (min-width:481px) and (max-width: 719px) {
     // .contenedorPersonajesArmas {
     //   margin: 60rem 20% 0 20%;

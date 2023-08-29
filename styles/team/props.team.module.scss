@@ -1,7 +1,7 @@
 .containinfo {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
   }
   .img {
     border-radius: 50%;
@@ -12,4 +12,12 @@
   }
   .img:hover {
     filter: grayscale(0%);
+  }
+
+  @media (max-width : 480px){
+    .containinfo {
+      p{
+        font-size: 1.3rem;
+      }
+    }
   }

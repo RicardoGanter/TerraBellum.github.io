@@ -1,6 +1,6 @@
 @import "../global.module";
 
-.redesSociales {
+.redesSociales {  
   background-color: $color_text_negro_claro; 
   display: flex;
   flex-direction: column;
@@ -34,4 +34,10 @@
 
 .icon {
   margin: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .redesSociales {  
+  margin: 110rem 0 0 0;
+  }
 }

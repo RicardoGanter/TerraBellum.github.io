@@ -54,15 +54,7 @@
       cursor: pointer;
       margin: auto;
       transition: .5s;
-    }
-    // .hability:hover{
-    //   background-color: rgba(222,42,222,1);
-    //   border-radius: 100%;
-    //   -webkit-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
-    // -moz-box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
-    // box-shadow: 0px 0px 16px 7px rgba(222,42,222,1);
-    
-    // }
+    } 
   }
 }
 // .activeButton{
@@ -87,15 +79,43 @@
 
 @media (max-width: 480px) {
   .imagenTB {
-    width: 200px;
-    height: 150px;
-    padding: 1rem;
+    display: none;
+  }
+  .contenedorPersonajesinfo {
+    p{
+      font-size: 1rem;
+    }
   }
   .imagenHud {
     width: 300px;
     height: 100px;
     padding: 1rem;
   }
+  .cointainhabilidadgift { 
+    margin: 1rem auto;
+    .Hb1 { 
+      margin: .6rem 0;
+      border-radius: 1rem; 
+      font-size: 1.6rem;
+      p{
+        font-size: 1rem;
+        margin: 1rem;
+      }
+    }
+    .containhabilidad { 
+      flex-wrap: wrap; 
+      gap: .5rem;
+      .hability {
+        width: 5.5rem;   
+      } 
+    }
+  }
+  .contenedorInfoJuego {
+    * {
+      font-size: 1rem;
+    }
+  }
+ 
 }
 
 @media (min-width: 481px) and (max-width: 719px) {

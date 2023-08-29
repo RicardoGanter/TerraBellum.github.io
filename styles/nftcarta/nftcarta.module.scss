@@ -12,3 +12,18 @@
         height: 325px;
     }   
 }
+
+
+
+@media (max-width: 480px) {
+.cards_grid{
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 325px;
+    overflow: scroll;
+    .card{
+        width: 200px;
+        height: 325px;
+    }   
+}
+}

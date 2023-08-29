@@ -14,8 +14,8 @@
   }
 }
 @media (max-width: 480px) {
-  .textoinicial {
-    width: 480px;
+  .textoinicial { 
+    text-align: center;
     font-size: 1rem;
   }
 }
@@ -28,7 +28,7 @@
 
 @media (max-width: 480px) {
   .textoinicial {
-    font-size: 1rem;
-    margin: 5rem 10% 0 10%;
+    font-size: 1.4rem;
+    // margin: 5rem 10% 0 10%;
   }
 }
