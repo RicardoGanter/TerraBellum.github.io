@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <body>
       <Header/>
         {children}
-      <BtnVoler/>
+      {/* <BtnVoler/> */}
       </body>
     </html>
   )

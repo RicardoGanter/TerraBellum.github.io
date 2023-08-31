@@ -12,11 +12,11 @@ const Innomictoken = ()=>{
                 <Image src={token} className={styles.imagetoken} alt={"Image tonken"} />
             </div>
             <div>
-                <p className={styles.text} >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Impedit accusantium distinctio hic, ratione quo blanditiis,
-                        beatae exercitationem eum,
-                        atque deserunt nam earum sapiente animi voluptatibus repellendus
-                        autem delectus temporibus suscipit?</p>
+                <p className={styles.text} >The Innomic Token is a unique cryptocurrency exclusive to
+                 Innomic GameChanger's universe. Its limited supply prevents devaluation, ensuring stability.
+                  This token works across all games within the ecosystem, enhancing the player experience and 
+                  loyalty. It serves as rewards, earned through
+                 gameplay and tradable with real value that grows as the ecosystem expands.</p>
             </div>
             <div className={styles.containtable}>
                 <div className={styles.table1}>   

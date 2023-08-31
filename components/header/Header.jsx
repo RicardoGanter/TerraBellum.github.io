@@ -50,7 +50,7 @@ const Header = () => {
               <Image src={iconhome} /> 
           </Link>
           <Link className={styles.btnnavbar} target="_blank"
-            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}>
+            href={"https://terrabellum-1.gitbook.io/terrabellum-whitepaper/"}>
               <Image src={icon_google} /> 
           </Link>
         </div>
@@ -99,7 +99,7 @@ const Header = () => {
             <Link 
             style={{textDecoration:"none", color:"white"}}
             target="_blank"
-            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}
+            href={"https://terrabellum-1.gitbook.io/terrabellum-whitepaper/"}
             onClick={() => setInterresolution(false)}>
               <p>
                 WhitePaper
@@ -135,7 +135,7 @@ const Header = () => {
             Marketplace
           </Link>
           <Link className={styles.btnnavbar} target="_blank"
-            href={"https://terrabellum.gitbook.io/whitepaper-terrabellum/"}>
+            href={"https://terrabellum-1.gitbook.io/terrabellum-whitepaper/"}>
               <Image src={icon_google} />
             WhitePaper
           </Link>

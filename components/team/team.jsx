@@ -44,24 +44,6 @@ const TextoCloacas = () => {
           cargo="Full stack development"
           imagen={Team.enzoVB}
           linkedin={"https://www.linkedin.com/in/enzo-vergara-bracho-4197381ba/"}
-        />
-        <PropsMiembros
-          nombre="Felipe Báez"
-          cargo="EIC"
-          imagen={Team.felipebl}
-          linkedin={"https://www.linkedin.com/in/felipe-ignacio-b%C3%A1ez-leal-397b3826b/"}
-        />
-        <PropsMiembros
-          nombre="Claudio Chuhaicura"
-          cargo="Full stack development"
-          imagen={Team.claudioCH}
-          linkedin={"https://www.linkedin.com/in/claudio-chuhaicura-a41b77208/"}
-        />
-        <PropsMiembros
-          nombre="Isaac Encalada"
-          cargo="CISO"
-          imagen={Team.isaacE}
-          linkedin={"https://www.linkedin.com/in/isaac-encalada-ruz-8493a626b/"}
         /> 
       </div>
     </div>

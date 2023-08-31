@@ -84,28 +84,27 @@ const Texto = () => {
               {habilidad == 1 ? (
                 <div className={styles.Hb1}>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Lorem Ipsum is simply dummy text
-                    of the Ipsum has been the industrys standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley
+                  Ability 1 is an inherent function tied to your character,
+                   unleashing mobility or strategic advantages. Activated based on your
+                    character's unique strengths, it enables you to harness strategic benefits
+                     tailored to the situation.
                   </p>
                 </div>
               ) : habilidad == 2 ? (
                 <div className={styles.Hb1}>
                   <p>
-                    Lolem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Lorem Ipsum is simply dummy text
-                    of the Ipsum has been the industrys standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley
+                  Introducing Ability 2, a unique skill attained through the fusion of
+                   three heroes. This exceptional ability is a product of combining the strengths
+                    of these three distinct characters. Once fused, you gain 
+                  access to a versatile skill that can be any one of the three heroes' abilities.
                   </p>
                 </div>
               ) : habilidad == 3 ? (
                 <div className={styles.Hb1}>
                   <p>
-                    Lalem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Lorem Ipsum is simply dummy text
-                    of the Ipsum has been the industrys standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley
+                  Ability 3, the pinnacle of skill acquisition, achieved by merging 
+                  three Level 2 heroes. This ultimate ability results from the fusion of these advanced characters,
+                   culminating in an immensely potent skill drawn from any of the three merged heroes.
                   </p>
                 </div>
               ) : null}
