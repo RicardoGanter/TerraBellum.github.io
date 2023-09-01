@@ -19,14 +19,14 @@ const Texto = () => {
     <>
       <main className={styles.contenedorPersonajesinfo}>
         <section className={styles.contenedorInfoJuego}>
-          <article>
+          {/* <article> */}
             <p>
               Terrabellum is an exciting action game with immersive combat in
               destructible maps, featuring unique characters with special
               abilities. Compete against three other players in a match where
               the last one standing takes the victory.
             </p>
-          </article>
+          {/* </article> */}
           <Image
             src={TB}
             className={styles.imagenTB}
@@ -86,7 +86,7 @@ const Texto = () => {
                   <p>
                   Ability 1 is an inherent function tied to your character,
                    unleashing mobility or strategic advantages. Activated based on your
-                    character's unique strengths, it enables you to harness strategic benefits
+                    characters unique strengths, it enables you to harness strategic benefits
                      tailored to the situation.
                   </p>
                 </div>
@@ -96,7 +96,7 @@ const Texto = () => {
                   Introducing Ability 2, a unique skill attained through the fusion of
                    three heroes. This exceptional ability is a product of combining the strengths
                     of these three distinct characters. Once fused, you gain 
-                  access to a versatile skill that can be any one of the three heroes' abilities.
+                  access to a versatile skill that can be any one of the three heroes abilities.
                   </p>
                 </div>
               ) : habilidad == 3 ? (
