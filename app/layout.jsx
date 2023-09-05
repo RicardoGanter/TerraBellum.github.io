@@ -14,10 +14,25 @@ export default function RootLayout({ children }) {
  return (
     <html lang="en">
       <head>
-      <link rel="shortcut icon" href="https://terrabellum.s3.sa-east-1.amazonaws.com/logo_28.webp"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-      </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charSet="UTF-8" />
+        <meta name="author" content="Ricardo Rosales Ganter" />
+        <meta name="keywords" content="blockchain, dapp, crypto, nfts, terrabellum" />
+        <meta name="google-site-verification" content="WPyVYMUabFyf_Kq40ZcPNiYX9w42U-PR2fbnB0h2DHw" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://terrabellum.s3.sa-east-1.amazonaws.com/logo_28.webp"/>
+        <link rel="canonical" href=""/>
+        <meta property="og:site_name" content="Terrabellum"></meta>
+        <title>Terrabellum</title>
+        <meta name='robots' content='TerraBellum' />
+        <meta name="googlebot" content="23123123"/> 
+        <meta property="og:site_name" content="Terrabellum"></meta>
+        <meta property="og:title" content="Terrabellum"></meta>
+        <meta property="og:image" content="https://terrabellum.s3.sa-east-1.amazonaws.com/logo.webp" />
+        <meta property="og:description" content="Discover an ever-evolving digital universe with blockchain, dApps, and the metaverse. Immerse yourself in an exciting video game with infinite possibilities. Explore, create and connect like never before!" />
+        <meta property="og:title" content="Terrabellum" />
+      </head>  
+      
+ 
       {/* <link rel="icon" href="/favicon.ico" type="image/x-icon"/> */}
       <body>
       <Header/>
