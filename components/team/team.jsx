@@ -39,12 +39,6 @@ const TextoCloacas = () => {
           imagen={Team.fabioC}
           linkedin={"https://www.linkedin.com/in/fabio-antonio-canales-bustamante-94757221b/"}
         />
-        <PropsMiembros
-          nombre="Enzo Vergara"
-          cargo="Full stack development"
-          imagen={Team.enzoVB}
-          linkedin={"https://www.linkedin.com/in/enzo-vergara-bracho-4197381ba/"}
-        /> 
       </div>
     </div>
   );
